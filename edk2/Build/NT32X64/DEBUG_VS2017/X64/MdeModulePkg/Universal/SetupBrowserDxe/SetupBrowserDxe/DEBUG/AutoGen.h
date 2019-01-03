@@ -80,7 +80,7 @@ extern UINT64 _gPcd_SkuId_Array[];
 
 // Definition of PCDs used in this module
 
-#define _PCD_TOKEN_PcdFrameworkCompatibilitySupport  48U
+#define _PCD_TOKEN_PcdFrameworkCompatibilitySupport  45U
 #define _PCD_SIZE_PcdFrameworkCompatibilitySupport 1
 #define _PCD_GET_MODE_SIZE_PcdFrameworkCompatibilitySupport  _PCD_SIZE_PcdFrameworkCompatibilitySupport 
 #define _PCD_VALUE_PcdFrameworkCompatibilitySupport  ((BOOLEAN)0U)

@@ -31,6 +31,7 @@
 
 [Binaries.X64]
   PE32|SecurityStubDxe.efi
+  DXE_DEPEX|SecurityStubDxe.depex
   DISPOSABLE|SecurityStubDxe.pdb
 
 [PatchPcd.X64]

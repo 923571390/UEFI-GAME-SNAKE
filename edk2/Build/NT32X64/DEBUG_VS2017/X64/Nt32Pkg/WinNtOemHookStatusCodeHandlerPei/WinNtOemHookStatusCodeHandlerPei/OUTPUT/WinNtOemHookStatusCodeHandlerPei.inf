@@ -32,6 +32,7 @@
 
 [Binaries.X64]
   PE32|WinNtOemHookStatusCodeHandlerPei.efi
+  PEI_DEPEX|WinNtOemHookStatusCodeHandlerPei.depex
   DISPOSABLE|WinNtOemHookStatusCodeHandlerPei.pdb
 
 [PatchPcd.X64]

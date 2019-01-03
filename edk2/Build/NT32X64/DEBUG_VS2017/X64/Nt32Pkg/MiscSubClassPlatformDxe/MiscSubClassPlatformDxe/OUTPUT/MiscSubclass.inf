@@ -35,6 +35,7 @@
 
 [Binaries.X64]
   PE32|MiscSubclass.efi
+  DXE_DEPEX|MiscSubclass.depex
   BIN|MiscSubclassOffset.bin
   DISPOSABLE|MiscSubclass.pdb
 

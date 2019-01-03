@@ -31,6 +31,7 @@
 
 [Binaries.X64]
   PE32|Stall.efi
+  PEI_DEPEX|Stall.depex
   DISPOSABLE|Stall.pdb
 
 [PatchPcd.X64]

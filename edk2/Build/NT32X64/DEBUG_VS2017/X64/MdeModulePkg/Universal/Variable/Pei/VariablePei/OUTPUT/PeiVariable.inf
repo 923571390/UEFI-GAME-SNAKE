@@ -33,6 +33,7 @@
 
 [Binaries.X64]
   PE32|PeiVariable.efi
+  PEI_DEPEX|PeiVariable.depex
   DISPOSABLE|PeiVariable.pdb
 
 [PatchPcd.X64]

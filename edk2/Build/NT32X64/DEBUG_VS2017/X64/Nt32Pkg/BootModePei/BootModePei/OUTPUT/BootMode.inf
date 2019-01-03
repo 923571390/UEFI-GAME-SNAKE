@@ -32,6 +32,7 @@
 
 [Binaries.X64]
   PE32|BootMode.efi
+  PEI_DEPEX|BootMode.depex
   DISPOSABLE|BootMode.pdb
 
 [PatchPcd.X64]

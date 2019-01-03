@@ -9,7 +9,7 @@ SYMRENAME_FAMILY = MSFT
 ASLDLINK_BUILDRULEORDER = nasm asm Asm ASM S s nasmb asm16
 ASLDLINK_FLAGS = /NODEFAULTLIB /ENTRY:ReferenceAcpiTable /SUBSYSTEM:CONSOLE
 ASLDLINK_FAMILY = MSFT
-ASLDLINK = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x64\link.exe
+ASLDLINK = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\Hostx86\x64\link.exe
 
 VFRPPPATH_BUILDRULEORDER = nasm asm Asm ASM S s nasmb asm16
 VFRPPPATH_FAMILY = MSFT
@@ -25,7 +25,7 @@ VFR = VfrCompile
 VFR_BUILDRULEORDER = nasm asm Asm ASM S s nasmb asm16
 VFR_FAMILY = MSFT
 
-PP = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x64\cl.exe
+PP = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\Hostx86\x64\cl.exe
 PP_FLAGS = /nologo /E /TC /FIAutoGen.h
 PP_BUILDRULEORDER = nasm asm Asm ASM S s nasmb asm16
 PP_FAMILY = MSFT
@@ -53,7 +53,7 @@ OPTROM_BUILDRULEORDER = nasm asm Asm ASM S s nasmb asm16
 OPTROM_FAMILY = MSFT
 
 SLINK_FLAGS = /NOLOGO /LTCG
-SLINK = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x64\lib.exe
+SLINK = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\Hostx86\x64\lib.exe
 SLINK_BUILDRULEORDER = nasm asm Asm ASM S s nasmb asm16
 SLINK_FAMILY = MSFT
 
@@ -63,7 +63,7 @@ DLINKPATH_FAMILY = MSFT
 PLATFORM_BUILDRULEORDER = nasm asm Asm ASM S s nasmb asm16
 PLATFORM_FAMILY = MSFT
 
-RC = C:\Program Files (x86)\Windows Kits\10\bin\10.0.17763.0\x86\rc.exe
+RC = C:\Program Files (x86)\Windows Kits\10\bin\10.0.17134.0\x86\rc.exe
 RC_BUILDRULEORDER = nasm asm Asm ASM S s nasmb asm16
 RC_FAMILY = MSFT
 
@@ -83,7 +83,7 @@ PKCS7SIGN_FAMILY = MSFT
 ASM_FLAGS = /nologo /c /WX /W3 /Cx /Zd /Zi
 ASM_BUILDRULEORDER = nasm asm Asm ASM S s nasmb asm16
 ASM_FAMILY = MSFT
-ASM = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x64\ml64.exe
+ASM = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\Hostx86\x64\ml64.exe
 
 ASL_BUILDRULEORDER = nasm asm Asm ASM S s nasmb asm16
 ASL = C:\ASL\iasl.exe
@@ -99,7 +99,7 @@ RSA2048SHA256SIGN_FAMILY = MSFT
 MTOC_BUILDRULEORDER = nasm asm Asm ASM S s nasmb asm16
 MTOC_FAMILY = MSFT
 
-CC = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x64\cl.exe
+CC = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\Hostx86\x64\cl.exe
 CC_FLAGS = /nologo /c /WX /GS- /W4 /Gs32768 /D UNICODE /O1b2s /GL /Gy /FIAutoGen.h /EHs-c- /GR- /GF /Zi /Gm
 CC_BUILDRULEORDER = nasm asm Asm ASM S s nasmb asm16
 CC_FAMILY = MSFT
@@ -109,7 +109,7 @@ NASMB_BUILDRULEORDER = nasm asm Asm ASM S s nasmb asm16
 NASMB_FAMILY = MSFT
 
 VFRPP_FLAGS = /nologo /E /TC /DVFRCOMPILE /FI$(MODULE_NAME)StrDefs.h
-VFRPP = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x64\cl.exe
+VFRPP = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\Hostx86\x64\cl.exe
 VFRPP_BUILDRULEORDER = nasm asm Asm ASM S s nasmb asm16
 VFRPP_FAMILY = MSFT
 
@@ -132,11 +132,11 @@ LZMA_GUID = EE4E5898-3914-4259-9D6E-DC7BD79403CF
 LZMA_BUILDRULEORDER = nasm asm Asm ASM S s nasmb asm16
 LZMA_FAMILY = MSFT
 
-ASM16 = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\ml.exe
+ASM16 = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\Hostx86\x86\ml.exe
 ASM16_BUILDRULEORDER = nasm asm Asm ASM S s nasmb asm16
 ASM16_FAMILY = MSFT
 
-ASLCC = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x64\cl.exe
+ASLCC = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\Hostx86\x64\cl.exe
 ASLCC_FLAGS = /nologo /c /FIAutoGen.h /TC /Dmain=ReferenceAcpiTable
 ASLCC_BUILDRULEORDER = nasm asm Asm ASM S s nasmb asm16
 ASLCC_FAMILY = MSFT
@@ -155,7 +155,7 @@ CCPATH_FAMILY = MSFT
 DLINK_FLAGS = /NOLOGO /NODEFAULTLIB /IGNORE:4001 /OPT:REF /OPT:ICF=10 /MAP /ALIGN:32 /SECTION:.xdata,D /SECTION:.pdata,D /Machine:X64 /LTCG /DLL /ENTRY:$(IMAGE_ENTRY_POINT) /SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER /SAFESEH:NO /BASE:0 /DRIVER /DEBUG /EXPORT:InitializeDriver=$(IMAGE_ENTRY_POINT) /BASE:0x10000 /ALIGN:4096 /FILEALIGN:4096 /SUBSYSTEM:CONSOLE /EXPORT:InitializeDriver=$(IMAGE_ENTRY_POINT) /BASE:0x10000 /ALIGN:4096 /FILEALIGN:4096 /SUBSYSTEM:CONSOLE
 DLINK_BUILDRULEORDER = nasm asm Asm ASM S s nasmb asm16
 DLINK_FAMILY = MSFT
-DLINK = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x64\link.exe
+DLINK = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\Hostx86\x64\link.exe
 
 TIANO = TianoCompress
 TIANO_GUID = A31280AD-481E-41B6-95E8-127F4C984779
@@ -175,7 +175,7 @@ CRC32_FAMILY = MSFT
 ASLPP_FLAGS = /nologo /E /C /FIAutoGen.h
 ASLPP_BUILDRULEORDER = nasm asm Asm ASM S s nasmb asm16
 ASLPP_FAMILY = MSFT
-ASLPP = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x64\cl.exe
+ASLPP = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\Hostx86\x64\cl.exe
 
 OBJCOPY_ADDDEBUGFLAG = --add-gnu-debuglink=$(DEBUG_DIR)/$(MODULE_NAME).debug
 OBJCOPY = echo
@@ -183,7 +183,7 @@ OBJCOPY_FLAGS = objcopy not needed for
 OBJCOPY_BUILDRULEORDER = nasm asm Asm ASM S s nasmb asm16
 OBJCOPY_FAMILY = MSFT
 
-APP = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x64\cl.exe
+APP = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\Hostx86\x64\cl.exe
 APP_FLAGS = /nologo /E /TC
 APP_FAMILY = MSFT
 APP_BUILDRULEORDER = nasm asm Asm ASM S s nasmb asm16

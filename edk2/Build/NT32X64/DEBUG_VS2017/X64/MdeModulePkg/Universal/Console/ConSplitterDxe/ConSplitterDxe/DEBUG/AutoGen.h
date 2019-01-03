@@ -87,7 +87,7 @@ extern const  BOOLEAN  _gPcd_FixedAtBuild_PcdConOutUgaSupport;
 #define _PCD_GET_MODE_BOOL_PcdConOutUgaSupport  _gPcd_FixedAtBuild_PcdConOutUgaSupport
 //#define _PCD_SET_MODE_BOOL_PcdConOutUgaSupport  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
 
-#define _PCD_TOKEN_PcdUgaConsumeSupport  35U
+#define _PCD_TOKEN_PcdUgaConsumeSupport  38U
 #define _PCD_SIZE_PcdUgaConsumeSupport 1
 #define _PCD_GET_MODE_SIZE_PcdUgaConsumeSupport  _PCD_SIZE_PcdUgaConsumeSupport 
 #define _PCD_VALUE_PcdUgaConsumeSupport  ((BOOLEAN)1U)

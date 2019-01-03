@@ -1,6 +1,6 @@
  SecMain
 
- Timestamp is 5c23c208 (Thu Dec 27 02:01:44 2018)
+ Timestamp is 5c19ca64 (Wed Dec 19 12:34:44 2018)
 
  Preferred load address is 0000000000010000
 
@@ -125,14 +125,14 @@
  0001:00003000       __scrt_is_managed_app      0000000000014000 f   MSVCRTD:utility_desktop.obj
  0001:000030b0       __scrt_set_unhandled_exception_filter 00000000000140b0 f   MSVCRTD:utility_desktop.obj
  0001:000030d0       __scrt_unhandled_exception_filter 00000000000140d0 f   MSVCRTD:utility_desktop.obj
- 0001:00003150       _RTC_Initialize            0000000000014150 f   MSVCRTD:initsect.obj
- 0001:000031a0       _RTC_Terminate             00000000000141a0 f   MSVCRTD:initsect.obj
+ 0001:00003150       _RTC_Initialize            0000000000014150 f   MSVCRTD:_initsect_.obj
+ 0001:000031a0       _RTC_Terminate             00000000000141a0 f   MSVCRTD:_initsect_.obj
  0001:000031f0       _guard_check_icall_nop     00000000000141f0 f i MSVCRTD:guard_support.obj
- 0001:00003200       __isa_available_init       0000000000014200 f   MSVCRTD:cpu_disp.obj
+ 0001:00003200       __isa_available_init       0000000000014200 f   MSVCRTD:_cpu_disp_.obj
  0001:00003570       __scrt_is_ucrt_dll_in_use  0000000000014570 f   MSVCRTD:ucrt_detection.obj
- 0001:000035a0       __GSHandlerCheck           00000000000145a0 f   MSVCRTD:gshandler.obj
- 0001:000035e0       __GSHandlerCheckCommon     00000000000145e0 f   MSVCRTD:gshandler.obj
- 0001:000036f0       __security_check_cookie    00000000000146f0 f   MSVCRTD:amdsecgs.obj
+ 0001:000035a0       __GSHandlerCheck           00000000000145a0 f   MSVCRTD:_gshandler_.obj
+ 0001:000035e0       __GSHandlerCheckCommon     00000000000145e0 f   MSVCRTD:_gshandler_.obj
+ 0001:000036f0       __security_check_cookie    00000000000146f0 f   MSVCRTD:_amdsecgs_.obj
  0001:00003720       __raise_securityfailure    0000000000014720 f   MSVCRTD:gs_report.obj
  0001:00003760       __report_gsfailure         0000000000014760 f   MSVCRTD:gs_report.obj
  0001:000038f2       __C_specific_handler       00000000000148f2 f   vcruntimed:VCRUNTIME140D.dll
@@ -320,7 +320,7 @@
  0001:00005540       __vcrt_uninitialize        0000000000016540 f   MSVCRTD:ucrt_stubs.obj
  0001:00005540       __acrt_uninitialize        0000000000016540 f   MSVCRTD:ucrt_stubs.obj
  0001:00005540       __scrt_stub_for_acrt_uninitialize 0000000000016540 f   MSVCRTD:ucrt_stubs.obj
- 0001:00005560       _guard_dispatch_icall_nop  0000000000016560 f   MSVCRTD:guard_dispatch.obj
+ 0001:00005560       _guard_dispatch_icall_nop  0000000000016560 f   MSVCRTD:_guard_dispatch_.obj
  0002:00000000       __imp_LookupPrivilegeValueW 0000000000017000     Advapi32:ADVAPI32.dll
  0002:00000008       __imp_AdjustTokenPrivileges 0000000000017008     Advapi32:ADVAPI32.dll
  0002:00000010       __imp_OpenProcessToken     0000000000017010     Advapi32:ADVAPI32.dll
@@ -598,10 +598,10 @@
  0002:00000c80       mStatusString              0000000000017c80     BasePrintLib:PrintLibInternal.obj
  0002:00000dc0       mHexStr                    0000000000017dc0     BasePrintLib:PrintLibInternal.obj
  0002:00000e30       _load_config_used          0000000000017e30     MSVCRTD:loadcfg.obj
- 0002:000011f8       __rtc_iaa                  00000000000181f8     MSVCRTD:initsect.obj
- 0002:00001200       __rtc_izz                  0000000000018200     MSVCRTD:initsect.obj
- 0002:00001208       __rtc_taa                  0000000000018208     MSVCRTD:initsect.obj
- 0002:00001210       __rtc_tzz                  0000000000018210     MSVCRTD:initsect.obj
+ 0002:000011f8       __rtc_iaa                  00000000000181f8     MSVCRTD:_initsect_.obj
+ 0002:00001200       __rtc_izz                  0000000000018200     MSVCRTD:_initsect_.obj
+ 0002:00001208       __rtc_taa                  0000000000018208     MSVCRTD:_initsect_.obj
+ 0002:00001210       __rtc_tzz                  0000000000018210     MSVCRTD:_initsect_.obj
  0002:00001490       __IMPORT_DESCRIPTOR_VCRUNTIME140D 0000000000018490     vcruntimed:VCRUNTIME140D.dll
  0002:000014a4       __IMPORT_DESCRIPTOR_ucrtbased 00000000000184a4     ucrtd:ucrtbased.dll
  0002:000014b8       __IMPORT_DESCRIPTOR_KERNEL32 00000000000184b8     Kernel32:KERNEL32.dll
@@ -612,9 +612,9 @@
  0002:0000151c       __NULL_IMPORT_DESCRIPTOR   000000000001851c     vcruntimed:VCRUNTIME140D.dll
  0003:00000000       __scrt_native_dllmain_reason 000000000001a000     MSVCRTD:utility.obj
  0003:00000004       __scrt_default_matherr     000000000001a004     MSVCRTD:matherr.obj
- 0003:00000008       __isa_available            000000000001a008     MSVCRTD:cpu_disp.obj
- 0003:0000000c       __isa_enabled              000000000001a00c     MSVCRTD:cpu_disp.obj
- 0003:00000010       __memcpy_nt_iters          000000000001a010     MSVCRTD:cpu_disp.obj
+ 0003:00000008       __isa_available            000000000001a008     MSVCRTD:_cpu_disp_.obj
+ 0003:0000000c       __isa_enabled              000000000001a00c     MSVCRTD:_cpu_disp_.obj
+ 0003:00000010       __memcpy_nt_iters          000000000001a010     MSVCRTD:_cpu_disp_.obj
  0003:00000018       __security_cookie_complement 000000000001a018     MSVCRTD:gs_cookie.obj
  0003:00000020       __security_cookie          000000000001a020     MSVCRTD:gs_cookie.obj
  0003:00000030       mSecNtLoadFilePpi          000000000001a030     SecMain:SecMain.obj
@@ -668,7 +668,7 @@
  0003:00000790       ?_OptionsStorage@?1??__local_stdio_printf_options@@9@4_KA 000000000001a790     MSVCRTD:default_local_stdio_options.obj
  0003:00000798       ?_OptionsStorage@?1??__local_stdio_scanf_options@@9@4_KA 000000000001a798     MSVCRTD:default_local_stdio_options.obj
  0003:000007a0       __scrt_debugger_hook_flag  000000000001a7a0     MSVCRTD:utility_desktop.obj
- 0003:000007a4       __favor                    000000000001a7a4     MSVCRTD:cpu_disp.obj
+ 0003:000007a4       __favor                    000000000001a7a4     MSVCRTD:_cpu_disp_.obj
  0003:00000d20       gFdInfoCount               000000000001ad20     SecMain:SecMain.obj
  0003:00000d28       gSystemMemoryCount         000000000001ad28     SecMain:SecMain.obj
  0003:00000d30       _gPcd_SkuId_Array          000000000001ad30     SecMain:AutoGen.obj
@@ -876,10 +876,10 @@
  0001:000026b0       ?find_pe_section@@YAPEAU_IMAGE_SECTION_HEADER@@QEAE_K@Z 00000000000136b0 f   MSVCRTD:utility.obj
  0001:00002780       ?is_potentially_valid_image_base@@YA_NQEAX@Z 0000000000013780 f   MSVCRTD:utility.obj
  0001:00002bc0       __get_entropy              0000000000013bc0 f   MSVCRTD:gs_support.obj
- 0001:000036e0       $$000000                   00000000000146e0     MSVCRTD:amdsecgs.obj
+ 0001:000036e0       $$000000                   00000000000146e0     MSVCRTD:_amdsecgs_.obj
  0001:00003840       capture_previous_context   0000000000014840 f   MSVCRTD:gs_report.obj
  0001:000050c0       $$000000                   00000000000160c0     SecMain:StackX64.obj
- 0001:00005550       $$000000                   0000000000016550     MSVCRTD:guard_dispatch.obj
+ 0001:00005550       $$000000                   0000000000016550     MSVCRTD:_guard_dispatch_.obj
  0001:00005570       ?filt$0@?0??__scrt_common_main_seh@@YAHXZ@4HA 0000000000016570 f   MSVCRTD:exe_main.obj
  0001:000055a0       __scrt_is_nonwritable_in_current_image$filt$0 00000000000165a0 f   MSVCRTD:utility.obj
  0002:000005c0       ?pre_cpp_initializer@@3P6AXXZEA 00000000000175c0     MSVCRTD:exe_main.obj
@@ -934,15 +934,15 @@
  0002:00001350       $unwind$__scrt_is_user_matherr_present 0000000000018350     MSVCRTD:matherr_detection.obj
  0002:00001350       $unwind$__scrt_is_ucrt_dll_in_use 0000000000018350     MSVCRTD:ucrt_detection.obj
  0002:00001358       $unwind$__scrt_fastfail    0000000000018358     MSVCRTD:utility_desktop.obj
- 0002:00001364       $unwind$_RTC_Initialize    0000000000018364     MSVCRTD:initsect.obj
- 0002:00001364       $unwind$_RTC_Terminate     0000000000018364     MSVCRTD:initsect.obj
- 0002:00001370       $unwind$__isa_available_init 0000000000018370     MSVCRTD:cpu_disp.obj
- 0002:00001380       $xdatasym                  0000000000018380     MSVCRTD:guard_dispatch.obj
- 0002:00001384       $unwind$__GSHandlerCheckCommon 0000000000018384     MSVCRTD:gshandler.obj
+ 0002:00001364       $unwind$_RTC_Initialize    0000000000018364     MSVCRTD:_initsect_.obj
+ 0002:00001364       $unwind$_RTC_Terminate     0000000000018364     MSVCRTD:_initsect_.obj
+ 0002:00001370       $unwind$__isa_available_init 0000000000018370     MSVCRTD:_cpu_disp_.obj
+ 0002:00001380       $xdatasym                  0000000000018380     MSVCRTD:_guard_dispatch_.obj
+ 0002:00001384       $unwind$__GSHandlerCheckCommon 0000000000018384     MSVCRTD:_gshandler_.obj
  0002:0000138c       $unwind$SecTemporaryRamSupport 000000000001838c     SecMain:SecMain.obj
  0002:0000138c       $unwind$SecImageRead       000000000001838c     SecMain:SecMain.obj
- 0002:0000138c       $unwind$__GSHandlerCheck   000000000001838c     MSVCRTD:gshandler.obj
- 0002:00001398       $xdatasym                  0000000000018398     MSVCRTD:amdsecgs.obj
+ 0002:0000138c       $unwind$__GSHandlerCheck   000000000001838c     MSVCRTD:_gshandler_.obj
+ 0002:00001398       $xdatasym                  0000000000018398     MSVCRTD:_amdsecgs_.obj
  0002:0000139c       $unwind$capture_previous_context 000000000001839c     MSVCRTD:gs_report.obj
  0002:000013a4       $unwind$_vsnprintf_l       00000000000183a4     SecMain:SecMain.obj
  0002:000013a4       $unwind$_snwprintf         00000000000183a4     SecMain:WinNtThunk.obj
@@ -1016,12 +1016,12 @@
  0004:0000018c       $pdata$__scrt_set_unhandled_exception_filter 000000000001b18c     MSVCRTD:utility_desktop.obj
  0004:00000198       $pdata$__scrt_fastfail     000000000001b198     MSVCRTD:utility_desktop.obj
  0004:000001a4       $pdata$__scrt_unhandled_exception_filter 000000000001b1a4     MSVCRTD:utility_desktop.obj
- 0004:000001b0       $pdata$_RTC_Initialize     000000000001b1b0     MSVCRTD:initsect.obj
- 0004:000001bc       $pdata$_RTC_Terminate      000000000001b1bc     MSVCRTD:initsect.obj
- 0004:000001c8       $pdata$__isa_available_init 000000000001b1c8     MSVCRTD:cpu_disp.obj
+ 0004:000001b0       $pdata$_RTC_Initialize     000000000001b1b0     MSVCRTD:_initsect_.obj
+ 0004:000001bc       $pdata$_RTC_Terminate      000000000001b1bc     MSVCRTD:_initsect_.obj
+ 0004:000001c8       $pdata$__isa_available_init 000000000001b1c8     MSVCRTD:_cpu_disp_.obj
  0004:000001d4       $pdata$__scrt_is_ucrt_dll_in_use 000000000001b1d4     MSVCRTD:ucrt_detection.obj
- 0004:000001ec       $pdata$__GSHandlerCheckCommon 000000000001b1ec     MSVCRTD:gshandler.obj
- 0004:000001f8       $pdata$__GSHandlerCheck    000000000001b1f8     MSVCRTD:gshandler.obj
+ 0004:000001ec       $pdata$__GSHandlerCheckCommon 000000000001b1ec     MSVCRTD:_gshandler_.obj
+ 0004:000001f8       $pdata$__GSHandlerCheck    000000000001b1f8     MSVCRTD:_gshandler_.obj
  0004:00000210       $pdata$__report_gsfailure  000000000001b210     MSVCRTD:gs_report.obj
  0004:0000021c       $pdata$capture_previous_context 000000000001b21c     MSVCRTD:gs_report.obj
  0004:00000228       $pdata$__raise_securityfailure 000000000001b228     MSVCRTD:gs_report.obj

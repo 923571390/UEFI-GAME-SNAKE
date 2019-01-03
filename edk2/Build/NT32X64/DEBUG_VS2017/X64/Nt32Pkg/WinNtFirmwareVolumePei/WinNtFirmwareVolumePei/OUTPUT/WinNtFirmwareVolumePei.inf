@@ -33,6 +33,7 @@
 
 [Binaries.X64]
   PE32|WinNtFirmwareVolumePei.efi
+  PEI_DEPEX|WinNtFirmwareVolumePei.depex
   DISPOSABLE|WinNtFirmwareVolumePei.pdb
 
 [PatchPcd.X64]

@@ -309,6 +309,7 @@
 
 [Binaries.X64]
   PE32|PcdDxe.efi
+  DXE_DEPEX|PcdDxe.depex
   DISPOSABLE|PcdDxe.pdb
 
 [PatchPcd.X64]

@@ -124,7 +124,7 @@ extern UINT64 _gPcd_SkuId_Array[];
 
 // Definition of PCDs used in this module
 
-#define _PCD_TOKEN_PcdFrameworkCompatibilitySupport  48U
+#define _PCD_TOKEN_PcdFrameworkCompatibilitySupport  45U
 #define _PCD_SIZE_PcdFrameworkCompatibilitySupport 1
 #define _PCD_GET_MODE_SIZE_PcdFrameworkCompatibilitySupport  _PCD_SIZE_PcdFrameworkCompatibilitySupport 
 #define _PCD_VALUE_PcdFrameworkCompatibilitySupport  ((BOOLEAN)0U)
@@ -132,7 +132,7 @@ extern const  BOOLEAN  _gPcd_FixedAtBuild_PcdFrameworkCompatibilitySupport;
 #define _PCD_GET_MODE_BOOL_PcdFrameworkCompatibilitySupport  _gPcd_FixedAtBuild_PcdFrameworkCompatibilitySupport
 //#define _PCD_SET_MODE_BOOL_PcdFrameworkCompatibilitySupport  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
 
-#define _PCD_TOKEN_PcdLoadFixAddressBootTimeCodePageNumber  50U
+#define _PCD_TOKEN_PcdLoadFixAddressBootTimeCodePageNumber  47U
 #define _PCD_PATCHABLE_VALUE_PcdLoadFixAddressBootTimeCodePageNumber  ((UINT32)0U)
 extern volatile   UINT32  _gPcd_BinaryPatch_PcdLoadFixAddressBootTimeCodePageNumber;
 #define _PCD_GET_MODE_32_PcdLoadFixAddressBootTimeCodePageNumber  _gPcd_BinaryPatch_PcdLoadFixAddressBootTimeCodePageNumber
@@ -142,7 +142,7 @@ extern UINTN _gPcd_BinaryPatch_Size_PcdLoadFixAddressBootTimeCodePageNumber;
 #define _PCD_SET_MODE_32_PcdLoadFixAddressBootTimeCodePageNumber(Value)  (_gPcd_BinaryPatch_PcdLoadFixAddressBootTimeCodePageNumber = (Value))
 #define _PCD_SET_MODE_32_S_PcdLoadFixAddressBootTimeCodePageNumber(Value)  ((_gPcd_BinaryPatch_PcdLoadFixAddressBootTimeCodePageNumber = (Value)), RETURN_SUCCESS) 
 
-#define _PCD_TOKEN_PcdLoadFixAddressRuntimeCodePageNumber  51U
+#define _PCD_TOKEN_PcdLoadFixAddressRuntimeCodePageNumber  48U
 #define _PCD_PATCHABLE_VALUE_PcdLoadFixAddressRuntimeCodePageNumber  ((UINT32)0U)
 extern volatile   UINT32  _gPcd_BinaryPatch_PcdLoadFixAddressRuntimeCodePageNumber;
 #define _PCD_GET_MODE_32_PcdLoadFixAddressRuntimeCodePageNumber  _gPcd_BinaryPatch_PcdLoadFixAddressRuntimeCodePageNumber
@@ -152,7 +152,7 @@ extern UINTN _gPcd_BinaryPatch_Size_PcdLoadFixAddressRuntimeCodePageNumber;
 #define _PCD_SET_MODE_32_PcdLoadFixAddressRuntimeCodePageNumber(Value)  (_gPcd_BinaryPatch_PcdLoadFixAddressRuntimeCodePageNumber = (Value))
 #define _PCD_SET_MODE_32_S_PcdLoadFixAddressRuntimeCodePageNumber(Value)  ((_gPcd_BinaryPatch_PcdLoadFixAddressRuntimeCodePageNumber = (Value)), RETURN_SUCCESS) 
 
-#define _PCD_TOKEN_PcdLoadModuleAtFixAddressEnable  52U
+#define _PCD_TOKEN_PcdLoadModuleAtFixAddressEnable  49U
 #define _PCD_SIZE_PcdLoadModuleAtFixAddressEnable 8
 #define _PCD_GET_MODE_SIZE_PcdLoadModuleAtFixAddressEnable  _PCD_SIZE_PcdLoadModuleAtFixAddressEnable 
 #define _PCD_VALUE_PcdLoadModuleAtFixAddressEnable  0ULL

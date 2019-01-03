@@ -1,6 +1,6 @@
  LogoDxe
 
- Timestamp is 5c23c456 (Thu Dec 27 02:11:34 2018)
+ Timestamp is 5c19cc20 (Wed Dec 19 12:42:08 2018)
 
  Preferred load address is 0000000000010000
 
@@ -15,7 +15,7 @@
  0005:00000000 000000ccH .pdata                  DATA
  0006:00000000 000000c4H .xdata                  DATA
  0007:00000000 00000060H .rsrc$01                DATA
- 0007:00000060 00007ed8H .rsrc$02                DATA
+ 0007:00000060 00001660H .rsrc$02                DATA
 
   Address         Publics by Value              Rva+Base               Lib:Object
 
@@ -143,7 +143,7 @@
 
  Static symbols
 
- 0000:fffef000       .debug$S                   0000000000010000     LogoDxe.exp
+ 0000:ffff5000       .debug$S                   0000000000010000     LogoDxe.exp
  0001:0000001a       InternalMemCopyMem.0       000000000001101a     BaseMemoryLibOptDxe:CopyMem.obj
  0001:00000032       InternalMemCopyMem.1       0000000000011032     BaseMemoryLibOptDxe:CopyMem.obj
  0001:00000045       InternalMemCopyMem.2       0000000000011045     BaseMemoryLibOptDxe:CopyMem.obj

@@ -42,7 +42,7 @@ extern EFI_GUID gEfiDebugPortProtocolGuid;
 extern UINT64 _gPcd_SkuId_Array[];
 
 // PCD definitions
-#define _PCD_TOKEN_PcdMaximumDevicePathNodeCount  30U
+#define _PCD_TOKEN_PcdMaximumDevicePathNodeCount  33U
 extern const UINT32 _gPcd_FixedAtBuild_PcdMaximumDevicePathNodeCount;
 #define _PCD_GET_MODE_32_PcdMaximumDevicePathNodeCount  _gPcd_FixedAtBuild_PcdMaximumDevicePathNodeCount
 //#define _PCD_SET_MODE_32_PcdMaximumDevicePathNodeCount  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD

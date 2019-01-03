@@ -38,6 +38,7 @@
 
 [Binaries.X64]
   PE32|DxeIpl.efi
+  PEI_DEPEX|DxeIpl.depex
   DISPOSABLE|DxeIpl.pdb
 
 [PatchPcd.X64]

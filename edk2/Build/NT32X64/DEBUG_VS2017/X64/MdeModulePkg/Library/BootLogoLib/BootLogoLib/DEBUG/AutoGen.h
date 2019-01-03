@@ -35,7 +35,7 @@ extern EFI_GUID gEdkiiPlatformLogoProtocolGuid;
 extern UINT64 _gPcd_SkuId_Array[];
 
 // PCD definitions
-#define _PCD_TOKEN_PcdUgaConsumeSupport  35U
+#define _PCD_TOKEN_PcdUgaConsumeSupport  38U
 extern const BOOLEAN _gPcd_FixedAtBuild_PcdUgaConsumeSupport;
 #define _PCD_GET_MODE_BOOL_PcdUgaConsumeSupport  _gPcd_FixedAtBuild_PcdUgaConsumeSupport
 //#define _PCD_SET_MODE_BOOL_PcdUgaConsumeSupport  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD

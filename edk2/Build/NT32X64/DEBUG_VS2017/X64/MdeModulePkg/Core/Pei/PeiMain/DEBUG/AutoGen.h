@@ -57,7 +57,7 @@ extern UINT64 _gPcd_SkuId_Array[];
 
 // Definition of PCDs used in this module
 
-#define _PCD_TOKEN_PcdPeiCoreMaxFvSupported  43U
+#define _PCD_TOKEN_PcdPeiCoreMaxFvSupported  40U
 #define _PCD_SIZE_PcdPeiCoreMaxFvSupported 4
 #define _PCD_GET_MODE_SIZE_PcdPeiCoreMaxFvSupported  _PCD_SIZE_PcdPeiCoreMaxFvSupported 
 #define _PCD_VALUE_PcdPeiCoreMaxFvSupported  6U
@@ -65,7 +65,7 @@ extern const  UINT32  _gPcd_FixedAtBuild_PcdPeiCoreMaxFvSupported;
 #define _PCD_GET_MODE_32_PcdPeiCoreMaxFvSupported  _gPcd_FixedAtBuild_PcdPeiCoreMaxFvSupported
 //#define _PCD_SET_MODE_32_PcdPeiCoreMaxFvSupported  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
 
-#define _PCD_TOKEN_PcdPeiCoreMaxPeimPerFv  44U
+#define _PCD_TOKEN_PcdPeiCoreMaxPeimPerFv  41U
 #define _PCD_SIZE_PcdPeiCoreMaxPeimPerFv 4
 #define _PCD_GET_MODE_SIZE_PcdPeiCoreMaxPeimPerFv  _PCD_SIZE_PcdPeiCoreMaxPeimPerFv 
 #define _PCD_VALUE_PcdPeiCoreMaxPeimPerFv  32U
@@ -73,7 +73,7 @@ extern const  UINT32  _gPcd_FixedAtBuild_PcdPeiCoreMaxPeimPerFv;
 #define _PCD_GET_MODE_32_PcdPeiCoreMaxPeimPerFv  _gPcd_FixedAtBuild_PcdPeiCoreMaxPeimPerFv
 //#define _PCD_SET_MODE_32_PcdPeiCoreMaxPeimPerFv  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
 
-#define _PCD_TOKEN_PcdPeiCoreMaxPpiSupported  45U
+#define _PCD_TOKEN_PcdPeiCoreMaxPpiSupported  42U
 #define _PCD_SIZE_PcdPeiCoreMaxPpiSupported 4
 #define _PCD_GET_MODE_SIZE_PcdPeiCoreMaxPpiSupported  _PCD_SIZE_PcdPeiCoreMaxPpiSupported 
 #define _PCD_VALUE_PcdPeiCoreMaxPpiSupported  64U
@@ -81,7 +81,7 @@ extern const  UINT32  _gPcd_FixedAtBuild_PcdPeiCoreMaxPpiSupported;
 #define _PCD_GET_MODE_32_PcdPeiCoreMaxPpiSupported  _gPcd_FixedAtBuild_PcdPeiCoreMaxPpiSupported
 //#define _PCD_SET_MODE_32_PcdPeiCoreMaxPpiSupported  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
 
-#define _PCD_TOKEN_PcdPeiCoreMaxPeiStackSize  46U
+#define _PCD_TOKEN_PcdPeiCoreMaxPeiStackSize  43U
 #define _PCD_SIZE_PcdPeiCoreMaxPeiStackSize 4
 #define _PCD_GET_MODE_SIZE_PcdPeiCoreMaxPeiStackSize  _PCD_SIZE_PcdPeiCoreMaxPeiStackSize 
 #define _PCD_VALUE_PcdPeiCoreMaxPeiStackSize  0x20000U
@@ -89,7 +89,7 @@ extern const  UINT32  _gPcd_FixedAtBuild_PcdPeiCoreMaxPeiStackSize;
 #define _PCD_GET_MODE_32_PcdPeiCoreMaxPeiStackSize  _gPcd_FixedAtBuild_PcdPeiCoreMaxPeiStackSize
 //#define _PCD_SET_MODE_32_PcdPeiCoreMaxPeiStackSize  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
 
-#define _PCD_TOKEN_PcdPeiCoreImageLoaderSearchTeSectionFirst  47U
+#define _PCD_TOKEN_PcdPeiCoreImageLoaderSearchTeSectionFirst  44U
 #define _PCD_SIZE_PcdPeiCoreImageLoaderSearchTeSectionFirst 1
 #define _PCD_GET_MODE_SIZE_PcdPeiCoreImageLoaderSearchTeSectionFirst  _PCD_SIZE_PcdPeiCoreImageLoaderSearchTeSectionFirst 
 #define _PCD_VALUE_PcdPeiCoreImageLoaderSearchTeSectionFirst  ((BOOLEAN)0U)
@@ -97,7 +97,7 @@ extern const  BOOLEAN  _gPcd_FixedAtBuild_PcdPeiCoreImageLoaderSearchTeSectionFi
 #define _PCD_GET_MODE_BOOL_PcdPeiCoreImageLoaderSearchTeSectionFirst  _gPcd_FixedAtBuild_PcdPeiCoreImageLoaderSearchTeSectionFirst
 //#define _PCD_SET_MODE_BOOL_PcdPeiCoreImageLoaderSearchTeSectionFirst  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
 
-#define _PCD_TOKEN_PcdFrameworkCompatibilitySupport  48U
+#define _PCD_TOKEN_PcdFrameworkCompatibilitySupport  45U
 #define _PCD_SIZE_PcdFrameworkCompatibilitySupport 1
 #define _PCD_GET_MODE_SIZE_PcdFrameworkCompatibilitySupport  _PCD_SIZE_PcdFrameworkCompatibilitySupport 
 #define _PCD_VALUE_PcdFrameworkCompatibilitySupport  ((BOOLEAN)0U)
@@ -105,7 +105,7 @@ extern const  BOOLEAN  _gPcd_FixedAtBuild_PcdFrameworkCompatibilitySupport;
 #define _PCD_GET_MODE_BOOL_PcdFrameworkCompatibilitySupport  _gPcd_FixedAtBuild_PcdFrameworkCompatibilitySupport
 //#define _PCD_SET_MODE_BOOL_PcdFrameworkCompatibilitySupport  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
 
-#define _PCD_TOKEN_PcdLoadFixAddressPeiCodePageNumber  49U
+#define _PCD_TOKEN_PcdLoadFixAddressPeiCodePageNumber  46U
 #define _PCD_PATCHABLE_VALUE_PcdLoadFixAddressPeiCodePageNumber  ((UINT32)0U)
 extern volatile   UINT32  _gPcd_BinaryPatch_PcdLoadFixAddressPeiCodePageNumber;
 #define _PCD_GET_MODE_32_PcdLoadFixAddressPeiCodePageNumber  _gPcd_BinaryPatch_PcdLoadFixAddressPeiCodePageNumber
@@ -115,7 +115,7 @@ extern UINTN _gPcd_BinaryPatch_Size_PcdLoadFixAddressPeiCodePageNumber;
 #define _PCD_SET_MODE_32_PcdLoadFixAddressPeiCodePageNumber(Value)  (_gPcd_BinaryPatch_PcdLoadFixAddressPeiCodePageNumber = (Value))
 #define _PCD_SET_MODE_32_S_PcdLoadFixAddressPeiCodePageNumber(Value)  ((_gPcd_BinaryPatch_PcdLoadFixAddressPeiCodePageNumber = (Value)), RETURN_SUCCESS) 
 
-#define _PCD_TOKEN_PcdLoadFixAddressBootTimeCodePageNumber  50U
+#define _PCD_TOKEN_PcdLoadFixAddressBootTimeCodePageNumber  47U
 #define _PCD_PATCHABLE_VALUE_PcdLoadFixAddressBootTimeCodePageNumber  ((UINT32)0U)
 extern volatile   UINT32  _gPcd_BinaryPatch_PcdLoadFixAddressBootTimeCodePageNumber;
 #define _PCD_GET_MODE_32_PcdLoadFixAddressBootTimeCodePageNumber  _gPcd_BinaryPatch_PcdLoadFixAddressBootTimeCodePageNumber
@@ -125,7 +125,7 @@ extern UINTN _gPcd_BinaryPatch_Size_PcdLoadFixAddressBootTimeCodePageNumber;
 #define _PCD_SET_MODE_32_PcdLoadFixAddressBootTimeCodePageNumber(Value)  (_gPcd_BinaryPatch_PcdLoadFixAddressBootTimeCodePageNumber = (Value))
 #define _PCD_SET_MODE_32_S_PcdLoadFixAddressBootTimeCodePageNumber(Value)  ((_gPcd_BinaryPatch_PcdLoadFixAddressBootTimeCodePageNumber = (Value)), RETURN_SUCCESS) 
 
-#define _PCD_TOKEN_PcdLoadFixAddressRuntimeCodePageNumber  51U
+#define _PCD_TOKEN_PcdLoadFixAddressRuntimeCodePageNumber  48U
 #define _PCD_PATCHABLE_VALUE_PcdLoadFixAddressRuntimeCodePageNumber  ((UINT32)0U)
 extern volatile   UINT32  _gPcd_BinaryPatch_PcdLoadFixAddressRuntimeCodePageNumber;
 #define _PCD_GET_MODE_32_PcdLoadFixAddressRuntimeCodePageNumber  _gPcd_BinaryPatch_PcdLoadFixAddressRuntimeCodePageNumber
@@ -135,7 +135,7 @@ extern UINTN _gPcd_BinaryPatch_Size_PcdLoadFixAddressRuntimeCodePageNumber;
 #define _PCD_SET_MODE_32_PcdLoadFixAddressRuntimeCodePageNumber(Value)  (_gPcd_BinaryPatch_PcdLoadFixAddressRuntimeCodePageNumber = (Value))
 #define _PCD_SET_MODE_32_S_PcdLoadFixAddressRuntimeCodePageNumber(Value)  ((_gPcd_BinaryPatch_PcdLoadFixAddressRuntimeCodePageNumber = (Value)), RETURN_SUCCESS) 
 
-#define _PCD_TOKEN_PcdLoadModuleAtFixAddressEnable  52U
+#define _PCD_TOKEN_PcdLoadModuleAtFixAddressEnable  49U
 #define _PCD_SIZE_PcdLoadModuleAtFixAddressEnable 8
 #define _PCD_GET_MODE_SIZE_PcdLoadModuleAtFixAddressEnable  _PCD_SIZE_PcdLoadModuleAtFixAddressEnable 
 #define _PCD_VALUE_PcdLoadModuleAtFixAddressEnable  0ULL
@@ -143,7 +143,7 @@ extern const  UINT64  _gPcd_FixedAtBuild_PcdLoadModuleAtFixAddressEnable;
 #define _PCD_GET_MODE_64_PcdLoadModuleAtFixAddressEnable  _gPcd_FixedAtBuild_PcdLoadModuleAtFixAddressEnable
 //#define _PCD_SET_MODE_64_PcdLoadModuleAtFixAddressEnable  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
 
-#define _PCD_TOKEN_PcdShadowPeimOnS3Boot  53U
+#define _PCD_TOKEN_PcdShadowPeimOnS3Boot  50U
 #define _PCD_SIZE_PcdShadowPeimOnS3Boot 1
 #define _PCD_GET_MODE_SIZE_PcdShadowPeimOnS3Boot  _PCD_SIZE_PcdShadowPeimOnS3Boot 
 #define _PCD_VALUE_PcdShadowPeimOnS3Boot  0U
@@ -151,7 +151,7 @@ extern const  BOOLEAN  _gPcd_FixedAtBuild_PcdShadowPeimOnS3Boot;
 #define _PCD_GET_MODE_BOOL_PcdShadowPeimOnS3Boot  _gPcd_FixedAtBuild_PcdShadowPeimOnS3Boot
 //#define _PCD_SET_MODE_BOOL_PcdShadowPeimOnS3Boot  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
 
-#define _PCD_TOKEN_PcdShadowPeimOnBoot  54U
+#define _PCD_TOKEN_PcdShadowPeimOnBoot  51U
 #define _PCD_SIZE_PcdShadowPeimOnBoot 1
 #define _PCD_GET_MODE_SIZE_PcdShadowPeimOnBoot  _PCD_SIZE_PcdShadowPeimOnBoot 
 #define _PCD_VALUE_PcdShadowPeimOnBoot  1U
@@ -159,7 +159,7 @@ extern const  BOOLEAN  _gPcd_FixedAtBuild_PcdShadowPeimOnBoot;
 #define _PCD_GET_MODE_BOOL_PcdShadowPeimOnBoot  _gPcd_FixedAtBuild_PcdShadowPeimOnBoot
 //#define _PCD_SET_MODE_BOOL_PcdShadowPeimOnBoot  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
 
-#define _PCD_TOKEN_PcdInitValueInTempStack  42U
+#define _PCD_TOKEN_PcdInitValueInTempStack  26U
 #define _PCD_SIZE_PcdInitValueInTempStack 4
 #define _PCD_GET_MODE_SIZE_PcdInitValueInTempStack  _PCD_SIZE_PcdInitValueInTempStack 
 #define _PCD_VALUE_PcdInitValueInTempStack  0x5AA55AA5U

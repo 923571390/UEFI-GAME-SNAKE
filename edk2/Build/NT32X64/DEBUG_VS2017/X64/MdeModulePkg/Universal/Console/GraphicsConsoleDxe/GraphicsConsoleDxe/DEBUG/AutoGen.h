@@ -69,7 +69,7 @@ extern UINT64 _gPcd_SkuId_Array[];
 
 // Definition of PCDs used in this module
 
-#define _PCD_TOKEN_PcdUgaConsumeSupport  35U
+#define _PCD_TOKEN_PcdUgaConsumeSupport  38U
 #define _PCD_SIZE_PcdUgaConsumeSupport 1
 #define _PCD_GET_MODE_SIZE_PcdUgaConsumeSupport  _PCD_SIZE_PcdUgaConsumeSupport 
 #define _PCD_VALUE_PcdUgaConsumeSupport  ((BOOLEAN)1U)

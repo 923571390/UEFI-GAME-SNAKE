@@ -35,6 +35,7 @@
 
 [Binaries.X64]
   PE32|LoadFileOnFv2.efi
+  DXE_DEPEX|LoadFileOnFv2.depex
   DISPOSABLE|LoadFileOnFv2.pdb
 
 [PatchPcd.X64]

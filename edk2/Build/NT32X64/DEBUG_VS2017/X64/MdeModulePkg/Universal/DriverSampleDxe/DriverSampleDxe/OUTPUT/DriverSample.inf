@@ -36,6 +36,7 @@
 
 [Binaries.X64]
   PE32|DriverSample.efi
+  DXE_DEPEX|DriverSample.depex
   BIN|DriverSampleOffset.bin
   DISPOSABLE|DriverSample.pdb
 

@@ -33,6 +33,7 @@
 
 [Binaries.X64]
   PE32|HttpUtilitiesDxe.efi
+  DXE_DEPEX|HttpUtilitiesDxe.depex
   DISPOSABLE|HttpUtilitiesDxe.pdb
 
 [PatchPcd.X64]

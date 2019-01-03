@@ -35,6 +35,7 @@
 
 [Binaries.X64]
   PE32|DevicePathDxe.efi
+  DXE_DEPEX|DevicePathDxe.depex
   DISPOSABLE|DevicePathDxe.pdb
 
 [PatchPcd.X64]

@@ -1,0 +1,32 @@
+
+[Defines]
+  INF_VERSION                    = 0x00010006
+  BASE_NAME                      = OurGame
+  FILE_GUID                      = 4ea97c46-7491-4dfd-b442-747010f3ce5f
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = ShellCEntryLib
+
+#  VALID_ARCHITECTURES           = IA32 X64 IPF
+
+[Sources]
+  OurGame.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  ShellPkg/ShellPkg.dec
+
+[LibraryClasses]
+  ShellCEntryLib
+  UefiApplicationEntryPoint
+  UefiBootServicesTableLib
+  UefiRuntimeServicesTableLib
+  MemoryAllocationLib
+  BaseLib
+  BaseMemoryLib
+  DebugLib
+  PrintLib
+  UefiLib
+  HiiLib
+
+[BuildOptions]

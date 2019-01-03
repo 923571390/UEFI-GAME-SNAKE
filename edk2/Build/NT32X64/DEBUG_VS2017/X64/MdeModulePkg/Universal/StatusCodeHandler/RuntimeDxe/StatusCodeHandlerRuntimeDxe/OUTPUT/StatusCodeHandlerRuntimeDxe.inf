@@ -32,6 +32,7 @@
 
 [Binaries.X64]
   PE32|StatusCodeHandlerRuntimeDxe.efi
+  DXE_DEPEX|StatusCodeHandlerRuntimeDxe.depex
   DISPOSABLE|StatusCodeHandlerRuntimeDxe.pdb
 
 [PatchPcd.X64]

@@ -32,6 +32,7 @@
 
 [Binaries.X64]
   PE32|ReportStatusCodeRouterPei.efi
+  PEI_DEPEX|ReportStatusCodeRouterPei.depex
   DISPOSABLE|ReportStatusCodeRouterPei.pdb
 
 [PatchPcd.X64]

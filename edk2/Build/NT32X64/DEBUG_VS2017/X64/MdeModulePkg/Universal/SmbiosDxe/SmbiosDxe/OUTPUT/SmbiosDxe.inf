@@ -31,6 +31,7 @@
 
 [Binaries.X64]
   PE32|SmbiosDxe.efi
+  DXE_DEPEX|SmbiosDxe.depex
   DISPOSABLE|SmbiosDxe.pdb
 
 [PatchPcd.X64]

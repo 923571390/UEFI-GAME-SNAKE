@@ -36,6 +36,7 @@
 
 [Binaries.X64]
   PE32|RuntimeDxe.efi
+  DXE_DEPEX|RuntimeDxe.depex
   DISPOSABLE|RuntimeDxe.pdb
 
 [PatchPcd.X64]

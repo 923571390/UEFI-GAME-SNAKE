@@ -34,6 +34,7 @@
 
 [Binaries.X64]
   PE32|SetupBrowser.efi
+  DXE_DEPEX|SetupBrowser.depex
   DISPOSABLE|SetupBrowser.pdb
 
 [PatchPcd.X64]

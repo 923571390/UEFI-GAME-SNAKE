@@ -66,7 +66,7 @@ extern UINT64 _gPcd_SkuId_Array[];
 
 // Definition of PCDs used in this module
 
-#define _PCD_TOKEN_PcdWinNtBootMode  38U
+#define _PCD_TOKEN_PcdWinNtBootMode  22U
 #define _PCD_SIZE_PcdWinNtBootMode 4
 #define _PCD_GET_MODE_SIZE_PcdWinNtBootMode  _PCD_SIZE_PcdWinNtBootMode 
 #define _PCD_VALUE_PcdWinNtBootMode  1U
@@ -74,7 +74,7 @@ extern const  UINT32  _gPcd_FixedAtBuild_PcdWinNtBootMode;
 #define _PCD_GET_MODE_32_PcdWinNtBootMode  _gPcd_FixedAtBuild_PcdWinNtBootMode
 //#define _PCD_SET_MODE_32_PcdWinNtBootMode  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
 
-#define _PCD_TOKEN_PcdWinNtFirmwareFdSize  39U
+#define _PCD_TOKEN_PcdWinNtFirmwareFdSize  23U
 #define _PCD_SIZE_PcdWinNtFirmwareFdSize 4
 #define _PCD_GET_MODE_SIZE_PcdWinNtFirmwareFdSize  _PCD_SIZE_PcdWinNtFirmwareFdSize 
 #define _PCD_VALUE_PcdWinNtFirmwareFdSize  0x00480000U
@@ -82,7 +82,7 @@ extern const  UINT32  _gPcd_FixedAtBuild_PcdWinNtFirmwareFdSize;
 #define _PCD_GET_MODE_32_PcdWinNtFirmwareFdSize  _gPcd_FixedAtBuild_PcdWinNtFirmwareFdSize
 //#define _PCD_SET_MODE_32_PcdWinNtFirmwareFdSize  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
 
-#define _PCD_TOKEN_PcdWinNtMemorySizeForSecMain  40U
+#define _PCD_TOKEN_PcdWinNtMemorySizeForSecMain  24U
 #define _PCD_VALUE_PcdWinNtMemorySizeForSecMain  _gPcd_FixedAtBuild_PcdWinNtMemorySizeForSecMain
 extern const UINT16 _gPcd_FixedAtBuild_PcdWinNtMemorySizeForSecMain[6];
 #define _PCD_GET_MODE_PTR_PcdWinNtMemorySizeForSecMain  _gPcd_FixedAtBuild_PcdWinNtMemorySizeForSecMain
@@ -90,7 +90,7 @@ extern const UINT16 _gPcd_FixedAtBuild_PcdWinNtMemorySizeForSecMain[6];
 #define _PCD_GET_MODE_SIZE_PcdWinNtMemorySizeForSecMain  _PCD_SIZE_PcdWinNtMemorySizeForSecMain 
 //#define _PCD_SET_MODE_PTR_PcdWinNtMemorySizeForSecMain  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
 
-#define _PCD_TOKEN_PcdWinNtFirmwareVolume  41U
+#define _PCD_TOKEN_PcdWinNtFirmwareVolume  25U
 #define _PCD_VALUE_PcdWinNtFirmwareVolume  _gPcd_FixedAtBuild_PcdWinNtFirmwareVolume
 extern const UINT16 _gPcd_FixedAtBuild_PcdWinNtFirmwareVolume[16];
 #define _PCD_GET_MODE_PTR_PcdWinNtFirmwareVolume  _gPcd_FixedAtBuild_PcdWinNtFirmwareVolume
@@ -98,7 +98,7 @@ extern const UINT16 _gPcd_FixedAtBuild_PcdWinNtFirmwareVolume[16];
 #define _PCD_GET_MODE_SIZE_PcdWinNtFirmwareVolume  _PCD_SIZE_PcdWinNtFirmwareVolume 
 //#define _PCD_SET_MODE_PTR_PcdWinNtFirmwareVolume  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
 
-#define _PCD_TOKEN_PcdInitValueInTempStack  42U
+#define _PCD_TOKEN_PcdInitValueInTempStack  26U
 #define _PCD_SIZE_PcdInitValueInTempStack 4
 #define _PCD_GET_MODE_SIZE_PcdInitValueInTempStack  _PCD_SIZE_PcdInitValueInTempStack 
 #define _PCD_VALUE_PcdInitValueInTempStack  0x5AA55AA5U

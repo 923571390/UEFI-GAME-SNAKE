@@ -27,14 +27,14 @@ extern GUID gEfiMdePkgTokenSpaceGuid;
 extern UINT64 _gPcd_SkuId_Array[];
 
 // PCD definitions
-#define _PCD_TOKEN_PcdMaximumAsciiStringLength  25U
+#define _PCD_TOKEN_PcdMaximumAsciiStringLength  30U
 extern const UINT32 _gPcd_FixedAtBuild_PcdMaximumAsciiStringLength;
 #define _PCD_GET_MODE_32_PcdMaximumAsciiStringLength  _gPcd_FixedAtBuild_PcdMaximumAsciiStringLength
 //#define _PCD_SET_MODE_32_PcdMaximumAsciiStringLength  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
 #define _PCD_VALUE_PcdMaximumAsciiStringLength 1000000
 #define _PCD_SIZE_PcdMaximumAsciiStringLength 4
 #define _PCD_GET_MODE_SIZE_PcdMaximumAsciiStringLength _PCD_SIZE_PcdMaximumAsciiStringLength
-#define _PCD_TOKEN_PcdMaximumUnicodeStringLength  26U
+#define _PCD_TOKEN_PcdMaximumUnicodeStringLength  31U
 extern const UINT32 _gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength;
 #define _PCD_GET_MODE_32_PcdMaximumUnicodeStringLength  _gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength
 //#define _PCD_SET_MODE_32_PcdMaximumUnicodeStringLength  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD

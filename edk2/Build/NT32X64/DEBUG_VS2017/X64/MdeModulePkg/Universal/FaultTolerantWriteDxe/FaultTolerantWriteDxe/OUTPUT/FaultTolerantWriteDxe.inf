@@ -34,6 +34,7 @@
 
 [Binaries.X64]
   PE32|FaultTolerantWriteDxe.efi
+  DXE_DEPEX|FaultTolerantWriteDxe.depex
   DISPOSABLE|FaultTolerantWriteDxe.pdb
 
 [PatchPcd.X64]

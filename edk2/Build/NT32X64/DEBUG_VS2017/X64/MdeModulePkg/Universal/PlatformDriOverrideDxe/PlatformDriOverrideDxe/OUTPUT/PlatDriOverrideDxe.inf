@@ -49,6 +49,7 @@
 
 [Binaries.X64]
   PE32|PlatDriOverrideDxe.efi
+  DXE_DEPEX|PlatDriOverrideDxe.depex
   BIN|PlatDriOverrideDxeOffset.bin
   DISPOSABLE|PlatDriOverrideDxe.pdb
 

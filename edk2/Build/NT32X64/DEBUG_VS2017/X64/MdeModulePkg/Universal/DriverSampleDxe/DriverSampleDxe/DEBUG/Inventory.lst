@@ -699,7 +699,7 @@ Total Size of all record is 0x000000C1
 			+00000004[00000004] EfiBitNumeric <UINT32>
 			+00000004[00000004] EfiBitOneof <UINT32>
 			+00000004[00000004] EfiBitCheckbox <UINT32>
-			+00000004[00000004] . <UINT32>
+			+00000004[00000004] : <UINT32>
 		};
 ---------------------------------------------------------------
 		struct MY_EFI_VARSTORE_DATA : mAlign [1] mTotalSize [0x8]
@@ -750,7 +750,7 @@ Total Size of all record is 0x000000C1
 			+00000207[000000cf] BitCheckbox <UINT8>
 			+00000207[000000cf] ReservedBits <UINT8>
 			+00000208[000000d0] BitOneof <UINT16>
-			+00000208[000000d0] z <UINT16>
+			+00000208[000000d0] † <UINT16>
 			+00000210[000000d2] BitNumeric <UINT16>
 			+00000212[000000d4] MyBitData <MY_BITS_DATA>
 			+00000216[000000d8] MyUnionData <MY_EFI_UNION_DATA>
@@ -767,10 +767,10 @@ Total Size of all record is 0x000000C1
 
 		struct MY_BITS_DATA {
 			+00000000[00000000] NestByteField <UINT16>
-			+00000002[00000002] V <UINT8>
+			+00000002[00000002] b <UINT8>
 			+00000002[00000002] NestBitCheckbox <UINT8>
 			+00000002[00000002] NestBitOneof <UINT8>
-			+00000002[00000002] z <UINT8>
+			+00000002[00000002] † <UINT8>
 			+00000003[00000003] NestBitNumeric <UINT8>
 		};
 ---------------------------------------------------------------

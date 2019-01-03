@@ -309,6 +309,7 @@
 
 [Binaries.X64]
   PE32|PcdPeim.efi
+  PEI_DEPEX|PcdPeim.depex
   DISPOSABLE|PcdPeim.pdb
 
 [PatchPcd.X64]

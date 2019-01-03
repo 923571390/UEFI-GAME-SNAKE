@@ -32,6 +32,7 @@
 
 [Binaries.X64]
   PE32|StatusCodeHandlerPei.efi
+  PEI_DEPEX|StatusCodeHandlerPei.depex
   DISPOSABLE|StatusCodeHandlerPei.pdb
 
 [PatchPcd.X64]

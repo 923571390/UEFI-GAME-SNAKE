@@ -34,6 +34,7 @@
 
 [Binaries.X64]
   PE32|Timer.efi
+  DXE_DEPEX|Timer.depex
   DISPOSABLE|Timer.pdb
 
 [PatchPcd.X64]

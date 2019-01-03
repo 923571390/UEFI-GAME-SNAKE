@@ -1,0 +1,17 @@
+[Defines]
+  DEC_SPECIFICATION              = 0x00010005
+  PACKAGE_NAME                   = MyPkg
+  PACKAGE_GUID                   = B3E3D3D5-D62B-4497-A175-264F489D127E
+  PACKAGE_VERSION                = 0.01
+
+
+[Guids]
+  gMyPkgTokenSpaceGuid       = { 0x6e71712, 0x22b7, 0x47e5, { 0x8c, 0xb1, 0x47, 0xcf, 0xc6, 0x49, 0x48, 0xf8 } }
+
+[PcdsFeatureFlag]
+  gMyPkgTokenSpaceGuid.PcdHelloWorldPrintEnable|TRUE|BOOLEAN|0x0001200a
+
+
+[PcdsFixedAtBuild, PcdsPatchableInModule, PcdsDynamic, PcdsDynamicEx]
+  gMyPkgTokenSpaceGuid.PcdHelloWorldPrintString|L"UEFI Hello World!\n"|VOID*|0x40000004
+  gMyPkgTokenSpaceGuid.PcdHelloWorldPrintTimes|1|UINT32|0x40000005

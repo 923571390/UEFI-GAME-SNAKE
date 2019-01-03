@@ -32,6 +32,7 @@
 
 [Binaries.X64]
   PE32|PrintDxe.efi
+  DXE_DEPEX|PrintDxe.depex
   DISPOSABLE|PrintDxe.pdb
 
 [PatchPcd.X64]

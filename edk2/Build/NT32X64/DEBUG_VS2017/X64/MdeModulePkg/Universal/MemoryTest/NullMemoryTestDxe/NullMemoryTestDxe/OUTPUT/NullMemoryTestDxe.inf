@@ -30,6 +30,7 @@
 
 [Binaries.X64]
   PE32|NullMemoryTestDxe.efi
+  DXE_DEPEX|NullMemoryTestDxe.depex
   DISPOSABLE|NullMemoryTestDxe.pdb
 
 [PatchPcd.X64]

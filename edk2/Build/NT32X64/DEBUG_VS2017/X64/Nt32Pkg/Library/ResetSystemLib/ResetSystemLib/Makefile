@@ -86,7 +86,7 @@ MV = move /y
 SYMRENAME = echo
 SYMRENAME_FLAGS = Symbol renaming not needed for
 
-ASLDLINK = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x64\link.exe
+ASLDLINK = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\Hostx86\x64\link.exe
 ASLDLINK_FLAGS = /NODEFAULTLIB /ENTRY:ReferenceAcpiTable /SUBSYSTEM:CONSOLE
 
 
@@ -96,7 +96,7 @@ ASLDLINK_FLAGS = /NODEFAULTLIB /ENTRY:ReferenceAcpiTable /SUBSYSTEM:CONSOLE
 VFR = VfrCompile
 VFR_FLAGS = -l -n
 
-PP = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x64\cl.exe
+PP = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\Hostx86\x64\cl.exe
 PP_FLAGS = /nologo /E /TC /FIAutoGen.h
 
 LZMAF86 = LzmaF86Compress
@@ -111,12 +111,12 @@ GENFW_FLAGS =
 OPTROM = EfiRom
 OPTROM_FLAGS = -e
 
-SLINK = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x64\lib.exe
+SLINK = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\Hostx86\x64\lib.exe
 SLINK_FLAGS = /NOLOGO /LTCG
 
 
 
-RC = C:\Program Files (x86)\Windows Kits\10\bin\10.0.17763.0\x86\rc.exe
+RC = C:\Program Files (x86)\Windows Kits\10\bin\10.0.17134.0\x86\rc.exe
 
 DTC = dtc
 DTC_FLAGS = -H epapr
@@ -125,7 +125,7 @@ DTC_FLAGS = -H epapr
 PKCS7SIGN = Pkcs7Sign
 PKCS7SIGN_GUID =  4AAFD29D-68DF-49EE-8AA9-347D375665A7
 
-ASM = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x64\ml64.exe
+ASM = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\Hostx86\x64\ml64.exe
 ASM_FLAGS = /nologo /c /WX /W3 /Cx /Zd /Zi
 
 ASL = C:\ASL\iasl.exe
@@ -136,12 +136,12 @@ RSA2048SHA256SIGN = Rsa2048Sha256Sign
 RSA2048SHA256SIGN_GUID =  A7717414-C616-4977-9420-844712A735BF
 
 
-CC = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x64\cl.exe
+CC = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\Hostx86\x64\cl.exe
 CC_FLAGS = /nologo /c /WX /GS- /W4 /Gs32768 /D UNICODE /O1b2s /GL /Gy /FIAutoGen.h /EHs-c- /GR- /GF /Zi /Gm
 
 NASMB_FLAGS = -f bin
 
-VFRPP = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x64\cl.exe
+VFRPP = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\Hostx86\x64\cl.exe
 VFRPP_FLAGS = /nologo /E /TC /DVFRCOMPILE /FI$(MODULE_NAME)StrDefs.h
 
 BROTLI = BrotliCompress
@@ -153,17 +153,17 @@ BROTLI_GUID =  3D532050-5CDA-4FD0-879E-0F7F630D5AFB
 LZMA = LzmaCompress
 LZMA_GUID =  EE4E5898-3914-4259-9D6E-DC7BD79403CF
 
-ASM16 = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\ml.exe
+ASM16 = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\Hostx86\x86\ml.exe
 
-ASLCC = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x64\cl.exe
+ASLCC = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\Hostx86\x64\cl.exe
 ASLCC_FLAGS = /nologo /c /FIAutoGen.h /TC /Dmain=ReferenceAcpiTable
 
 
-MAKE = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\nmake.exe
+MAKE = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\Hostx86\x86\nmake.exe
 
 DLINK2_FLAGS = /WHOLEARCHIVE
 
-DLINK = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x64\link.exe
+DLINK = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\Hostx86\x64\link.exe
 DLINK_FLAGS = /NOLOGO /NODEFAULTLIB /IGNORE:4001 /OPT:REF /OPT:ICF=10 /MAP /ALIGN:32 /SECTION:.xdata,D /SECTION:.pdata,D /Machine:X64 /LTCG /DLL /ENTRY:$(IMAGE_ENTRY_POINT) /SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER /SAFESEH:NO /BASE:0 /DRIVER /DEBUG /EXPORT:InitializeDriver=$(IMAGE_ENTRY_POINT) /BASE:0x10000 /ALIGN:4096 /FILEALIGN:4096 /SUBSYSTEM:CONSOLE
 
 TIANO = TianoCompress
@@ -175,14 +175,14 @@ VPDTOOL_GUID =  8C3D856A-9BE6-468E-850A-24F7A8D38E08
 CRC32 = GenCrc32
 CRC32_GUID =  FC1BCDB0-7D31-49AA-936A-A4600D9DD083
 
-ASLPP = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x64\cl.exe
+ASLPP = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\Hostx86\x64\cl.exe
 ASLPP_FLAGS = /nologo /E /C /FIAutoGen.h
 
 OBJCOPY_ADDDEBUGFLAG =  --add-gnu-debuglink=$(DEBUG_DIR)/$(MODULE_NAME).debug
 OBJCOPY = echo
 OBJCOPY_FLAGS = objcopy not needed for
 
-APP = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x64\cl.exe
+APP = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\Hostx86\x64\cl.exe
 APP_FLAGS = /nologo /E /TC
 
 ASMLINK = C:\WINDDK\3790.1830\bin\bin16\link16.exe

@@ -32,6 +32,7 @@
 
 [Binaries.X64]
   PE32|WinNtThunkDxe.efi
+  DXE_DEPEX|WinNtThunkDxe.depex
   DISPOSABLE|WinNtThunkDxe.pdb
 
 [PatchPcd.X64]

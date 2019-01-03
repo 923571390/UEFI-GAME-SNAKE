@@ -134,7 +134,7 @@ extern const  UINT32  _gPcd_FixedAtBuild_PcdWinNtFlashNvStorageEventLogSize;
 #define _PCD_SET_MODE_32_PcdFlashNvStorageVariableBase(Value)  LibPcdSet32(_PCD_TOKEN_PcdFlashNvStorageVariableBase, (Value))
 #define _PCD_SET_MODE_32_S_PcdFlashNvStorageVariableBase(Value)  LibPcdSet32S(_PCD_TOKEN_PcdFlashNvStorageVariableBase, (Value))
 
-#define _PCD_TOKEN_PcdWinNtFirmwareFdSize  39U
+#define _PCD_TOKEN_PcdWinNtFirmwareFdSize  23U
 #define _PCD_SIZE_PcdWinNtFirmwareFdSize 4
 #define _PCD_GET_MODE_SIZE_PcdWinNtFirmwareFdSize  _PCD_SIZE_PcdWinNtFirmwareFdSize 
 #define _PCD_VALUE_PcdWinNtFirmwareFdSize  0x00480000U

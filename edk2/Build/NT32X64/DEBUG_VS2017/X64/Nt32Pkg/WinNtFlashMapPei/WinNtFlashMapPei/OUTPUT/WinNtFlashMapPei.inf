@@ -33,6 +33,7 @@
 
 [Binaries.X64]
   PE32|WinNtFlashMapPei.efi
+  PEI_DEPEX|WinNtFlashMapPei.depex
   DISPOSABLE|WinNtFlashMapPei.pdb
 
 [PatchPcd.X64]

@@ -32,6 +32,7 @@
 
 [Binaries.X64]
   PE32|WinNtAutoScan.efi
+  PEI_DEPEX|WinNtAutoScan.depex
   DISPOSABLE|WinNtAutoScan.pdb
 
 [PatchPcd.X64]
