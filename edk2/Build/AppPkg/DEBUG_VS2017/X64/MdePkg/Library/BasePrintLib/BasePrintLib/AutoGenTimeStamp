@@ -1,0 +1,11 @@
+c:\edk2\MdePkg\Library\BasePrintLib\BasePrintLib.inf
+c:\edk2\MdePkg\Include\Base.h
+c:\edk2\MdePkg\Library\BasePrintLib\PrintLibInternal.h
+c:\edk2\MdePkg\Include\Library\PcdLib.h
+c:\edk2\MdePkg\Include\Library\PrintLib.h
+c:\edk2\MdePkg\Include\Library\DebugLib.h
+c:\edk2\MdePkg\Include\Library\BaseLib.h
+c:\edk2\Build\AppPkg\DEBUG_VS2017\X64\MdePkg\Library\BasePrintLib\BasePrintLib\DEBUG\AutoGen.h
+c:\edk2\MdePkg\Library\BasePrintLib\PrintLib.c
+c:\edk2\MdePkg\Include\X64\ProcessorBind.h
+c:\edk2\MdePkg\Library\BasePrintLib\PrintLibInternal.c

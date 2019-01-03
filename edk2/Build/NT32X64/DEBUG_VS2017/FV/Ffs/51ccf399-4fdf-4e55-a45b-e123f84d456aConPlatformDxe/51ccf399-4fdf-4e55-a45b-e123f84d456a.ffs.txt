@@ -1,0 +1,1 @@
+GenFfs -t EFI_FV_FILETYPE_DRIVER -g 51ccf399-4fdf-4e55-a45b-e123f84d456a -o c:\edk2\Build\NT32X64\DEBUG_VS2017\FV\Ffs\51ccf399-4fdf-4e55-a45b-e123f84d456aConPlatformDxe\51ccf399-4fdf-4e55-a45b-e123f84d456a.ffs -i c:\edk2\Build\NT32X64\DEBUG_VS2017\FV\Ffs\51ccf399-4fdf-4e55-a45b-e123f84d456aConPlatformDxe\51ccf399-4fdf-4e55-a45b-e123f84d456aSEC2.com

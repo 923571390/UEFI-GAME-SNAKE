@@ -1,0 +1,188 @@
+## @file
+# Entry Point of NT32 Emulator
+#
+# Main executable file of NT32 Emulator that loads PEI core after initialization finished.
+#
+#  Copyright (c) 2007 - 2011, Intel Corporation. All rights reserved.<BR>
+#  This program and the accompanying materials
+#  are licensed and made available under the terms and conditions of the BSD License
+#  which accompanies this distribution. The full text of the license may be found at
+#  http://opensource.org/licenses/bsd-license.php
+#  THE PROGRAM IS DISTRIBUTED UNDER THE BSD LICENSE ON AN "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.
+#
+##
+
+# DO NOT EDIT
+# FILE auto-generated
+
+[Defines]
+  INF_VERSION                = 0x00010017
+  BASE_NAME                  = SecMain
+  FILE_GUID                  = 4b837b03-6587-4d19-b82b-edfad836c0a0
+  MODULE_TYPE                = USER_DEFINED
+  VERSION_STRING             = 1.0
+
+[Packages.X64]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  Nt32Pkg/Nt32Pkg.dec
+
+[Binaries.X64]
+  BIN|SecMain
+
+[PatchPcd.X64]
+
+[Protocols.X64]
+  ## SOMETIMES_CONSUMES
+  gEfiDevicePathProtocolGuid
+
+  ## CONSUMES
+  gEfiDevicePathUtilitiesProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiDevicePathToTextProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiDevicePathFromTextProtocolGuid
+
+  ## SOMETIMES_PRODUCES
+  gEfiDriverBindingProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiSimpleTextOutProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiGraphicsOutputProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiHiiFontProtocolGuid
+
+  ## SOMETIMES_CONSUMES # Consumes if gEfiGraphicsOutputProtocolGuid uninstalled
+  gEfiUgaDrawProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiComponentNameProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiComponentName2ProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiDriverConfigurationProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiDriverConfiguration2ProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiDriverDiagnosticsProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiDriverDiagnostics2ProtocolGuid
+
+
+[Ppis.X64]
+  # PPI ALWAYS_PRODUCED
+  gNtPeiLoadFilePpiGuid
+
+  # PPI ALWAYS_PRODUCED
+  gEfiPeiStatusCodePpiGuid
+
+  # PPI ALWAYS_PRODUCED
+  gNtFwhPpiGuid
+
+  # PPI ALWAYS_PRODUCED
+  gPeiNtAutoScanPpiGuid
+
+  # PPI ALWAYS_CONSUMED
+  # PPI ALWAYS_PRODUCED
+  gPeiNtThunkPpiGuid
+
+  gEfiTemporaryRamSupportPpiGuid
+
+  ## SOMETIMES_PRODUCES
+  gEfiPeiFirmwareVolumeInfoPpiGuid
+
+  ## SOMETIMES_PRODUCES
+  gEfiPeiFirmwareVolumeInfo2PpiGuid
+
+
+[Guids.X64]
+  ## SOMETIMES_PRODUCES ## GUID # FV File System Guid.
+  gEfiFirmwareFileSystem2Guid
+
+  ## SOMETIMES_CONSUMES   ## UNDEFINED
+  gEfiStatusCodeSpecificDataGuid
+
+  ## SOMETIMES_CONSUMES   ## UNDEFINED
+  gEfiStatusCodeDataTypeDebugGuid
+
+  ## SOMETIMES_CONSUMES  ## Event
+  gEfiEventReadyToBootGuid
+
+  ## SOMETIMES_CONSUMES  ## Event
+  gEfiEventLegacyBootGuid
+
+  ## SOMETIMES_CONSUMES  ## Variable
+  gEfiGlobalVariableGuid
+
+  ## CONSUMES  ## SystemTable
+  gEfiHobListGuid
+
+
+[PcdEx.X64]
+
+[LibraryClasses.X64]
+## @LIB_INSTANCES
+#  MdePkg/Library/PeiMemoryAllocationLib/PeiMemoryAllocationLib.inf
+#  MdePkg/Library/PeiServicesLib/PeiServicesLib.inf
+#  Nt32Pkg/Library/PeiNt32OemHookStatusCodeLib/PeiNt32OemHookStatusCodeLib.inf
+#  MdeModulePkg/Library/PeiReportStatusCodeLib/PeiReportStatusCodeLib.inf
+#  MdePkg/Library/BaseLib/BaseLib.inf
+#  MdePkg/Library/BaseMemoryLibOptDxe/BaseMemoryLibOptDxe.inf
+#  MdePkg/Library/BasePrintLib/BasePrintLib.inf
+#  MdePkg/Library/BasePcdLibNull/BasePcdLibNull.inf
+#  MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull.inf
+#  MdePkg/Library/PeiServicesTablePointerLib/PeiServicesTablePointerLib.inf
+#  MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib.inf
+#  MdePkg/Library/UefiRuntimeServicesTableLib/UefiRuntimeServicesTableLib.inf
+#  MdePkg/Library/UefiDevicePathLibDevicePathProtocol/UefiDevicePathLibDevicePathProtocol.inf
+#  MdePkg/Library/UefiLib/UefiLib.inf
+#  MdePkg/Library/DxeHobLib/DxeHobLib.inf
+#  MdePkg/Library/BasePeCoffExtraActionLibNull/BasePeCoffExtraActionLibNull.inf
+#  MdePkg/Library/BasePeCoffLib/BasePeCoffLib.inf
+
+[Depex.X64]
+
+
+
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32
+#
+
+[BuildOptions.X64]
+## @AsBuilt
+##   MSFT:DEBUG_VS2017_X64_SYMRENAME_FLAGS = Symbol renaming not needed for
+##   MSFT:DEBUG_VS2017_X64_ASLDLINK_FLAGS = /NODEFAULTLIB /ENTRY:ReferenceAcpiTable /SUBSYSTEM:CONSOLE
+##   MSFT:DEBUG_VS2017_X64_VFR_FLAGS = -l -n
+##   MSFT:DEBUG_VS2017_X64_PP_FLAGS = /nologo /E /TC /FIAutoGen.h
+##   MSFT:DEBUG_VS2017_X64_GENFW_FLAGS = 
+##   MSFT:DEBUG_VS2017_X64_OPTROM_FLAGS = -e
+##   MSFT:DEBUG_VS2017_X64_SLINK_FLAGS = /NOLOGO /LTCG
+##   MSFT:DEBUG_VS2017_X64_DTC_FLAGS = -H epapr
+##   MSFT:DEBUG_VS2017_X64_ASM_FLAGS = /nologo /W3 /WX /c /Cx /Zd /W0 /Zi
+##   MSFT:DEBUG_VS2017_X64_ASL_FLAGS = 
+##   MSFT:DEBUG_VS2017_X64_CC_FLAGS = /nologo /W4 /WX /Gy /c /D UNICODE /Od /FIAutoGen.h /EHs-c- /GF /Gs8192 /Zi /Gm /D _CRT_SECURE_NO_WARNINGS /D _CRT_SECURE_NO_DEPRECATE
+##   MSFT:DEBUG_VS2017_X64_NASMB_FLAGS = -f bin
+##   MSFT:DEBUG_VS2017_X64_VFRPP_FLAGS = /nologo /E /TC /DVFRCOMPILE /FI$(MODULE_NAME)StrDefs.h
+##   MSFT:DEBUG_VS2017_X64_ASLCC_FLAGS = /nologo /c /FIAutoGen.h /TC /Dmain=ReferenceAcpiTable
+##   MSFT:DEBUG_VS2017_X64_MAKE_FLAGS = /nologo
+##   MSFT:DEBUG_VS2017_X64_DLINK2_FLAGS = /WHOLEARCHIVE
+##   MSFT:DEBUG_VS2017_X64_DLINK_FLAGS = /out:"$(BIN_DIR)\SecMain.exe" /base:0x10000000 /pdb:"$(BIN_DIR)\SecMain.pdb" /LIBPATH:"%VCToolsInstallDir%lib\x64" /LIBPATH:"%UniversalCRTSdkDir%lib\%UCRTVersion%\ucrt\x64" /LIBPATH:"%WindowsSdkDir%lib\%WindowsSDKLibVersion%\um\x64" /NOLOGO /SUBSYSTEM:CONSOLE /NODEFAULTLIB /IGNORE:4086 /MAP /OPT:REF /DEBUG /MACHINE:AMD64 /LTCG Kernel32.lib MSVCRTD.lib vcruntimed.lib ucrtd.lib Gdi32.lib User32.lib Winmm.lib Advapi32.lib /EXPORT:InitializeDriver=$(IMAGE_ENTRY_POINT) /BASE:0x10000 /ALIGN:4096 /FILEALIGN:4096 /SUBSYSTEM:CONSOLE
+##   MSFT:DEBUG_VS2017_X64_ASLPP_FLAGS = /nologo /E /C /FIAutoGen.h
+##   MSFT:DEBUG_VS2017_X64_OBJCOPY_FLAGS = objcopy not needed for
+##   MSFT:DEBUG_VS2017_X64_APP_FLAGS = /nologo /E /TC
+##   MSFT:DEBUG_VS2017_X64_ASMLINK_FLAGS = /link /nologo
+##   MSFT:DEBUG_VS2017_X64_NASM_FLAGS = -Ox -f win64 -g

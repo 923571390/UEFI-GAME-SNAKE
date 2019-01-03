@@ -1,0 +1,212 @@
+ CapsuleRuntimeDxe
+
+ Timestamp is 5c23c33b (Thu Dec 27 02:06:51 2018)
+
+ Preferred load address is 0000000000010000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000140H .text                   CODE
+ 0001:00000140 000012a1H .text$mn                CODE
+ 0002:00000000 00000844H .rdata                  DATA
+ 0002:00000844 0000014cH .rdata$zzzdbg           DATA
+ 0003:00000000 00000148H .data                   DATA
+ 0003:00000148 00000078H .bss                    DATA
+ 0004:00000000 00000059H .edata                  DATA
+ 0005:00000000 000000d8H .pdata                  DATA
+ 0006:00000000 000000f4H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __volatile_metadata        0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000100       __guard_flags              0000000000000100     <absolute>
+ 0001:00000000       InternalMemZeroMem         0000000000011000     BaseMemoryLibOptDxe:ZeroMem.obj
+ 0001:00000020       AsmCpuid                   0000000000011020     BaseLib:CpuId.obj
+ 0001:00000050       InternalMemCopyMem         0000000000011050     BaseMemoryLibOptDxe:CopyMem.obj
+ 0001:000000d0       InternalMemSetMem          00000000000110d0     BaseMemoryLibOptDxe:SetMem.obj
+ 0001:00000110       InternalMemSetMem64        0000000000011110     BaseMemoryLibOptDxe:SetMem64.obj
+ 0001:00000130       InternalMemSetMem32        0000000000011130     BaseMemoryLibOptDxe:SetMem32.obj
+ 0001:00000140       _ModuleEntryPoint          0000000000011140 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000001f8       ProcessLibraryConstructorList 00000000000111f8 f   CapsuleRuntimeDxe:AutoGen.obj
+ 0001:000004f4       ProcessLibraryDestructorList 00000000000114f4 f   CapsuleRuntimeDxe:AutoGen.obj
+ 0001:0000064c       UpdateCapsule              000000000001164c f   CapsuleRuntimeDxe:CapsuleService.obj
+ 0001:00000750       QueryCapsuleCapabilities   0000000000011750 f   CapsuleRuntimeDxe:CapsuleService.obj
+ 0001:00000848       CopyGuid                   0000000000011848 f   BaseMemoryLibOptDxe:MemLibGuid.obj
+ 0001:000008cc       CompareGuid                00000000000118cc f   BaseMemoryLibOptDxe:MemLibGuid.obj
+ 0001:00000934       AsciiStrLen                0000000000011934 f   BaseLib:String.obj
+ 0001:000009a0       AsciiStrnLenS              00000000000119a0 f   BaseLib:SafeString.obj
+ 0001:000009cc       AsciiStrnCpyS              00000000000119cc f   BaseLib:SafeString.obj
+ 0001:00000ac8       ReadUnaligned64            0000000000011ac8 f   BaseLib:Unaligned.obj
+ 0001:00000af8       DebugPrint                 0000000000011af8 f   PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0001:00000ccc       DebugAssert                0000000000011ccc f   PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0001:00000e1c       GetHobList                 0000000000011e1c f   DxeHobLib:HobLib.obj
+ 0001:00000efc       GetNextHob                 0000000000011efc f   DxeHobLib:HobLib.obj
+ 0001:00000f4c       GetDebugPrintErrorLevel    0000000000011f4c f   DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0001:00001068       GetDebugMask               0000000000012068 f   DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0001:00001084       SetDebugMask               0000000000012084 f   DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0001:00001090       RuntimeLibExitBootServicesEvent 0000000000012090 f   UefiRuntimeLib:RuntimeLib.obj
+ 0001:00001098       RuntimeLibVirtualNotifyEvent 0000000000012098 f   UefiRuntimeLib:RuntimeLib.obj
+ 0001:000010ac       InternalReportStatusCode   00000000000120ac f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00001174       ReportStatusCodeEx         0000000000012174 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00001348       CopyMem                    0000000000012348 f   BaseMemoryLibOptDxe:CopyMemWrapper.obj
+ 0002:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 0000000000013000     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000028       ??_C@_0BE@DCHLEIGN@?$CBEFI_ERROR?5?$CIStatus?$CJ@ 0000000000013028     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000040       _gDriverUnloadImageCount   0000000000013040     CapsuleRuntimeDxe:AutoGen.obj
+ 0002:00000041       _gPcd_FixedAtBuild_PcdSupportUpdateCapsuleReset 0000000000013041     CapsuleRuntimeDxe:AutoGen.obj
+ 0002:00000042       _gPcd_FixedAtBuild_PcdReportStatusCodePropertyMask 0000000000013042     CapsuleRuntimeDxe:AutoGen.obj
+ 0002:00000043       _gPcd_FixedAtBuild_PcdDxeIplSwitchToLongMode 0000000000013043     CapsuleRuntimeDxe:AutoGen.obj
+ 0002:00000044       _gUefiDriverRevision       0000000000013044     CapsuleRuntimeDxe:AutoGen.obj
+ 0002:00000048       _gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength 0000000000013048     CapsuleRuntimeDxe:AutoGen.obj
+ 0002:0000004c       _gPcd_FixedAtBuild_PcdMaxSizeNonPopulateCapsule 000000000001304c     CapsuleRuntimeDxe:AutoGen.obj
+ 0002:00000050       _gPcd_FixedAtBuild_PcdMaxSizePopulateCapsule 0000000000013050     CapsuleRuntimeDxe:AutoGen.obj
+ 0002:00000054       _gPcd_FixedAtBuild_PcdDebugPrintErrorLevel 0000000000013054     CapsuleRuntimeDxe:AutoGen.obj
+ 0002:00000058       _gPcd_FixedAtBuild_PcdFixedDebugPrintErrorLevel 0000000000013058     CapsuleRuntimeDxe:AutoGen.obj
+ 0002:0000005c       _gPcd_FixedAtBuild_PcdCapsulePeiLongModeStackSize 000000000001305c     CapsuleRuntimeDxe:AutoGen.obj
+ 0002:00000060       gEfiCallerBaseName         0000000000013060     CapsuleRuntimeDxe:AutoGen.obj
+ 0002:00000068       _gPcd_FixedAtBuild_PcdMaximumAsciiStringLength 0000000000013068     CapsuleRuntimeDxe:AutoGen.obj
+ 0002:0000006c       _gPcd_FixedAtBuild_PcdDebugPropertyMask 000000000001306c     CapsuleRuntimeDxe:AutoGen.obj
+ 0002:0000006d       _gPcd_FixedAtBuild_PcdUse1GPageTable 000000000001306d     CapsuleRuntimeDxe:AutoGen.obj
+ 0002:00000070       mUefiDevicePathLibEndDevicePath 0000000000013070     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000080       mHexStr                    0000000000013080     BasePrintLib:PrintLibInternal.obj
+ 0002:00000090       ??_C@_0BC@JPBOMMCO@CapsuleRuntimeDxe@ 0000000000013090     CapsuleRuntimeDxe:AutoGen.obj
+ 0002:000000b0       ??_C@_0HC@JJNCCHHF@c?3?2edk2?2Build?2NT32X64?2DEBUG_VS2@ 00000000000130b0     CapsuleRuntimeDxe:AutoGen.obj
+ 0002:00000130       ??_C@_0EC@OBAKDMBE@c?3?2edk2?2MdeModulePkg?2Universal?2@ 0000000000013130     CapsuleRuntimeDxe:CapsuleService.obj
+ 0002:00000178       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013178     BaseMemoryLibOptDxe:ZeroMemWrapper.obj
+ 0002:00000190       ??_C@_0CI@BEFOLLLE@c?3?2edk2?2MdePkg?2Library?2BaseLib?2@ 0000000000013190     BaseLib:String.obj
+ 0002:000001b8       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000131b8     BaseLib:String.obj
+ 0002:000001d0       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 00000000000131d0     BaseLib:String.obj
+ 0002:00000208       ??_C@_0CM@GBAFEFEA@c?3?2edk2?2MdePkg?2Library?2BaseLib?2@ 0000000000013208     BaseLib:SafeString.obj
+ 0002:00000238       ??_C@_0BO@ECNIOIHG@?$CIDestination?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000013238     BaseLib:SafeString.obj
+ 0002:00000258       ??_C@_0BJ@EAEEJIP@?$CISource?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000013258     BaseLib:SafeString.obj
+ 0002:00000280       ??_C@_0FL@CDANCHFO@InternalSafeStringNoAsciiStrOve@ 0000000000013280     BaseLib:SafeString.obj
+ 0002:000002e0       ??_C@_0CL@COEFNOFM@c?3?2edk2?2MdePkg?2Library?2BaseLib?2@ 00000000000132e0     BaseLib:Unaligned.obj
+ 0002:00000310       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013310     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0002:00000330       ??_C@_0EH@EMGPELNE@c?3?2edk2?2MdeModulePkg?2Library?2Pe@ 0000000000013330     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0002:00000378       ??_C@_0CI@HIINONDG@?$CICHAR8?5?$CK?$CJBaseListMarker?5?$DM?$DN?5Form@ 0000000000013378     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0002:000003a0       ??_C@_01OHGJGJJP@?$FL@     00000000000133a0     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0002:000003a4       ??_C@_02PBFOLPKM@?$FN?5@   00000000000133a4     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0002:000003a8       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000133a8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000003d0       ??_C@_0EL@ODFJBOBF@c?3?2edk2?2MdePkg?2Library?2UefiBoot@ 00000000000133d0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000420       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013420     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000438       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013438     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000450       ??_C@_0EP@BCAOHHL@c?3?2edk2?2MdePkg?2Library?2UefiDevi@ 0000000000013450     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000004a0       ??_C@_0DC@CNNBPJA@mDevicePathLibDevicePathUtiliti@ 00000000000134a0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000004d8       ??_C@_0BE@OBDFIHND@gRT?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000134d8     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000004f0       ??_C@_0FB@NIMBGODD@c?3?2edk2?2MdePkg?2Library?2UefiRunt@ 00000000000134f0     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000548       ??_C@_0CK@GGFNJPAK@c?3?2edk2?2MdePkg?2Library?2DxeHobLi@ 0000000000013548     DxeHobLib:HobLib.obj
+ 0002:00000578       ??_C@_0BJ@OBFMLLDO@mHobList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013578     DxeHobLib:HobLib.obj
+ 0002:00000598       ??_C@_0BJ@NOLLDKJB@HobStart?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013598     DxeHobLib:HobLib.obj
+ 0002:000005b8       ??_C@_1BC@DPOIABCP@?$AAE?$AAF?$AAI?$AAD?$AAe?$AAb?$AAu?$AAg@ 00000000000135b8     DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0002:000005d0       ??_C@_0DD@BGKIIDHG@c?3?2edk2?2MdePkg?2Library?2UefiRunt@ 00000000000135d0     UefiRuntimeLib:RuntimeLib.obj
+ 0002:00000610       ??_C@_0EK@NEAGPEKB@c?3?2edk2?2MdeModulePkg?2Library?2Dx@ 0000000000013610     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000660       ??_C@_0DN@HHIHPHHB@?$CB?$CI?$CIExtendedData?5?$DN?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013660     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:000006a0       ??_C@_0DN@BBBIFINB@?$CB?$CI?$CIExtendedData?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000136a0     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:000006e0       ??_C@_0DI@MIEIGAOH@Status?5code?5extended?5data?5is?5to@ 00000000000136e0     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000720       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000013720     BaseMemoryLibOptDxe:CopyMemWrapper.obj
+ 0002:00000768       ??_C@_0DM@DBGKHDAI@c?3?2edk2?2MdePkg?2Library?2BaseMemo@ 0000000000013768     BaseMemoryLibOptDxe:CopyMemWrapper.obj
+ 0002:000007a8       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 00000000000137a8     BaseMemoryLibOptDxe:CopyMemWrapper.obj
+ 0003:00000000       gEfiLoadedImageProtocolGuid 0000000000014000     CapsuleRuntimeDxe:AutoGen.obj
+ 0003:00000010       gEfiStatusCodeSpecificDataGuid 0000000000014010     CapsuleRuntimeDxe:AutoGen.obj
+ 0003:00000020       gEfiGlobalVariableGuid     0000000000014020     CapsuleRuntimeDxe:AutoGen.obj
+ 0003:00000030       gEfiStatusCodeRuntimeProtocolGuid 0000000000014030     CapsuleRuntimeDxe:AutoGen.obj
+ 0003:00000040       gEfiGenericVariableGuid    0000000000014040     CapsuleRuntimeDxe:AutoGen.obj
+ 0003:00000050       gEdkiiVariableLockProtocolGuid 0000000000014050     CapsuleRuntimeDxe:AutoGen.obj
+ 0003:00000060       gEfiCapsuleArchProtocolGuid 0000000000014060     CapsuleRuntimeDxe:AutoGen.obj
+ 0003:00000070       gEfiFmpCapsuleGuid         0000000000014070     CapsuleRuntimeDxe:AutoGen.obj
+ 0003:00000080       gEfiDevicePathProtocolGuid 0000000000014080     CapsuleRuntimeDxe:AutoGen.obj
+ 0003:00000090       gEfiDevicePathToTextProtocolGuid 0000000000014090     CapsuleRuntimeDxe:AutoGen.obj
+ 0003:000000a0       gEfiStatusCodeDataTypeDebugGuid 00000000000140a0     CapsuleRuntimeDxe:AutoGen.obj
+ 0003:000000b0       gEfiDevicePathUtilitiesProtocolGuid 00000000000140b0     CapsuleRuntimeDxe:AutoGen.obj
+ 0003:000000c0       gEfiDevicePathFromTextProtocolGuid 00000000000140c0     CapsuleRuntimeDxe:AutoGen.obj
+ 0003:000000d0       gEfiHobListGuid            00000000000140d0     CapsuleRuntimeDxe:AutoGen.obj
+ 0003:000000e0       gEfiDebugMaskProtocolGuid  00000000000140e0     CapsuleRuntimeDxe:AutoGen.obj
+ 0003:000000f0       gEfiEventExitBootServicesGuid 00000000000140f0     CapsuleRuntimeDxe:AutoGen.obj
+ 0003:00000100       gEfiCapsuleVendorGuid      0000000000014100     CapsuleRuntimeDxe:AutoGen.obj
+ 0003:00000110       gEfiEventVirtualAddressChangeGuid 0000000000014110     CapsuleRuntimeDxe:AutoGen.obj
+ 0003:00000120       gEfiCallerIdGuid           0000000000014120     CapsuleRuntimeDxe:AutoGen.obj
+ 0003:00000130       mDebugMaskProtocol         0000000000014130     DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0003:00000148       mNewHandle                 0000000000014148     CapsuleRuntimeDxe:CapsuleService.obj
+ 0003:00000150       mTimes                     0000000000014150     CapsuleRuntimeDxe:CapsuleService.obj
+ 0003:00000158       mMaxSizeNonPopulateCapsule 0000000000014158     CapsuleRuntimeDxe:CapsuleService.obj
+ 0003:0000015c       mMaxSizePopulateCapsule    000000000001415c     CapsuleRuntimeDxe:CapsuleService.obj
+ 0003:00000160       gST                        0000000000014160     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000168       gBS                        0000000000014168     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000170       gImageHandle               0000000000014170     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000178       mDevicePathLibDevicePathUtilities 0000000000014178     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0003:00000180       gRT                        0000000000014180     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:00000188       mHobList                   0000000000014188     DxeHobLib:HobLib.obj
+ 0003:00000190       mSystemTable               0000000000014190     DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0003:00000198       mDebugPrintErrorLevel      0000000000014198     DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0003:0000019c       mGlobalErrorLevelInitialized 000000000001419c     DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0003:0000019d       mEfiAtRuntime              000000000001419d     UefiRuntimeLib:RuntimeLib.obj
+ 0003:000001a0       mReportStatusCodeLibStatusCodeProtocol 00000000000141a0     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0003:000001a8       mEfiVirtualNotifyEvent     00000000000141a8     <common>
+ 0003:000001b0       mInternalRT                00000000000141b0     <common>
+ 0003:000001b8       mEfiExitBootServicesEvent  00000000000141b8     <common>
+
+ entry point at        0001:00000140
+
+ Static symbols
+
+ 0000:ffff7000       .debug$S                   0000000000010000     CapsuleRuntimeDxe.exp
+ 0001:0000002f       AsmCpuid.0                 000000000001102f     BaseLib:CpuId.obj
+ 0001:00000034       AsmCpuid.1                 0000000000011034     BaseLib:CpuId.obj
+ 0001:0000003b       AsmCpuid.2                 000000000001103b     BaseLib:CpuId.obj
+ 0001:00000044       AsmCpuid.3                 0000000000011044     BaseLib:CpuId.obj
+ 0001:0000006a       InternalMemCopyMem.0       000000000001106a     BaseMemoryLibOptDxe:CopyMem.obj
+ 0001:00000082       InternalMemCopyMem.1       0000000000011082     BaseMemoryLibOptDxe:CopyMem.obj
+ 0001:00000095       InternalMemCopyMem.2       0000000000011095     BaseMemoryLibOptDxe:CopyMem.obj
+ 0001:000000b2       @CopyBackward              00000000000110b2     BaseMemoryLibOptDxe:CopyMem.obj
+ 0001:000000bb       @CopyBytes                 00000000000110bb     BaseMemoryLibOptDxe:CopyMem.obj
+ 0004:00000000       .edata                     0000000000015000     CapsuleRuntimeDxe.exp
+ 0004:00000028       rgpv                       0000000000015028     CapsuleRuntimeDxe.exp
+ 0004:0000002c       rgszName                   000000000001502c     CapsuleRuntimeDxe.exp
+ 0004:00000030       rgwOrd                     0000000000015030     CapsuleRuntimeDxe.exp
+ 0004:00000032       szName                     0000000000015032     CapsuleRuntimeDxe.exp
+ 0004:00000048       $N00001                    0000000000015048     CapsuleRuntimeDxe.exp
+ 0005:00000000       $pdata$_ModuleEntryPoint   0000000000016000     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:0000000c       $pdata$ProcessLibraryDestructorList 000000000001600c     CapsuleRuntimeDxe:AutoGen.obj
+ 0005:00000018       $pdata$ProcessLibraryConstructorList 0000000000016018     CapsuleRuntimeDxe:AutoGen.obj
+ 0005:00000024       $pdata$QueryCapsuleCapabilities 0000000000016024     CapsuleRuntimeDxe:CapsuleService.obj
+ 0005:00000030       $pdata$UpdateCapsule       0000000000016030     CapsuleRuntimeDxe:CapsuleService.obj
+ 0005:0000003c       $pdata$CopyGuid            000000000001603c     BaseMemoryLibOptDxe:MemLibGuid.obj
+ 0005:00000048       $pdata$CompareGuid         0000000000016048     BaseMemoryLibOptDxe:MemLibGuid.obj
+ 0005:00000054       $pdata$AsciiStrLen         0000000000016054     BaseLib:String.obj
+ 0005:00000060       $pdata$AsciiStrnCpyS       0000000000016060     BaseLib:SafeString.obj
+ 0005:0000006c       $pdata$ReadUnaligned64     000000000001606c     BaseLib:Unaligned.obj
+ 0005:00000078       $pdata$DebugPrint          0000000000016078     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0005:00000084       $pdata$DebugAssert         0000000000016084     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0005:00000090       $pdata$GetNextHob          0000000000016090     DxeHobLib:HobLib.obj
+ 0005:0000009c       $pdata$GetHobList          000000000001609c     DxeHobLib:HobLib.obj
+ 0005:000000a8       $pdata$GetDebugPrintErrorLevel 00000000000160a8     DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0005:000000b4       $pdata$InternalReportStatusCode 00000000000160b4     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0005:000000c0       $pdata$ReportStatusCodeEx  00000000000160c0     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0005:000000cc       $pdata$CopyMem             00000000000160cc     BaseMemoryLibOptDxe:CopyMemWrapper.obj
+ 0006:00000000       $unwind$_ModuleEntryPoint  0000000000017000     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0006:00000000       $unwind$GetHobList         0000000000017000     DxeHobLib:HobLib.obj
+ 0006:00000000       $unwind$CopyGuid           0000000000017000     BaseMemoryLibOptDxe:MemLibGuid.obj
+ 0006:00000000       $unwind$AsciiStrnCpyS      0000000000017000     BaseLib:SafeString.obj
+ 0006:00000010       $unwind$ProcessLibraryConstructorList 0000000000017010     CapsuleRuntimeDxe:AutoGen.obj
+ 0006:00000028       $unwind$ProcessLibraryDestructorList 0000000000017028     CapsuleRuntimeDxe:AutoGen.obj
+ 0006:0000003c       $unwind$UpdateCapsule      000000000001703c     CapsuleRuntimeDxe:CapsuleService.obj
+ 0006:00000050       $unwind$QueryCapsuleCapabilities 0000000000017050     CapsuleRuntimeDxe:CapsuleService.obj
+ 0006:00000068       $unwind$CompareGuid        0000000000017068     BaseMemoryLibOptDxe:MemLibGuid.obj
+ 0006:00000068       $unwind$CopyMem            0000000000017068     BaseMemoryLibOptDxe:CopyMemWrapper.obj
+ 0006:0000007c       $unwind$AsciiStrLen        000000000001707c     BaseLib:String.obj
+ 0006:00000088       $unwind$ReadUnaligned64    0000000000017088     BaseLib:Unaligned.obj
+ 0006:00000088       $unwind$GetNextHob         0000000000017088     DxeHobLib:HobLib.obj
+ 0006:00000090       $unwind$DebugPrint         0000000000017090     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0006:000000a0       $unwind$DebugAssert        00000000000170a0     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0006:000000bc       $unwind$GetDebugPrintErrorLevel 00000000000170bc     DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0006:000000c4       $unwind$InternalReportStatusCode 00000000000170c4     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0006:000000dc       $unwind$ReportStatusCodeEx 00000000000170dc     DxeReportStatusCodeLib:ReportStatusCodeLib.obj

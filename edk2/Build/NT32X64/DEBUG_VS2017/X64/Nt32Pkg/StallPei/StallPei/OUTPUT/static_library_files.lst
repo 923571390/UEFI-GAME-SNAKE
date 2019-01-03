@@ -1,0 +1,14 @@
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdePkg/Library/PeiHobLib/PeiHobLib/OUTPUT/PeiHobLib.lib
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdePkg/Library/PeiMemoryAllocationLib/PeiMemoryAllocationLib/OUTPUT/PeiMemoryAllocationLib.lib
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdePkg/Library/PeiServicesLib/PeiServicesLib/OUTPUT/PeiServicesLib.lib
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/Nt32Pkg/Library/PeiNt32OemHookStatusCodeLib/PeiNt32OemHookStatusCodeLib/OUTPUT/PeiNt32OemHookStatusCodeLib.lib
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib/OUTPUT/BaseDebugPrintErrorLevelLib.lib
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdePkg/Library/BaseMemoryLibOptPei/BaseMemoryLibOptPei/OUTPUT/BaseMemoryLibOptPei.lib
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdeModulePkg/Library/PeiReportStatusCodeLib/PeiReportStatusCodeLib/OUTPUT/PeiReportStatusCodeLib.lib
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdePkg/Library/PeiPcdLib/PeiPcdLib/OUTPUT/PeiPcdLib.lib
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdeModulePkg/Library/PeiDxeDebugLibReportStatusCode/PeiDxeDebugLibReportStatusCode/OUTPUT/PeiDxeDebugLibReportStatusCode.lib
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdePkg/Library/PeiServicesTablePointerLib/PeiServicesTablePointerLib/OUTPUT/PeiServicesTablePointerLib.lib
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdePkg/Library/PeimEntryPoint/PeimEntryPoint/OUTPUT/PeimEntryPoint.lib
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/Nt32Pkg/StallPei/StallPei/OUTPUT/Stall.lib

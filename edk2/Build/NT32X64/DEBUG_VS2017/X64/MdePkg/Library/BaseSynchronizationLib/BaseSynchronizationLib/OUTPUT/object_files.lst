@@ -1,0 +1,7 @@
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdePkg/Library/BaseSynchronizationLib/BaseSynchronizationLib/OUTPUT/Ia32/InternalGetSpinLockProperties.obj
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdePkg/Library/BaseSynchronizationLib/BaseSynchronizationLib/OUTPUT/X64/InterlockedCompareExchange64.obj
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdePkg/Library/BaseSynchronizationLib/BaseSynchronizationLib/OUTPUT/X64/InterlockedCompareExchange32.obj
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdePkg/Library/BaseSynchronizationLib/BaseSynchronizationLib/OUTPUT/X64/InterlockedCompareExchange16.obj
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdePkg/Library/BaseSynchronizationLib/BaseSynchronizationLib/OUTPUT/X64/InterlockedDecrement.obj
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdePkg/Library/BaseSynchronizationLib/BaseSynchronizationLib/OUTPUT/X64/InterlockedIncrement.obj
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdePkg/Library/BaseSynchronizationLib/BaseSynchronizationLib/OUTPUT/SynchronizationMsc.obj

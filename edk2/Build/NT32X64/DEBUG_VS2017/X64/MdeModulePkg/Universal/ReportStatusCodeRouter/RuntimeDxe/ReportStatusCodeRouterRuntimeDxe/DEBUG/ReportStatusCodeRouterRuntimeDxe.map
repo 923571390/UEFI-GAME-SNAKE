@@ -1,0 +1,263 @@
+ ReportStatusCodeRouterRuntimeDxe
+
+ Timestamp is 5c23c316 (Thu Dec 27 02:06:14 2018)
+
+ Preferred load address is 0000000000010000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000150H .text                   CODE
+ 0001:00000150 00001a4eH .text$mn                CODE
+ 0002:00000000 00000a44H .rdata                  DATA
+ 0002:00000a44 00000178H .rdata$zzzdbg           DATA
+ 0003:00000000 00000140H .data                   DATA
+ 0003:00000140 00000078H .bss                    DATA
+ 0004:00000000 00000068H .edata                  DATA
+ 0005:00000000 0000018cH .pdata                  DATA
+ 0006:00000000 0000010cH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __volatile_metadata        0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000100       __guard_flags              0000000000000100     <absolute>
+ 0001:00000000       InternalMemCopyMem         0000000000011000     BaseMemoryLibOptDxe:CopyMem.obj
+ 0001:00000080       InternalMemSetMem          0000000000011080     BaseMemoryLibOptDxe:SetMem.obj
+ 0001:000000c0       InternalMemSetMem64        00000000000110c0     BaseMemoryLibOptDxe:SetMem64.obj
+ 0001:000000e0       InternalMemSetMem32        00000000000110e0     BaseMemoryLibOptDxe:SetMem32.obj
+ 0001:000000f0       CpuPause                   00000000000110f0     BaseLib:CpuPause.obj
+ 0001:00000100       AsmCpuid                   0000000000011100     BaseLib:CpuId.obj
+ 0001:00000130       InternalMemZeroMem         0000000000011130     BaseMemoryLibOptDxe:ZeroMem.obj
+ 0001:00000150       _ModuleEntryPoint          0000000000011150 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000198       ProcessLibraryConstructorList 0000000000011198 f   ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0001:00000494       ProcessLibraryDestructorList 0000000000011494 f   ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0001:000005ec       ProcessModuleEntryPointList 00000000000115ec f   ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0001:000006d0       RscHandlerNotification     00000000000116d0 f   ReportStatusCodeRouterRuntimeDxe:ReportStatusCodeRouterRuntimeDxe.obj
+ 0001:00000730       Register                   0000000000011730 f   ReportStatusCodeRouterRuntimeDxe:ReportStatusCodeRouterRuntimeDxe.obj
+ 0001:00000880       Unregister                 0000000000011880 f   ReportStatusCodeRouterRuntimeDxe:ReportStatusCodeRouterRuntimeDxe.obj
+ 0001:0000093c       ReportDispatcher           000000000001193c f   ReportStatusCodeRouterRuntimeDxe:ReportStatusCodeRouterRuntimeDxe.obj
+ 0001:00000b74       VirtualAddressChangeCallBack 0000000000011b74 f   ReportStatusCodeRouterRuntimeDxe:ReportStatusCodeRouterRuntimeDxe.obj
+ 0001:00000c50       InternalBaseLibIsListValid 0000000000011c50 f   BaseLib:LinkedList.obj
+ 0001:00000ce0       InsertTailList             0000000000011ce0 f   BaseLib:LinkedList.obj
+ 0001:00000d40       GetFirstNode               0000000000011d40 f   BaseLib:LinkedList.obj
+ 0001:00000d78       GetNextNode                0000000000011d78 f   BaseLib:LinkedList.obj
+ 0001:00000db4       IsNull                     0000000000011db4 f   BaseLib:LinkedList.obj
+ 0001:00000e00       RemoveEntryList            0000000000011e00 f   BaseLib:LinkedList.obj
+ 0001:00000e68       DebugPrint                 0000000000011e68 f   PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0001:0000103c       DebugAssert                000000000001203c f   PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0001:0000118c       CopyGuid                   000000000001218c f   BaseMemoryLibOptDxe:MemLibGuid.obj
+ 0001:00001210       CompareGuid                0000000000012210 f   BaseMemoryLibOptDxe:MemLibGuid.obj
+ 0001:00001278       CopyMem                    0000000000012278 f   BaseMemoryLibOptDxe:CopyMemWrapper.obj
+ 0001:00001314       AllocatePool               0000000000012314 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000134c       InternalAllocateZeroPool   000000000001234c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001390       InternalReallocatePool     0000000000012390 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000013fc       FreePool                   00000000000123fc f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001440       GetHobList                 0000000000012440 f   DxeHobLib:HobLib.obj
+ 0001:00001520       GetNextHob                 0000000000012520 f   DxeHobLib:HobLib.obj
+ 0001:00001570       GetDebugPrintErrorLevel    0000000000012570 f   DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0001:0000168c       GetDebugMask               000000000001268c f   DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0001:000016a8       SetDebugMask               00000000000126a8 f   DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0001:000016b4       RuntimeLibExitBootServicesEvent 00000000000126b4 f   UefiRuntimeLib:RuntimeLib.obj
+ 0001:000016bc       RuntimeLibVirtualNotifyEvent 00000000000126bc f   UefiRuntimeLib:RuntimeLib.obj
+ 0001:000016d0       InternalReportStatusCode   00000000000126d0 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00001798       ReportStatusCodeEx         0000000000012798 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:0000196c       AsciiStrLen                000000000001296c f   BaseLib:String.obj
+ 0001:000019d8       AsciiStrnLenS              00000000000129d8 f   BaseLib:SafeString.obj
+ 0001:00001a04       AsciiStrnCpyS              0000000000012a04 f   BaseLib:SafeString.obj
+ 0001:00001b00       ReadUnaligned64            0000000000012b00 f   BaseLib:Unaligned.obj
+ 0001:00001b30       ZeroMem                    0000000000012b30 f   BaseMemoryLibOptDxe:ZeroMemWrapper.obj
+ 0002:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 0000000000013000     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000028       ??_C@_0BE@DCHLEIGN@?$CBEFI_ERROR?5?$CIStatus?$CJ@ 0000000000013028     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000040       _gDriverUnloadImageCount   0000000000013040     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0002:00000041       _gPcd_FixedAtBuild_PcdReportStatusCodePropertyMask 0000000000013041     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0002:00000042       _gPcd_FixedAtBuild_PcdDebugPropertyMask 0000000000013042     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0002:00000043       _gPcd_FixedAtBuild_PcdVerifyNodeInList 0000000000013043     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0002:00000044       _gUefiDriverRevision       0000000000013044     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0002:00000048       _gPcd_FixedAtBuild_PcdMaximumLinkedListLength 0000000000013048     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0002:0000004c       _gPcd_FixedAtBuild_PcdDebugPrintErrorLevel 000000000001304c     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0002:00000050       _gPcd_FixedAtBuild_PcdFixedDebugPrintErrorLevel 0000000000013050     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0002:00000054       _gPcd_FixedAtBuild_PcdMaximumAsciiStringLength 0000000000013054     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0002:00000058       gEfiCallerBaseName         0000000000013058     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0002:00000060       mUefiDevicePathLibEndDevicePath 0000000000013060     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000068       ??_C@_0CB@PINBHLDO@ReportStatusCodeRouterRuntimeDx@ 0000000000013068     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0002:00000090       ??_C@_0JB@OMMFNOOD@c?3?2edk2?2Build?2NT32X64?2DEBUG_VS2@ 0000000000013090     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0002:00000128       ??_C@_0BF@NDBIKIKC@CR?5has?5Bad?5Signature@ 0000000000013128     ReportStatusCodeRouterRuntimeDxe:ReportStatusCodeRouterRuntimeDxe.obj
+ 0002:00000140       ??_C@_0GE@KKNDEFPO@c?3?2edk2?2MdeModulePkg?2Universal?2@ 0000000000013140     ReportStatusCodeRouterRuntimeDxe:ReportStatusCodeRouterRuntimeDxe.obj
+ 0002:000001a8       ??_C@_0BO@GLGOPODC@CallbackEntry?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000131a8     ReportStatusCodeRouterRuntimeDxe:ReportStatusCodeRouterRuntimeDxe.obj
+ 0002:000001c8       ??_C@_0BF@NJNGJMPC@List?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000131c8     BaseLib:LinkedList.obj
+ 0002:000001e0       ??_C@_0CM@FDGEGMJJ@c?3?2edk2?2MdePkg?2Library?2BaseLib?2@ 00000000000131e0     BaseLib:LinkedList.obj
+ 0002:00000210       ??_C@_0CC@KDLPLAED@List?9?$DOForwardLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 0000000000013210     BaseLib:LinkedList.obj
+ 0002:00000238       ??_C@_0BP@IJJCCMAK@List?9?$DOBackLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013238     BaseLib:LinkedList.obj
+ 0002:00000258       ??_C@_0CG@LGIALJFK@InternalBaseLibIsListValid?5?$CILis@ 0000000000013258     BaseLib:LinkedList.obj
+ 0002:00000280       ??_C@_0CC@JLDICICM@InternalBaseLibIsListValid?5?$CILis@ 0000000000013280     BaseLib:LinkedList.obj
+ 0002:000002a8       ??_C@_0BF@NMBJJECB@?$CBIsListEmpty?5?$CIEntry?$CJ@ 00000000000132a8     BaseLib:LinkedList.obj
+ 0002:000002c0       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000132c0     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0002:000002e0       ??_C@_0EH@EMGPELNE@c?3?2edk2?2MdeModulePkg?2Library?2Pe@ 00000000000132e0     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0002:00000328       ??_C@_0CI@HIINONDG@?$CICHAR8?5?$CK?$CJBaseListMarker?5?$DM?$DN?5Form@ 0000000000013328     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0002:00000350       ??_C@_01OHGJGJJP@?$FL@     0000000000013350     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0002:00000354       ??_C@_02PBFOLPKM@?$FN?5@   0000000000013354     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0002:00000358       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013358     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0002:00000370       ??_C@_0DG@EEENIGGL@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 0000000000013370     BaseMemoryLibOptDxe:MemLibGuid.obj
+ 0002:000003b0       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 00000000000133b0     BaseMemoryLibOptDxe:CopyMemWrapper.obj
+ 0002:000003f8       ??_C@_0DM@DBGKHDAI@c?3?2edk2?2MdePkg?2Library?2BaseMemo@ 00000000000133f8     BaseMemoryLibOptDxe:CopyMemWrapper.obj
+ 0002:00000438       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000013438     BaseMemoryLibOptDxe:CopyMemWrapper.obj
+ 0002:00000478       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013478     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000004a0       ??_C@_0EL@ODFJBOBF@c?3?2edk2?2MdePkg?2Library?2UefiBoot@ 00000000000134a0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000004f0       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000134f0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000508       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013508     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000520       ??_C@_0EF@NBCCMJKB@c?3?2edk2?2MdePkg?2Library?2UefiMemo@ 0000000000013520     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00000568       ??_C@_0BE@OBDFIHND@gRT?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013568     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000580       ??_C@_0FB@NIMBGODD@c?3?2edk2?2MdePkg?2Library?2UefiRunt@ 0000000000013580     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000005e0       ??_C@_0EP@BCAOHHL@c?3?2edk2?2MdePkg?2Library?2UefiDevi@ 00000000000135e0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000630       ??_C@_0DC@CNNBPJA@mDevicePathLibDevicePathUtiliti@ 0000000000013630     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000668       ??_C@_0CK@GGFNJPAK@c?3?2edk2?2MdePkg?2Library?2DxeHobLi@ 0000000000013668     DxeHobLib:HobLib.obj
+ 0002:00000698       ??_C@_0BJ@OBFMLLDO@mHobList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013698     DxeHobLib:HobLib.obj
+ 0002:000006b8       ??_C@_0BJ@NOLLDKJB@HobStart?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000136b8     DxeHobLib:HobLib.obj
+ 0002:000006d8       ??_C@_1BC@DPOIABCP@?$AAE?$AAF?$AAI?$AAD?$AAe?$AAb?$AAu?$AAg@ 00000000000136d8     DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0002:000006f0       ??_C@_0DD@BGKIIDHG@c?3?2edk2?2MdePkg?2Library?2UefiRunt@ 00000000000136f0     UefiRuntimeLib:RuntimeLib.obj
+ 0002:00000730       ??_C@_0EK@NEAGPEKB@c?3?2edk2?2MdeModulePkg?2Library?2Dx@ 0000000000013730     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000780       ??_C@_0DN@HHIHPHHB@?$CB?$CI?$CIExtendedData?5?$DN?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013780     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:000007c0       ??_C@_0DN@BBBIFINB@?$CB?$CI?$CIExtendedData?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000137c0     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000800       ??_C@_0DI@MIEIGAOH@Status?5code?5extended?5data?5is?5to@ 0000000000013800     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000838       ??_C@_0CI@BEFOLLLE@c?3?2edk2?2MdePkg?2Library?2BaseLib?2@ 0000000000013838     BaseLib:String.obj
+ 0002:00000860       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013860     BaseLib:String.obj
+ 0002:00000878       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 0000000000013878     BaseLib:String.obj
+ 0002:000008b0       ??_C@_0CM@GBAFEFEA@c?3?2edk2?2MdePkg?2Library?2BaseLib?2@ 00000000000138b0     BaseLib:SafeString.obj
+ 0002:000008e0       ??_C@_0BO@ECNIOIHG@?$CIDestination?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 00000000000138e0     BaseLib:SafeString.obj
+ 0002:00000900       ??_C@_0BJ@EAEEJIP@?$CISource?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000013900     BaseLib:SafeString.obj
+ 0002:00000920       ??_C@_0FL@CDANCHFO@InternalSafeStringNoAsciiStrOve@ 0000000000013920     BaseLib:SafeString.obj
+ 0002:00000980       ??_C@_0CL@COEFNOFM@c?3?2edk2?2MdePkg?2Library?2BaseLib?2@ 0000000000013980     BaseLib:Unaligned.obj
+ 0002:000009b0       ??_C@_0DM@IFMIBCMP@c?3?2edk2?2MdePkg?2Library?2BaseMemo@ 00000000000139b0     BaseMemoryLibOptDxe:ZeroMemWrapper.obj
+ 0003:00000000       gEfiLoadedImageProtocolGuid 0000000000014000     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0003:00000010       gEfiStatusCodeSpecificDataGuid 0000000000014010     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0003:00000020       gEfiGlobalVariableGuid     0000000000014020     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0003:00000030       gEfiStatusCodeRuntimeProtocolGuid 0000000000014030     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0003:00000040       gEfiGenericVariableGuid    0000000000014040     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0003:00000050       gEfiDevicePathProtocolGuid 0000000000014050     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0003:00000060       gEfiDevicePathToTextProtocolGuid 0000000000014060     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0003:00000070       gEfiStatusCodeDataTypeDebugGuid 0000000000014070     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0003:00000080       gEfiDevicePathUtilitiesProtocolGuid 0000000000014080     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0003:00000090       gEfiDevicePathFromTextProtocolGuid 0000000000014090     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0003:000000a0       gEfiRscHandlerProtocolGuid 00000000000140a0     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0003:000000b0       gEfiHobListGuid            00000000000140b0     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0003:000000c0       gEfiDebugMaskProtocolGuid  00000000000140c0     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0003:000000d0       gEfiEventExitBootServicesGuid 00000000000140d0     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0003:000000e0       gEfiEventVirtualAddressChangeGuid 00000000000140e0     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0003:000000f0       gEfiCallerIdGuid           00000000000140f0     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0003:00000100       mCallbackListHead          0000000000014100     ReportStatusCodeRouterRuntimeDxe:ReportStatusCodeRouterRuntimeDxe.obj
+ 0003:00000110       mStatusCodeProtocol        0000000000014110     ReportStatusCodeRouterRuntimeDxe:ReportStatusCodeRouterRuntimeDxe.obj
+ 0003:00000118       mRscHandlerProtocol        0000000000014118     ReportStatusCodeRouterRuntimeDxe:ReportStatusCodeRouterRuntimeDxe.obj
+ 0003:00000128       mDebugMaskProtocol         0000000000014128     DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0003:00000140       mStatusCodeNestStatus      0000000000014140     ReportStatusCodeRouterRuntimeDxe:ReportStatusCodeRouterRuntimeDxe.obj
+ 0003:00000144       mDebugPrintErrorLevel      0000000000014144     DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0003:00000148       mHandle                    0000000000014148     ReportStatusCodeRouterRuntimeDxe:ReportStatusCodeRouterRuntimeDxe.obj
+ 0003:00000150       mVirtualAddressChangeEvent 0000000000014150     ReportStatusCodeRouterRuntimeDxe:ReportStatusCodeRouterRuntimeDxe.obj
+ 0003:00000158       gST                        0000000000014158     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000160       gBS                        0000000000014160     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000168       gImageHandle               0000000000014168     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000170       gRT                        0000000000014170     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:00000178       mDevicePathLibDevicePathUtilities 0000000000014178     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0003:00000180       mHobList                   0000000000014180     DxeHobLib:HobLib.obj
+ 0003:00000188       mSystemTable               0000000000014188     DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0003:00000190       mGlobalErrorLevelInitialized 0000000000014190     DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0003:00000191       mEfiAtRuntime              0000000000014191     UefiRuntimeLib:RuntimeLib.obj
+ 0003:00000198       mReportStatusCodeLibStatusCodeProtocol 0000000000014198     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0003:000001a0       mEfiVirtualNotifyEvent     00000000000141a0     <common>
+ 0003:000001a8       mInternalRT                00000000000141a8     <common>
+ 0003:000001b0       mEfiExitBootServicesEvent  00000000000141b0     <common>
+
+ entry point at        0001:00000150
+
+ Static symbols
+
+ 0000:ffff7000       .debug$S                   0000000000010000     ReportStatusCodeRouterRuntimeDxe.exp
+ 0001:0000001a       InternalMemCopyMem.0       000000000001101a     BaseMemoryLibOptDxe:CopyMem.obj
+ 0001:00000032       InternalMemCopyMem.1       0000000000011032     BaseMemoryLibOptDxe:CopyMem.obj
+ 0001:00000045       InternalMemCopyMem.2       0000000000011045     BaseMemoryLibOptDxe:CopyMem.obj
+ 0001:00000062       @CopyBackward              0000000000011062     BaseMemoryLibOptDxe:CopyMem.obj
+ 0001:0000006b       @CopyBytes                 000000000001106b     BaseMemoryLibOptDxe:CopyMem.obj
+ 0001:0000010f       AsmCpuid.0                 000000000001110f     BaseLib:CpuId.obj
+ 0001:00000114       AsmCpuid.1                 0000000000011114     BaseLib:CpuId.obj
+ 0001:0000011b       AsmCpuid.2                 000000000001111b     BaseLib:CpuId.obj
+ 0001:00000124       AsmCpuid.3                 0000000000011124     BaseLib:CpuId.obj
+ 0004:00000000       .edata                     0000000000015000     ReportStatusCodeRouterRuntimeDxe.exp
+ 0004:00000028       rgpv                       0000000000015028     ReportStatusCodeRouterRuntimeDxe.exp
+ 0004:0000002c       rgszName                   000000000001502c     ReportStatusCodeRouterRuntimeDxe.exp
+ 0004:00000030       rgwOrd                     0000000000015030     ReportStatusCodeRouterRuntimeDxe.exp
+ 0004:00000032       szName                     0000000000015032     ReportStatusCodeRouterRuntimeDxe.exp
+ 0004:00000057       $N00001                    0000000000015057     ReportStatusCodeRouterRuntimeDxe.exp
+ 0005:00000000       $pdata$_ModuleEntryPoint   0000000000016000     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:0000000c       $pdata$ProcessLibraryDestructorList 000000000001600c     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0005:00000018       $pdata$ProcessLibraryConstructorList 0000000000016018     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0005:00000024       $pdata$ProcessModuleEntryPointList 0000000000016024     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0005:00000030       $pdata$VirtualAddressChangeCallBack 0000000000016030     ReportStatusCodeRouterRuntimeDxe:ReportStatusCodeRouterRuntimeDxe.obj
+ 0005:0000003c       $pdata$ReportDispatcher    000000000001603c     ReportStatusCodeRouterRuntimeDxe:ReportStatusCodeRouterRuntimeDxe.obj
+ 0005:00000048       $pdata$Unregister          0000000000016048     ReportStatusCodeRouterRuntimeDxe:ReportStatusCodeRouterRuntimeDxe.obj
+ 0005:00000054       $pdata$Register            0000000000016054     ReportStatusCodeRouterRuntimeDxe:ReportStatusCodeRouterRuntimeDxe.obj
+ 0005:00000060       $pdata$RscHandlerNotification 0000000000016060     ReportStatusCodeRouterRuntimeDxe:ReportStatusCodeRouterRuntimeDxe.obj
+ 0005:0000006c       $pdata$InternalBaseLibIsListValid 000000000001606c     BaseLib:LinkedList.obj
+ 0005:00000078       $pdata$InsertTailList      0000000000016078     BaseLib:LinkedList.obj
+ 0005:00000084       $pdata$GetFirstNode        0000000000016084     BaseLib:LinkedList.obj
+ 0005:00000090       $pdata$GetNextNode         0000000000016090     BaseLib:LinkedList.obj
+ 0005:0000009c       $pdata$RemoveEntryList     000000000001609c     BaseLib:LinkedList.obj
+ 0005:000000a8       $pdata$IsNull              00000000000160a8     BaseLib:LinkedList.obj
+ 0005:000000b4       $pdata$DebugPrint          00000000000160b4     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0005:000000c0       $pdata$DebugAssert         00000000000160c0     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0005:000000cc       $pdata$CompareGuid         00000000000160cc     BaseMemoryLibOptDxe:MemLibGuid.obj
+ 0005:000000d8       $pdata$CopyGuid            00000000000160d8     BaseMemoryLibOptDxe:MemLibGuid.obj
+ 0005:000000e4       $pdata$CopyMem             00000000000160e4     BaseMemoryLibOptDxe:CopyMemWrapper.obj
+ 0005:000000f0       $pdata$InternalReallocatePool 00000000000160f0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:000000fc       $pdata$InternalAllocateZeroPool 00000000000160fc     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000108       $pdata$FreePool            0000000000016108     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000114       $pdata$AllocatePool        0000000000016114     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000120       $pdata$GetNextHob          0000000000016120     DxeHobLib:HobLib.obj
+ 0005:0000012c       $pdata$GetHobList          000000000001612c     DxeHobLib:HobLib.obj
+ 0005:00000138       $pdata$GetDebugPrintErrorLevel 0000000000016138     DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0005:00000144       $pdata$InternalReportStatusCode 0000000000016144     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0005:00000150       $pdata$ReportStatusCodeEx  0000000000016150     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0005:0000015c       $pdata$AsciiStrLen         000000000001615c     BaseLib:String.obj
+ 0005:00000168       $pdata$AsciiStrnCpyS       0000000000016168     BaseLib:SafeString.obj
+ 0005:00000174       $pdata$ReadUnaligned64     0000000000016174     BaseLib:Unaligned.obj
+ 0005:00000180       $pdata$ZeroMem             0000000000016180     BaseMemoryLibOptDxe:ZeroMemWrapper.obj
+ 0006:00000000       $unwind$_ModuleEntryPoint  0000000000017000     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0006:00000000       $unwind$AsciiStrnCpyS      0000000000017000     BaseLib:SafeString.obj
+ 0006:00000000       $unwind$VirtualAddressChangeCallBack 0000000000017000     ReportStatusCodeRouterRuntimeDxe:ReportStatusCodeRouterRuntimeDxe.obj
+ 0006:00000000       $unwind$GetHobList         0000000000017000     DxeHobLib:HobLib.obj
+ 0006:00000000       $unwind$Unregister         0000000000017000     ReportStatusCodeRouterRuntimeDxe:ReportStatusCodeRouterRuntimeDxe.obj
+ 0006:00000000       $unwind$CopyGuid           0000000000017000     BaseMemoryLibOptDxe:MemLibGuid.obj
+ 0006:00000010       $unwind$ProcessLibraryConstructorList 0000000000017010     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0006:00000028       $unwind$ProcessLibraryDestructorList 0000000000017028     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0006:0000003c       $unwind$GetDebugPrintErrorLevel 000000000001703c     DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0006:0000003c       $unwind$ProcessModuleEntryPointList 000000000001703c     ReportStatusCodeRouterRuntimeDxe:AutoGen.obj
+ 0006:00000044       $unwind$RscHandlerNotification 0000000000017044     ReportStatusCodeRouterRuntimeDxe:ReportStatusCodeRouterRuntimeDxe.obj
+ 0006:00000050       $unwind$Register           0000000000017050     ReportStatusCodeRouterRuntimeDxe:ReportStatusCodeRouterRuntimeDxe.obj
+ 0006:00000060       $unwind$ReportDispatcher   0000000000017060     ReportStatusCodeRouterRuntimeDxe:ReportStatusCodeRouterRuntimeDxe.obj
+ 0006:00000078       $unwind$InsertTailList     0000000000017078     BaseLib:LinkedList.obj
+ 0006:00000078       $unwind$AsciiStrLen        0000000000017078     BaseLib:String.obj
+ 0006:00000078       $unwind$ZeroMem            0000000000017078     BaseMemoryLibOptDxe:ZeroMemWrapper.obj
+ 0006:00000078       $unwind$IsNull             0000000000017078     BaseLib:LinkedList.obj
+ 0006:00000078       $unwind$InternalBaseLibIsListValid 0000000000017078     BaseLib:LinkedList.obj
+ 0006:00000084       $unwind$FreePool           0000000000017084     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0006:00000084       $unwind$GetFirstNode       0000000000017084     BaseLib:LinkedList.obj
+ 0006:0000008c       $unwind$InternalAllocateZeroPool 000000000001708c     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0006:0000008c       $unwind$GetNextNode        000000000001708c     BaseLib:LinkedList.obj
+ 0006:0000008c       $unwind$GetNextHob         000000000001708c     DxeHobLib:HobLib.obj
+ 0006:0000008c       $unwind$RemoveEntryList    000000000001708c     BaseLib:LinkedList.obj
+ 0006:0000008c       $unwind$ReadUnaligned64    000000000001708c     BaseLib:Unaligned.obj
+ 0006:00000094       $unwind$DebugPrint         0000000000017094     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0006:000000a4       $unwind$DebugAssert        00000000000170a4     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0006:000000c0       $unwind$InternalReallocatePool 00000000000170c0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0006:000000c0       $unwind$CopyMem            00000000000170c0     BaseMemoryLibOptDxe:CopyMemWrapper.obj
+ 0006:000000c0       $unwind$CompareGuid        00000000000170c0     BaseMemoryLibOptDxe:MemLibGuid.obj
+ 0006:000000d4       $unwind$AllocatePool       00000000000170d4     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0006:000000dc       $unwind$InternalReportStatusCode 00000000000170dc     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0006:000000f4       $unwind$ReportStatusCodeEx 00000000000170f4     DxeReportStatusCodeLib:ReportStatusCodeLib.obj

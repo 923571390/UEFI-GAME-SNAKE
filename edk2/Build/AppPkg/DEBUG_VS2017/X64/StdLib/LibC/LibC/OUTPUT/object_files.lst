@@ -1,0 +1,15 @@
+c:/edk2/Build/AppPkg/DEBUG_VS2017/X64/StdLib/LibC/LibC/OUTPUT/Main/errno.obj
+c:/edk2/Build/AppPkg/DEBUG_VS2017/X64/StdLib/LibC/LibC/OUTPUT/Main/assert.obj
+c:/edk2/Build/AppPkg/DEBUG_VS2017/X64/StdLib/LibC/LibC/OUTPUT/Main/isinfd_ieee754.obj
+c:/edk2/Build/AppPkg/DEBUG_VS2017/X64/StdLib/LibC/LibC/OUTPUT/Main/isinff_ieee754.obj
+c:/edk2/Build/AppPkg/DEBUG_VS2017/X64/StdLib/LibC/LibC/OUTPUT/Main/isnand_ieee754.obj
+c:/edk2/Build/AppPkg/DEBUG_VS2017/X64/StdLib/LibC/LibC/OUTPUT/Main/isnanf_ieee754.obj
+c:/edk2/Build/AppPkg/DEBUG_VS2017/X64/StdLib/LibC/LibC/OUTPUT/Main/infinityf_ieee754.obj
+c:/edk2/Build/AppPkg/DEBUG_VS2017/X64/StdLib/LibC/LibC/OUTPUT/Main/Main.obj
+c:/edk2/Build/AppPkg/DEBUG_VS2017/X64/StdLib/LibC/LibC/OUTPUT/Main/HtoNtoH.obj
+c:/edk2/Build/AppPkg/DEBUG_VS2017/X64/StdLib/LibC/LibC/OUTPUT/Main/ByteSwap.obj
+c:/edk2/Build/AppPkg/DEBUG_VS2017/X64/StdLib/LibC/LibC/OUTPUT/Main/longjmp.obj
+c:/edk2/Build/AppPkg/DEBUG_VS2017/X64/StdLib/LibC/LibC/OUTPUT/Main/x86flt_rounds.obj
+c:/edk2/Build/AppPkg/DEBUG_VS2017/X64/StdLib/LibC/LibC/OUTPUT/Main/X64/fpu_rmode.obj
+c:/edk2/Build/AppPkg/DEBUG_VS2017/X64/StdLib/LibC/LibC/OUTPUT/Main/X64/isinfl.obj
+c:/edk2/Build/AppPkg/DEBUG_VS2017/X64/StdLib/LibC/LibC/OUTPUT/Main/X64/isnanl.obj

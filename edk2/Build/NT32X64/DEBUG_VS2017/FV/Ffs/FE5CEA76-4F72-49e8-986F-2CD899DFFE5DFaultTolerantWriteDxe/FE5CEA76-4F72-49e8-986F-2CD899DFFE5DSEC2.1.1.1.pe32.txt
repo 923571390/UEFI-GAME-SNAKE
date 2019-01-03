@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o c:\edk2\Build\NT32X64\DEBUG_VS2017\FV\Ffs\FE5CEA76-4F72-49e8-986F-2CD899DFFE5DFaultTolerantWriteDxe\FE5CEA76-4F72-49e8-986F-2CD899DFFE5DSEC2.1.1.1.pe32 c:\edk2\Build\NT32X64\DEBUG_VS2017\X64\MdeModulePkg\Universal\FaultTolerantWriteDxe\FaultTolerantWriteDxe\OUTPUT\FaultTolerantWriteDxe.efi

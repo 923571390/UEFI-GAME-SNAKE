@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\X64",
+    "\\X64\\MdeModulePkg",
+    "\\X64\\MdeModulePkg\\Library",
+    "\\X64\\MdeModulePkg\\Library\\BootLogoLib",
+    "\\X64\\MdeModulePkg\\Library\\BootLogoLib\\BootLogoLib",
+    "\\X64\\MdeModulePkg\\Library\\BootLogoLib\\BootLogoLib\\OUTPUT",
+    "\\X64\\MdeModulePkg\\Logo",
+    "\\X64\\MdeModulePkg\\Logo\\LogoDxe",
+    "\\X64\\MdeModulePkg\\Logo\\LogoDxe\\DEBUG",
+    "\\X64\\MdeModulePkg\\Logo\\LogoDxe\\OUTPUT"
+  ],
+  "SelectedNode": "\\X64\\MdeModulePkg",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,8 @@
+c:\edk2\MdePkg\Include\IndustryStandard\PeImage.h
+c:\edk2\MdePkg\Include\Base.h
+c:\edk2\MdePkg\Include\Library\PeCoffGetEntryPointLib.h
+c:\edk2\MdePkg\Library\BasePeCoffGetEntryPointLib\PeCoffGetEntryPoint.c
+c:\edk2\MdePkg\Library\BasePeCoffGetEntryPointLib\BasePeCoffGetEntryPointLib.inf
+c:\edk2\Build\NT32X64\DEBUG_VS2017\X64\MdePkg\Library\BasePeCoffGetEntryPointLib\BasePeCoffGetEntryPointLib\DEBUG\AutoGen.h
+c:\edk2\MdePkg\Include\X64\ProcessorBind.h
+c:\edk2\MdePkg\Include\Library\DebugLib.h

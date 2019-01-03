@@ -1,0 +1,126 @@
+;------------------------------------------------------------------------------
+;
+; Copyright (c) 2006 - 2012, Intel Corporation. All rights reserved.<BR>
+; Copyright (c) 2017, AMD Incorporated. All rights reserved.<BR>
+;
+; This program and the accompanying materials are licensed and made available
+; under the terms and conditions of the BSD License which accompanies this
+; distribution.  The full text of the license may be found at
+; http:
+;
+; THE PROGRAM IS DISTRIBUTED UNDER THE BSD LICENSE ON AN "AS IS" BASIS,
+; WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.
+;
+;------------------------------------------------------------------------------
+
+    DEFAULT REL
+    SECTION .text
+
+;------------------------------------------------------------------------------
+;  void
+;  __cdecl
+;  IoReadFifo8 (
+;      UINTN                 Port,              
+;      UINTN                 Size,              
+;     void                  *Buffer            
+;    );
+;------------------------------------------------------------------------------
+global IoReadFifo8
+IoReadFifo8:
+    cld
+    xchg    rcx, rdx
+    xchg    rdi, r8             ; rdi: buffer address; r8: save rdi
+rep insb
+    mov     rdi, r8             ; restore rdi
+    ret
+
+;------------------------------------------------------------------------------
+;  void
+;  __cdecl
+;  IoReadFifo16 (
+;      UINTN                 Port,              
+;      UINTN                 Size,              
+;     void                  *Buffer            
+;    );
+;------------------------------------------------------------------------------
+global IoReadFifo16
+IoReadFifo16:
+    cld
+    xchg    rcx, rdx
+    xchg    rdi, r8             ; rdi: buffer address; r8: save rdi
+rep insw
+    mov     rdi, r8             ; restore rdi
+    ret
+
+;------------------------------------------------------------------------------
+;  void
+;  __cdecl
+;  IoReadFifo32 (
+;      UINTN                 Port,              
+;      UINTN                 Size,              
+;     void                  *Buffer            
+;    );
+;------------------------------------------------------------------------------
+global IoReadFifo32
+IoReadFifo32:
+    cld
+    xchg    rcx, rdx
+    xchg    rdi, r8             ; rdi: buffer address; r8: save rdi
+rep insd
+    mov     rdi, r8             ; restore rdi
+    ret
+
+;------------------------------------------------------------------------------
+;  void
+;  __cdecl
+;  IoWriteFifo8 (
+;     UINTN                  Port,              
+;     UINTN                  Size,              
+;     void                   *Buffer            
+;    );
+;------------------------------------------------------------------------------
+global IoWriteFifo8
+IoWriteFifo8:
+    cld
+    xchg    rcx, rdx
+    xchg    rsi, r8             ; rsi: buffer address; r8: save rsi
+rep outsb
+    mov     rsi, r8             ; restore rsi
+    ret
+
+;------------------------------------------------------------------------------
+;  void
+;  __cdecl
+;  IoWriteFifo16 (
+;     UINTN                  Port,              
+;     UINTN                  Size,              
+;     void                   *Buffer            
+;    );
+;------------------------------------------------------------------------------
+global IoWriteFifo16
+IoWriteFifo16:
+    cld
+    xchg    rcx, rdx
+    xchg    rsi, r8             ; rsi: buffer address; r8: save rsi
+rep outsw
+    mov     rsi, r8             ; restore rsi
+    ret
+
+;------------------------------------------------------------------------------
+;  void
+;  __cdecl
+;  IoWriteFifo32 (
+;     UINTN                  Port,              
+;     UINTN                  Size,              
+;     void                   *Buffer            
+;    );
+;------------------------------------------------------------------------------
+global IoWriteFifo32
+IoWriteFifo32:
+    cld
+    xchg    rcx, rdx
+    xchg    rsi, r8             ; rsi: buffer address; r8: save rsi
+rep outsd
+    mov     rsi, r8             ; restore rsi
+    ret
+

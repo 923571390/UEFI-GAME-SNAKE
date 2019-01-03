@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o c:\edk2\Build\NT32X64\DEBUG_VS2017\FV\Ffs\22ea234f-e72a-11e4-91f9-28d2447c4829HttpUtilitiesDxe\22ea234f-e72a-11e4-91f9-28d2447c4829SEC2.1.1.1.pe32 c:\edk2\Build\NT32X64\DEBUG_VS2017\X64\NetworkPkg\HttpUtilitiesDxe\HttpUtilitiesDxe\OUTPUT\HttpUtilitiesDxe.efi

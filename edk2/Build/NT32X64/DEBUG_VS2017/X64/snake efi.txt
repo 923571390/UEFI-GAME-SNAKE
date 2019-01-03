@@ -1,0 +1,336 @@
+
+#include "efi.h"
+#include "efilib.h"
+#include "she.h"
+
+#include <atk_libc.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "Bmp.h"
+#include "Hii.h"
+#include "ConsoleControl.h"
+#include "GraphicsOutput.h"
+#define Out ST->ConOut
+#define In  ST->ConIn
+#define SCAN_CODE_UP    0x01
+#define SCAN_CODE_DOWN  0x02
+#define SCAN_CODE_RIGHT 0x03
+#define SCAN_CODE_LEFT  0x04
+#define SCAN_CODE_ESC   0x17
+#define N 200
+
+EFI_GUID gEfiConsoleControlProtocolGuid = EFI_CONSOLE_CONTROL_PROTOCOL_GUID;
+EFI_GUID gEfiGraphicsOutputProtocolGuid = EFI_GRAPHICS_OUTPUT_PROTOCOL_GUID;
+EFI_GUID gEfiHiiProtocolGuid = EFI_HII_PROTOCOL_GUID;
+EFI_GUID gEfiUgaDrawProtocolGuid = EFI_UGA_DRAW_PROTOCOL_GUID;
+
+EFI_CONSOLE_CONTROL_PROTOCOL  *ConsoleControl;
+EFI_GRAPHICS_OUTPUT_PROTOCOL  *GraphicsOutput;
+EFI_GRAPHICS_OUTPUT_BLT_PIXEL Color;
+EFI_HII_PROTOCOL              *mHii;
+EFI_UGA_DRAW_PROTOCOL         *UgaDraw;
+
+EFI_SYSTEM_TABLE          *gST;
+EFI_BOOT_SERVICES         *gBS;
+EFI_RUNTIME_SERVICES      *gRT;
+
+static BOOLEAN egHasGraphics = TRUE;
+static UINTN egScreenWidth  = 800;
+static UINTN egScreenHeight = 600;
+
+#define _Clrscr(); ST->ConOut->ClearScreen(ST->ConOut);
+
+static EFI_UGA_PIXEL        EfiColors[16] = {
+  0x00, 0x00, 0x00, 0x00,  // BLACK
+  0x98, 0x00, 0x00, 0x00,  // BLUE
+  0x00, 0x98, 0x00, 0x00,  // GREEN
+  0x98, 0x98, 0x00, 0x00,  // CYAN
+  0x00, 0x00, 0x98, 0x00,  // RED
+  0x98, 0x00, 0x98, 0x00,  // MAGENTA
+  0x00, 0x98, 0x98, 0x00,  // BROWN
+  0x98, 0x98, 0x98, 0x00,  // LIGHTGRAY
+  0x30, 0x30, 0x30, 0x00,  // DARKGRAY - BRIGHT BLACK
+  0xff, 0x00, 0x00, 0x00,  // LIGHTBLUE - ?
+  0x00, 0xff, 0x00, 0x00,  // LIGHTGREEN - ?
+  0xff, 0xff, 0x00, 0x00,  // LIGHTCYAN
+  0x00, 0x00, 0xff, 0x00,  // LIGHTRED
+  0xff, 0x00, 0xff, 0x00,  // LIGHTMAGENTA
+  0x00, 0xff, 0xff, 0x00,  // LIGHTBROWN
+  0xff, 0xff, 0xff, 0x00,  // WHITE
+};
+
+UINTN Node;
+EFI_INPUT_KEY Key;
+UINTN Score=0;
+UINT8 Barrier=1;
+UINTN Gamespeed=100000;
+
+struct Food
+{
+INTN x;
+INTN  y;
+UINTN  yes;
+}food;
+
+struct Snake
+{
+INTN x[N];
+INTN y[N];
+UINTN node;
+UINTN direction;
+UINTN life;
+}snake;
+  
+VOID 
+DrawData(
+IN UINT8  *ImageBuffer,
+IN UINTN  Col,
+IN UINTN  Row
+);
+
+VOID
+DrawWord(
+IN CHAR16 *Value,
+IN UINT16 X,
+IN UINT16 Y,
+IN UINT16 Background,
+IN UINT16 WordCount
+);
+
+UINT8
+Rand(
+IN EFI_HANDLE ImageHandle,
+IN EFI_SYSTEM_TABLE *SystemTable
+);
+
+EFI_STATUS
+Init(
+IN EFI_HANDLE ImageHandle,
+IN EFI_SYSTEM_TABLE *SystemTable
+);
+
+EFI_STATUS
+DrawK(
+IN EFI_HANDLE ImageHandle,
+IN EFI_SYSTEM_TABLE *SystemTable
+);
+
+VOID
+PrintScore(
+IN EFI_HANDLE ImageHandle,
+IN EFI_SYSTEM_TABLE *SystemTable)
+{   
+        CHAR16 Str1[50];
+        UINT8  Count1;
+        ValueToString(Str1,0,Score);
+        Count1=(UINT8)StrLen(Str1);
+        DrawWord(ImageHandle,SystemTable,Str1,160,65,3,Count1);
+        return;
+}
+
+VOID
+GameOver(VOID);
+
+EFI_STATUS
+GamePlay(
+IN EFI_HANDLE ImageHandle,
+IN EFI_SYSTEM_TABLE *SystemTable
+);
+
+Main(
+IN EFI_HANDLE ImageHandle,
+IN EFI_SYSTEM_TABLE *SystemTable
+)
+{
+    EFI_STATUS Status;
+    EFI_GRAPHICS_OUTPUT_BLT_PIXEL ForeGround;
+    EFI_GRAPHICS_OUTPUT_BLT_PIXEL BackGround;        
+        
+        UINT8  Count,Countsize;
+        UINTN  i,j,k;
+        CHAR16 *Str=L"Start Load";
+        CHAR16 *Str2=L"JJDD";
+        Count=11;
+        
+//---        if(Barrier==1)
+//---        {
+          Init(ImageHandle,SystemTable);          
+          ConsoleControl->SetMode (ConsoleControl, EfiConsoleControlScreenGraphics);
+
+//               UgaDraw->Blt(UgaDraw,&EfiColors[0],EfiUgaVideoFill,0,0,0,0,800,600,0);
+// 
+      if (GraphicsOutput != NULL) {
+        Status = GraphicsOutput->Blt(GraphicsOutput,&EfiColors[0],EfiBltVideoFill,0,0,0,0,800,600,0);
+      } 
+          else {
+        Status = UgaDraw->Blt(UgaDraw,&EfiColors[0],EfiUgaVideoFill,0,0,0,0,800,600,0);
+      }
+        
+      DrawData(sheData,350,250);
+      getchar();  
+//-      DrawWord(Str,340,520,0,Count);
+//-          getchar();
+
+          k=0;
+          for(j=0;j<14;j++)
+          {
+            for(i=0;i<6;i++)
+            {
+//-         UgaDraw->Blt(UgaDraw,&EfiColors[15], EfiUgaVideoFill,0,0,k,565,8,16,0);
+// I use Red color 
+          Color.Green=0;
+          Color.Blue=0;
+          Color.Red=255;
+
+          if (GraphicsOutput != NULL) {
+            Status = GraphicsOutput->Blt(GraphicsOutput,&EfiColors[6],EfiBltVideoFill,0,0,k,565,8,16,0);
+          } 
+                  else {
+            Status = UgaDraw->Blt(UgaDraw,&EfiColors[6],EfiUgaVideoFill,0,0,k,565,8,16,0);
+          }
+              k=k+9;
+              BS->Stall(500000);
+            }
+          }
+          getchar();          
+//---        }
+//-        DrawK(ImageHandle,SystemTable);
+/*        
+        if(Barrier==1)
+      Str2=L"The First Barrier" ;
+        else if(Barrier==2)
+          Str2=L"The Second Barrier" ;
+        else if(Barrier==3)
+          Str2=L"The Third Barrier" ;
+    Countsize=(UINT8)StrLen(Str2);
+*/
+//-        DrawWord(ImageHandle,SystemTable,Str2,300,45,3,Countsize);
+//-        GamePlay(ImageHandle,SystemTable);
+    getchar();
+        ConsoleControl->SetMode(ConsoleControl, EfiConsoleControlScreenText);
+        return EFI_SUCCESS;
+}
+
+EFI_STATUS
+Init(
+IN EFI_HANDLE ImageHandle,
+IN EFI_SYSTEM_TABLE *SystemTable
+)
+{
+    EFI_HANDLE  Handle;
+    UINTN       Size;
+        EFI_STATUS Status;
+        EFI_HANDLE *HandleBuffer; 
+        EFI_HANDLE *UgaHandle;
+        EFI_GUID   gConsoleControlProtocolGuid = EFI_CONSOLE_CONTROL_PROTOCOL_GUID;
+        UINTN      NoHandle; 
+        UINTN      UgaDrawProtocolCount;
+
+    gST = SystemTable;
+    gBS = gST->BootServices;
+    gRT = gST->RuntimeServices;                
+        
+    InitializeLib(ImageHandle,SystemTable);
+        InitializeLibC(ImageHandle, SystemTable);
+
+    _Clrscr();        
+
+        Status = gBS->LocateProtocol(&gConsoleControlProtocolGuid,NULL,(VOID **)&ConsoleControl); 
+        if(EFI_ERROR(Status)) 
+        {
+          Print(L"Error on gBS->LocateProtocol of ConsoleControl\n");
+        }
+        
+    Status = gBS->HandleProtocol(gST->ConsoleOutHandle,&gEfiGraphicsOutputProtocolGuid,(VOID **) &GraphicsOutput);                                         
+    if (EFI_ERROR (Status)) {
+          Print(L"Error on gBS->HandleProtocol of GraphicsOutput\n"); 
+      GraphicsOutput = NULL;
+      Status = gBS->HandleProtocol(gST->ConsoleOutHandle,&gEfiUgaDrawProtocolGuid,&UgaDraw);
+      if (EFI_ERROR (Status)) {
+        Print(L"Error on gBS->HandleProtocol of UgaDraw\n"); 
+        return EFI_UNSUPPORTED;
+      }
+    }                
+        
+        Status = gBS->LocateHandleBuffer(ByProtocol,&UgaDrawProtocol,NULL,&NoHandle,&HandleBuffer); 
+        if(EFI_ERROR(Status)) 
+        {
+      Print(L"Error on gBS->LocateHandleBuffer of UgaDrawProtocol\n");
+        }
+        
+        gBS->FreePool(HandleBuffer); 
+        Status = gBS->HandleProtocol(&UgaHandle,&gEfiUgaDrawProtocolGuid,(VOID **)&UgaDraw); 
+        if(EFI_ERROR(Status)) 
+        {
+          Print(L"Error on gBS->HandleProtocol of UgaDraw\n");
+        }
+        
+        Status = LibLocateHandle(ByProtocol,&gEfiUgaDrawProtocolGuid,NULL,&UgaDrawProtocolCount,&UgaHandle);
+        if(EFI_ERROR(Status))
+        {
+          Print(L"Error on LibLocateHandle of UgaHandle\n");
+        }
+
+    Status = gBS->LocateHandle(ByProtocol,&gEfiHiiProtocolGuid,NULL,&Size,&Handle);
+        if(EFI_ERROR(Status))
+        {
+          Print(L"Error on gBS->LocateHandle of gEfiHiiProtocolGuid Handle\n");
+        }
+
+    Status = gBS->HandleProtocol(Handle,&gEfiHiiProtocolGuid,&mHii);        
+    if(EFI_ERROR(Status))
+        {
+          Print(L"Error on gBS->HandleProtocol of gEfiHiiProtocolGuid EfiHiiProtocol mHii\n");
+        }        
+        
+    getchar();
+        
+        return EFI_SUCCESS;
+
+/*  
+    EFI_HANDLE  Handle;
+    UINTN       Size;
+    EFI_STATUS  Status;     
+    UINTN       UgaDrawProtocolCount;
+    EFI_HANDLE  *UgaDrawHandles;
+
+    ConsoleControl = NULL;
+        InitializeLib(ImageHandle,SystemTable);
+        InitializeLibC(ImageHandle,SystemTable);
+        Size = sizeof (EFI_HANDLE);
+                
+    Status = BS->HandleProtocol(ST->ConsoleOutHandle,&gEfiGraphicsOutputProtocolGuid,(VOID **) &GraphicsOutput);                                         
+    if (EFI_ERROR (Status)) {
+      GraphicsOutput = NULL;
+      Status = BS->HandleProtocol(ST->ConsoleOutHandle,&gEfiUgaDrawProtocolGuid,&UgaDraw);
+      if (EFI_ERROR (Status)) {
+        Print(L"error"); 
+        return EFI_UNSUPPORTED;
+      }
+    }                        
+        
+    Status = BS->LocateHandle(ByProtocol,&gEfiHiiProtocolGuid,NULL,&Size,&Handle);
+    if (EFI_ERROR (Status)) {
+      return Status;
+    }
+
+    Status = BS->HandleProtocol(Handle,&gEfiHiiProtocolGuid,&mHii);        
+    Status = BS->LocateProtocol(&gEfiConsoleControlProtocolGuid,NULL,(VOID **)&ConsoleControl);
+    if(EFI_ERROR(Status))
+        {
+          Print(L"error");
+        }
+        Status = LibLocateHandle(ByProtocol,&gEfiUgaDrawProtocolGuid,NULL,&UgaDrawProtocolCount,&UgaDrawHandles);
+        if(EFI_ERROR(Status))
+        {
+          Print(L"error");
+        }
+    Status = BS->HandleProtocol(UgaDrawHandles[0],&gEfiUgaDrawProtocolGuid,&UgaDraw);
+    if(EFI_ERROR(Status))
+        {
+          Print(L"error");
+        }        
+    return EFI_SUCCESS;
+*/        
+}

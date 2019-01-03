@@ -1,0 +1,318 @@
+ ConPlatformDxe
+
+ Timestamp is 5c23c340 (Thu Dec 27 02:06:56 2018)
+
+ Preferred load address is 0000000000010000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000130H .text                   CODE
+ 0001:00000130 000022bbH .text$mn                CODE
+ 0002:00000000 00000c04H .rdata                  DATA
+ 0002:00000c04 0000014cH .rdata$zzzdbg           DATA
+ 0003:00000000 00000318H .data                   DATA
+ 0003:00000318 00000078H .bss                    DATA
+ 0004:00000000 00000056H .edata                  DATA
+ 0005:00000000 000001e0H .pdata                  DATA
+ 0006:00000000 00000190H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __volatile_metadata        0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000100       __guard_flags              0000000000000100     <absolute>
+ 0001:00000000       InternalMemCompareMem      0000000000011000     BaseMemoryLibOptDxe:CompareMem.obj
+ 0001:00000020       InternalMemCopyMem         0000000000011020     BaseMemoryLibOptDxe:CopyMem.obj
+ 0001:000000a0       InternalMemSetMem          00000000000110a0     BaseMemoryLibOptDxe:SetMem.obj
+ 0001:000000e0       InternalMemSetMem64        00000000000110e0     BaseMemoryLibOptDxe:SetMem64.obj
+ 0001:00000100       InternalMemSetMem32        0000000000011100     BaseMemoryLibOptDxe:SetMem32.obj
+ 0001:00000110       InternalMemZeroMem         0000000000011110     BaseMemoryLibOptDxe:ZeroMem.obj
+ 0001:00000130       _ModuleEntryPoint          0000000000011130 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000001d8       ProcessLibraryConstructorList 00000000000111d8 f   ConPlatformDxe:AutoGen.obj
+ 0001:00000530       ConPlatformTextInDriverBindingSupported 0000000000011530 f   ConPlatformDxe:ConPlatform.obj
+ 0001:0000053c       ConPlatformTextOutDriverBindingSupported 000000000001153c f   ConPlatformDxe:ConPlatform.obj
+ 0001:00000548       ConPlatformDriverBindingSupported 0000000000011548 f   ConPlatformDxe:ConPlatform.obj
+ 0001:000005ec       ConPlatformTextInDriverBindingStart 00000000000115ec f   ConPlatformDxe:ConPlatform.obj
+ 0001:0000073c       ConPlatformTextOutDriverBindingStart 000000000001173c f   ConPlatformDxe:ConPlatform.obj
+ 0001:00000990       ConPlatformTextInDriverBindingStop 0000000000011990 f   ConPlatformDxe:ConPlatform.obj
+ 0001:00000a28       ConPlatformTextOutDriverBindingStop 0000000000011a28 f   ConPlatformDxe:ConPlatform.obj
+ 0001:00000ae8       ConPlatformUnInstallProtocol 0000000000011ae8 f   ConPlatformDxe:ConPlatform.obj
+ 0001:00000b48       IsGopSibling               0000000000011b48 f   ConPlatformDxe:ConPlatform.obj
+ 0001:00000ca4       ConPlatformMatchDevicePaths 0000000000011ca4 f   ConPlatformDxe:ConPlatform.obj
+ 0001:00000dac       ConPlatformUpdateDeviceVariable 0000000000011dac f   ConPlatformDxe:ConPlatform.obj
+ 0001:00000f10       IsHotPlugDevice            0000000000011f10 f   ConPlatformDxe:ConPlatform.obj
+ 0001:00000f88       ConPlatformComponentNameGetDriverName 0000000000011f88 f   ConPlatformDxe:ComponentName.obj
+ 0001:000010f8       ConPlatformComponentNameGetControllerName 00000000000120f8 f   ConPlatformDxe:ComponentName.obj
+ 0001:00001104       DebugPrint                 0000000000012104 f   PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0001:000012d8       DebugAssert                00000000000122d8 f   PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0001:00001428       CompareMem                 0000000000012428 f   BaseMemoryLibOptDxe:CompareMemWrapper.obj
+ 0001:00001500       CopyMem                    0000000000012500 f   BaseMemoryLibOptDxe:CopyMemWrapper.obj
+ 0001:0000159c       InternalAllocatePool       000000000001259c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000015cc       FreePool                   00000000000125cc f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001610       DevicePathType             0000000000012610 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:00001640       DevicePathSubType          0000000000012640 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:00001670       DevicePathNodeLength       0000000000012670 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:000016bc       NextDevicePathNode         00000000000126bc f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:000016f4       IsDevicePathEndType        00000000000126f4 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:00001730       IsDevicePathEnd            0000000000012730 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:00001784       CompareIso639LanguageCode  0000000000012784 f   UefiLib:UefiLib.obj
+ 0001:000017ec       EfiGetSystemConfigurationTable 00000000000127ec f   UefiLib:UefiLib.obj
+ 0001:000018b0       EfiLibInstallDriverBindingComponentName2 00000000000128b0 f   UefiLib:UefiDriverModel.obj
+ 0001:00001980       GetHobList                 0000000000012980 f   DxeHobLib:HobLib.obj
+ 0001:00001a04       GetNextHob                 0000000000012a04 f   DxeHobLib:HobLib.obj
+ 0001:00001a54       GetDebugPrintErrorLevel    0000000000012a54 f   DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0001:00001b70       GetDebugMask               0000000000012b70 f   DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0001:00001b8c       SetDebugMask               0000000000012b8c f   DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0001:00001b98       EfiBootManagerGetGopDevicePath 0000000000012b98 f   UefiBootManagerLib:BmConsole.obj
+ 0001:00001dd4       InternalReportStatusCode   0000000000012dd4 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00001e9c       ReportStatusCodeEx         0000000000012e9c f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00002070       AsciiStrLen                0000000000013070 f   BaseLib:String.obj
+ 0001:000020dc       AsciiStrnCmp               00000000000130dc f   BaseLib:String.obj
+ 0001:000021a8       AsciiStrnLenS              00000000000131a8 f   BaseLib:SafeString.obj
+ 0001:000021d4       AsciiStrnCpyS              00000000000131d4 f   BaseLib:SafeString.obj
+ 0001:000022d0       ReadUnaligned64            00000000000132d0 f   BaseLib:Unaligned.obj
+ 0001:00002300       CopyGuid                   0000000000013300 f   BaseMemoryLibOptDxe:MemLibGuid.obj
+ 0001:00002384       CompareGuid                0000000000013384 f   BaseMemoryLibOptDxe:MemLibGuid.obj
+ 0002:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 0000000000014000     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000028       ??_C@_0BE@DCHLEIGN@?$CBEFI_ERROR?5?$CIStatus?$CJ@ 0000000000014028     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000040       _gDriverUnloadImageCount   0000000000014040     ConPlatformDxe:AutoGen.obj
+ 0002:00000041       _gPcd_FixedAtBuild_PcdReportStatusCodePropertyMask 0000000000014041     ConPlatformDxe:AutoGen.obj
+ 0002:00000042       _gPcd_FixedAtBuild_PcdComponentNameDisable 0000000000014042     ConPlatformDxe:AutoGen.obj
+ 0002:00000043       _gPcd_FixedAtBuild_PcdDebugPropertyMask 0000000000014043     ConPlatformDxe:AutoGen.obj
+ 0002:00000044       _gUefiDriverRevision       0000000000014044     ConPlatformDxe:AutoGen.obj
+ 0002:00000048       _gPcd_FixedAtBuild_PcdDebugPrintErrorLevel 0000000000014048     ConPlatformDxe:AutoGen.obj
+ 0002:0000004c       _gPcd_FixedAtBuild_PcdFixedDebugPrintErrorLevel 000000000001404c     ConPlatformDxe:AutoGen.obj
+ 0002:00000050       gEfiCallerBaseName         0000000000014050     ConPlatformDxe:AutoGen.obj
+ 0002:00000058       _gPcd_FixedAtBuild_PcdMaximumAsciiStringLength 0000000000014058     ConPlatformDxe:AutoGen.obj
+ 0002:0000005c       _gPcd_FixedAtBuild_PcdComponentName2Disable 000000000001405c     ConPlatformDxe:AutoGen.obj
+ 0002:00000060       mUefiDevicePathLibEndDevicePath 0000000000014060     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000068       ??_C@_0P@DCAFEACP@ConPlatformDxe@ 0000000000014068     ConPlatformDxe:AutoGen.obj
+ 0002:00000080       ??_C@_0HE@ECIANNPH@c?3?2edk2?2Build?2NT32X64?2DEBUG_VS2@ 0000000000014080     ConPlatformDxe:AutoGen.obj
+ 0002:00000100       ??_C@_0EE@LBFOBAIO@c?3?2edk2?2MdeModulePkg?2Universal?2@ 0000000000014100     ConPlatformDxe:ConPlatform.obj
+ 0002:00000148       ??_C@_1M@NFPEGKHA@?$AAC?$AAo?$AAn?$AAI?$AAn@ 0000000000014148     ConPlatformDxe:ConPlatform.obj
+ 0002:00000158       ??_C@_1BC@OBFMLJLI@?$AAC?$AAo?$AAn?$AAI?$AAn?$AAD?$AAe?$AAv@ 0000000000014158     ConPlatformDxe:ConPlatform.obj
+ 0002:00000170       ??_C@_1O@MJHLOIFA@?$AAC?$AAo?$AAn?$AAO?$AAu?$AAt@ 0000000000014170     ConPlatformDxe:ConPlatform.obj
+ 0002:00000180       ??_C@_1O@JOJMCOJC@?$AAE?$AAr?$AAr?$AAO?$AAu?$AAt@ 0000000000014180     ConPlatformDxe:ConPlatform.obj
+ 0002:00000190       ??_C@_1BE@INNAKDAF@?$AAC?$AAo?$AAn?$AAO?$AAu?$AAt?$AAD?$AAe?$AAv@ 0000000000014190     ConPlatformDxe:ConPlatform.obj
+ 0002:000001a8       ??_C@_1BE@JFPOEAHF@?$AAE?$AAr?$AAr?$AAO?$AAu?$AAt?$AAD?$AAe?$AAv@ 00000000000141a8     ConPlatformDxe:ConPlatform.obj
+ 0002:000001bc       ??_C@_03LKLGDMJI@eng@      00000000000141bc     ConPlatformDxe:ComponentName.obj
+ 0002:000001c0       ??_C@_02LFNMGJAP@en@       00000000000141c0     ConPlatformDxe:ComponentName.obj
+ 0002:000001c4       ??_C@_06DALJLGPG@eng?$DLen@ 00000000000141c4     ConPlatformDxe:ComponentName.obj
+ 0002:000001d0       ??_C@_1EG@IAMKDAMC@?$AAP?$AAl?$AAa?$AAt?$AAf?$AAo?$AAr?$AAm?$AA?5?$AAC?$AAo?$AAn?$AAs?$AAo?$AAl@ 00000000000141d0     ConPlatformDxe:ComponentName.obj
+ 0002:00000218       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000014218     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0002:00000230       ??_C@_0EH@EMGPELNE@c?3?2edk2?2MdeModulePkg?2Library?2Pe@ 0000000000014230     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0002:00000278       ??_C@_0CI@HIINONDG@?$CICHAR8?5?$CK?$CJBaseListMarker?5?$DM?$DN?5Form@ 0000000000014278     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0002:000002a0       ??_C@_01OHGJGJJP@?$FL@     00000000000142a0     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0002:000002a4       ??_C@_02PBFOLPKM@?$FN?5@   00000000000142a4     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0002:000002a8       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000142a8     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0002:000002c0       ??_C@_0CC@JOEHDGKB@DestinationBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 00000000000142c0     BaseMemoryLibOptDxe:CompareMemWrapper.obj
+ 0002:000002e8       ??_C@_0DP@CPGOBMAI@c?3?2edk2?2MdePkg?2Library?2BaseMemo@ 00000000000142e8     BaseMemoryLibOptDxe:CompareMemWrapper.obj
+ 0002:00000328       ??_C@_0BN@MDMCNBCC@SourceBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000014328     BaseMemoryLibOptDxe:CompareMemWrapper.obj
+ 0002:00000350       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000014350     BaseMemoryLibOptDxe:CompareMemWrapper.obj
+ 0002:00000398       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000014398     BaseMemoryLibOptDxe:CompareMemWrapper.obj
+ 0002:000003d8       ??_C@_0DM@DBGKHDAI@c?3?2edk2?2MdePkg?2Library?2BaseMemo@ 00000000000143d8     BaseMemoryLibOptDxe:CopyMemWrapper.obj
+ 0002:00000418       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000014418     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000440       ??_C@_0EL@ODFJBOBF@c?3?2edk2?2MdePkg?2Library?2UefiBoot@ 0000000000014440     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000490       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000014490     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000004a8       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000144a8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000004c0       ??_C@_0EF@NBCCMJKB@c?3?2edk2?2MdePkg?2Library?2UefiMemo@ 00000000000144c0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00000508       ??_C@_0BE@OBDFIHND@gRT?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000014508     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000520       ??_C@_0FB@NIMBGODD@c?3?2edk2?2MdePkg?2Library?2UefiRunt@ 0000000000014520     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000580       ??_C@_0EP@BCAOHHL@c?3?2edk2?2MdePkg?2Library?2UefiDevi@ 0000000000014580     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000005d0       ??_C@_0DC@CNNBPJA@mDevicePathLibDevicePathUtiliti@ 00000000000145d0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000608       ??_C@_0BF@CBLMFKOC@Node?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000014608     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000620       ??_C@_0BK@PPOBBAMB@TableGuid?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000014620     UefiLib:UefiLib.obj
+ 0002:00000640       ??_C@_0CJ@PFEGNAHL@c?3?2edk2?2MdePkg?2Library?2UefiLib?2@ 0000000000014640     UefiLib:UefiLib.obj
+ 0002:00000670       ??_C@_0BG@JDKEGFNB@Table?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000014670     UefiLib:UefiLib.obj
+ 0002:00000688       ??_C@_0BO@MHFMIIAE@DriverBinding?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000014688     UefiLib:UefiDriverModel.obj
+ 0002:000006a8       ??_C@_0DB@DDNPJJP@c?3?2edk2?2MdePkg?2Library?2UefiLib?2@ 00000000000146a8     UefiLib:UefiDriverModel.obj
+ 0002:000006e0       ??_C@_0CK@GGFNJPAK@c?3?2edk2?2MdePkg?2Library?2DxeHobLi@ 00000000000146e0     DxeHobLib:HobLib.obj
+ 0002:00000710       ??_C@_0BJ@OBFMLLDO@mHobList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000014710     DxeHobLib:HobLib.obj
+ 0002:00000730       ??_C@_0BJ@NOLLDKJB@HobStart?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000014730     DxeHobLib:HobLib.obj
+ 0002:00000750       ??_C@_1BC@DPOIABCP@?$AAE?$AAF?$AAI?$AAD?$AAe?$AAb?$AAu?$AAg@ 0000000000014750     DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0002:00000770       ??_C@_0EF@LIFNJAGA@c?3?2edk2?2MdeModulePkg?2Library?2Ue@ 0000000000014770     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:000007c0       ??_C@_0EB@CMNLLCIC@c?3?2edk2?2MdePkg?2Library?2DxeServi@ 00000000000147c0     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0002:00000808       ??_C@_0BE@IOIFLNKO@gDS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000014808     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0002:00000820       ??_C@_0BJ@LJAJNOJ@Previous?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000014820     UefiBootManagerLib:BmConsole.obj
+ 0002:00000840       ??_C@_0DM@CCCDAHEL@c?3?2edk2?2MdeModulePkg?2Library?2Ue@ 0000000000014840     UefiBootManagerLib:BmConsole.obj
+ 0002:00000880       ??_C@_0CJ@JFALCEFL@?$FLBds?$FN?5Looking?5for?5GOP?5child?5dee@ 0000000000014880     UefiBootManagerLib:BmConsole.obj
+ 0002:000008b0       ??_C@_0EK@NEAGPEKB@c?3?2edk2?2MdeModulePkg?2Library?2Dx@ 00000000000148b0     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000900       ??_C@_0DN@HHIHPHHB@?$CB?$CI?$CIExtendedData?5?$DN?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000014900     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000940       ??_C@_0DN@BBBIFINB@?$CB?$CI?$CIExtendedData?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000014940     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000980       ??_C@_0DI@MIEIGAOH@Status?5code?5extended?5data?5is?5to@ 0000000000014980     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:000009b8       ??_C@_0CI@BEFOLLLE@c?3?2edk2?2MdePkg?2Library?2BaseLib?2@ 00000000000149b8     BaseLib:String.obj
+ 0002:000009e0       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000149e0     BaseLib:String.obj
+ 0002:000009f8       ??_C@_0DJ@JJHGIFMP@Length?5?$DM?$DN?5_gPcd_FixedAtBuild_Pc@ 00000000000149f8     BaseLib:String.obj
+ 0002:00000a38       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 0000000000014a38     BaseLib:String.obj
+ 0002:00000a70       ??_C@_0BL@IKFBNFIL@AsciiStrSize?5?$CIFirstString?$CJ@ 0000000000014a70     BaseLib:String.obj
+ 0002:00000a90       ??_C@_0BM@EDNOKLLE@AsciiStrSize?5?$CISecondString?$CJ@ 0000000000014a90     BaseLib:String.obj
+ 0002:00000ab0       ??_C@_0CM@GBAFEFEA@c?3?2edk2?2MdePkg?2Library?2BaseLib?2@ 0000000000014ab0     BaseLib:SafeString.obj
+ 0002:00000ae0       ??_C@_0BO@ECNIOIHG@?$CIDestination?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000014ae0     BaseLib:SafeString.obj
+ 0002:00000b00       ??_C@_0BJ@EAEEJIP@?$CISource?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000014b00     BaseLib:SafeString.obj
+ 0002:00000b20       ??_C@_0FL@CDANCHFO@InternalSafeStringNoAsciiStrOve@ 0000000000014b20     BaseLib:SafeString.obj
+ 0002:00000b80       ??_C@_0CL@COEFNOFM@c?3?2edk2?2MdePkg?2Library?2BaseLib?2@ 0000000000014b80     BaseLib:Unaligned.obj
+ 0003:00000000       gEfiLoadedImageProtocolGuid 0000000000015000     ConPlatformDxe:AutoGen.obj
+ 0003:00000010       gEfiStatusCodeSpecificDataGuid 0000000000015010     ConPlatformDxe:AutoGen.obj
+ 0003:00000020       gEfiDriverDiagnostics2ProtocolGuid 0000000000015020     ConPlatformDxe:AutoGen.obj
+ 0003:00000030       gEfiMemoryTypeInformationGuid 0000000000015030     ConPlatformDxe:AutoGen.obj
+ 0003:00000040       gEfiPciRootBridgeIoProtocolGuid 0000000000015040     ConPlatformDxe:AutoGen.obj
+ 0003:00000050       gEfiGlobalVariableGuid     0000000000015050     ConPlatformDxe:AutoGen.obj
+ 0003:00000060       gEfiStatusCodeRuntimeProtocolGuid 0000000000015060     ConPlatformDxe:AutoGen.obj
+ 0003:00000070       gEfiGenericVariableGuid    0000000000015070     ConPlatformDxe:AutoGen.obj
+ 0003:00000080       gEfiDriverDiagnosticsProtocolGuid 0000000000015080     ConPlatformDxe:AutoGen.obj
+ 0003:00000090       gEfiConsoleOutDeviceGuid   0000000000015090     ConPlatformDxe:AutoGen.obj
+ 0003:000000a0       gEfiComponentName2ProtocolGuid 00000000000150a0     ConPlatformDxe:AutoGen.obj
+ 0003:000000b0       gEfiSimpleTextOutProtocolGuid 00000000000150b0     ConPlatformDxe:AutoGen.obj
+ 0003:000000c0       gEfiDeferredImageLoadProtocolGuid 00000000000150c0     ConPlatformDxe:AutoGen.obj
+ 0003:000000d0       gEfiDriverConfiguration2ProtocolGuid 00000000000150d0     ConPlatformDxe:AutoGen.obj
+ 0003:000000e0       gEfiDevicePathProtocolGuid 00000000000150e0     ConPlatformDxe:AutoGen.obj
+ 0003:000000f0       gEfiPciIoProtocolGuid      00000000000150f0     ConPlatformDxe:AutoGen.obj
+ 0003:00000100       gEfiStandardErrorDeviceGuid 0000000000015100     ConPlatformDxe:AutoGen.obj
+ 0003:00000110       gEfiDevicePathToTextProtocolGuid 0000000000015110     ConPlatformDxe:AutoGen.obj
+ 0003:00000120       gEfiHiiConfigRoutingProtocolGuid 0000000000015120     ConPlatformDxe:AutoGen.obj
+ 0003:00000130       gEfiSimpleTextInProtocolGuid 0000000000015130     ConPlatformDxe:AutoGen.obj
+ 0003:00000140       gEfiStatusCodeDataTypeDebugGuid 0000000000015140     ConPlatformDxe:AutoGen.obj
+ 0003:00000150       gEfiHiiImageProtocolGuid   0000000000015150     ConPlatformDxe:AutoGen.obj
+ 0003:00000160       gEfiDevicePathUtilitiesProtocolGuid 0000000000015160     ConPlatformDxe:AutoGen.obj
+ 0003:00000170       gEfiDevicePathFromTextProtocolGuid 0000000000015170     ConPlatformDxe:AutoGen.obj
+ 0003:00000180       gEfiGraphicsOutputProtocolGuid 0000000000015180     ConPlatformDxe:AutoGen.obj
+ 0003:00000190       gEfiHiiDatabaseProtocolGuid 0000000000015190     ConPlatformDxe:AutoGen.obj
+ 0003:000001a0       gEfiHiiStringProtocolGuid  00000000000151a0     ConPlatformDxe:AutoGen.obj
+ 0003:000001b0       gEfiHobListGuid            00000000000151b0     ConPlatformDxe:AutoGen.obj
+ 0003:000001c0       gEfiDriverConfigurationProtocolGuid 00000000000151c0     ConPlatformDxe:AutoGen.obj
+ 0003:000001d0       gEfiConsoleInDeviceGuid    00000000000151d0     ConPlatformDxe:AutoGen.obj
+ 0003:000001e0       gEfiDebugMaskProtocolGuid  00000000000151e0     ConPlatformDxe:AutoGen.obj
+ 0003:000001f0       gEdkiiStatusCodeDataTypeVariableGuid 00000000000151f0     ConPlatformDxe:AutoGen.obj
+ 0003:00000200       gEfiDriverBindingProtocolGuid 0000000000015200     ConPlatformDxe:AutoGen.obj
+ 0003:00000210       gEfiComponentNameProtocolGuid 0000000000015210     ConPlatformDxe:AutoGen.obj
+ 0003:00000220       gEfiDxeServicesTableGuid   0000000000015220     ConPlatformDxe:AutoGen.obj
+ 0003:00000230       gEfiCallerIdGuid           0000000000015230     ConPlatformDxe:AutoGen.obj
+ 0003:00000240       gEfiHiiFontProtocolGuid    0000000000015240     ConPlatformDxe:AutoGen.obj
+ 0003:00000250       gConPlatformTextOutDriverBinding 0000000000015250     ConPlatformDxe:ConPlatform.obj
+ 0003:00000280       gConPlatformTextInDriverBinding 0000000000015280     ConPlatformDxe:ConPlatform.obj
+ 0003:000002b0       gConPlatformComponentName2 00000000000152b0     ConPlatformDxe:ComponentName.obj
+ 0003:000002c8       gConPlatformComponentName  00000000000152c8     ConPlatformDxe:ComponentName.obj
+ 0003:000002e0       mConPlatformDriverNameTable 00000000000152e0     ConPlatformDxe:ComponentName.obj
+ 0003:00000300       mDebugMaskProtocol         0000000000015300     DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0003:00000318       gST                        0000000000015318     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000320       gBS                        0000000000015320     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000328       gImageHandle               0000000000015328     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000330       gRT                        0000000000015330     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:00000338       mDevicePathLibDevicePathUtilities 0000000000015338     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0003:00000340       mHobList                   0000000000015340     DxeHobLib:HobLib.obj
+ 0003:00000348       mSystemTable               0000000000015348     DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0003:00000350       mDebugPrintErrorLevel      0000000000015350     DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0003:00000354       mGlobalErrorLevelInitialized 0000000000015354     DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0003:00000358       gHiiString                 0000000000015358     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0003:00000360       gHiiFont                   0000000000015360     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0003:00000368       gHiiConfigRouting          0000000000015368     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0003:00000370       gHiiImage                  0000000000015370     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0003:00000378       gHiiDatabase               0000000000015378     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0003:00000380       gDS                        0000000000015380     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0003:00000388       mReportStatusCodeLibStatusCodeProtocol 0000000000015388     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+
+ entry point at        0001:00000130
+
+ Static symbols
+
+ 0000:ffff6000       .debug$S                   0000000000010000     ConPlatformDxe.exp
+ 0001:0000003a       InternalMemCopyMem.0       000000000001103a     BaseMemoryLibOptDxe:CopyMem.obj
+ 0001:00000052       InternalMemCopyMem.1       0000000000011052     BaseMemoryLibOptDxe:CopyMem.obj
+ 0001:00000065       InternalMemCopyMem.2       0000000000011065     BaseMemoryLibOptDxe:CopyMem.obj
+ 0001:00000082       @CopyBackward              0000000000011082     BaseMemoryLibOptDxe:CopyMem.obj
+ 0001:0000008b       @CopyBytes                 000000000001108b     BaseMemoryLibOptDxe:CopyMem.obj
+ 0004:00000000       .edata                     0000000000016000     ConPlatformDxe.exp
+ 0004:00000028       rgpv                       0000000000016028     ConPlatformDxe.exp
+ 0004:0000002c       rgszName                   000000000001602c     ConPlatformDxe.exp
+ 0004:00000030       rgwOrd                     0000000000016030     ConPlatformDxe.exp
+ 0004:00000032       szName                     0000000000016032     ConPlatformDxe.exp
+ 0004:00000045       $N00001                    0000000000016045     ConPlatformDxe.exp
+ 0005:00000000       $pdata$_ModuleEntryPoint   0000000000017000     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:0000000c       $pdata$ProcessLibraryConstructorList 000000000001700c     ConPlatformDxe:AutoGen.obj
+ 0005:00000018       $pdata$IsHotPlugDevice     0000000000017018     ConPlatformDxe:ConPlatform.obj
+ 0005:00000024       $pdata$ConPlatformUpdateDeviceVariable 0000000000017024     ConPlatformDxe:ConPlatform.obj
+ 0005:00000030       $pdata$ConPlatformMatchDevicePaths 0000000000017030     ConPlatformDxe:ConPlatform.obj
+ 0005:0000003c       $pdata$IsGopSibling        000000000001703c     ConPlatformDxe:ConPlatform.obj
+ 0005:00000048       $pdata$ConPlatformUnInstallProtocol 0000000000017048     ConPlatformDxe:ConPlatform.obj
+ 0005:00000054       $pdata$ConPlatformTextOutDriverBindingStop 0000000000017054     ConPlatformDxe:ConPlatform.obj
+ 0005:00000060       $pdata$ConPlatformTextInDriverBindingStop 0000000000017060     ConPlatformDxe:ConPlatform.obj
+ 0005:0000006c       $pdata$ConPlatformTextOutDriverBindingStart 000000000001706c     ConPlatformDxe:ConPlatform.obj
+ 0005:00000078       $pdata$ConPlatformTextInDriverBindingStart 0000000000017078     ConPlatformDxe:ConPlatform.obj
+ 0005:00000084       $pdata$ConPlatformDriverBindingSupported 0000000000017084     ConPlatformDxe:ConPlatform.obj
+ 0005:00000090       $pdata$ConPlatformComponentNameGetDriverName 0000000000017090     ConPlatformDxe:ComponentName.obj
+ 0005:0000009c       $pdata$DebugPrint          000000000001709c     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0005:000000a8       $pdata$DebugAssert         00000000000170a8     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0005:000000b4       $pdata$CompareMem          00000000000170b4     BaseMemoryLibOptDxe:CompareMemWrapper.obj
+ 0005:000000c0       $pdata$CopyMem             00000000000170c0     BaseMemoryLibOptDxe:CopyMemWrapper.obj
+ 0005:000000cc       $pdata$InternalAllocatePool 00000000000170cc     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:000000d8       $pdata$FreePool            00000000000170d8     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:000000e4       $pdata$DevicePathNodeLength 00000000000170e4     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0005:000000f0       $pdata$IsDevicePathEnd     00000000000170f0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0005:000000fc       $pdata$DevicePathType      00000000000170fc     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0005:00000108       $pdata$NextDevicePathNode  0000000000017108     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0005:00000114       $pdata$IsDevicePathEndType 0000000000017114     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0005:00000120       $pdata$DevicePathSubType   0000000000017120     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0005:0000012c       $pdata$EfiGetSystemConfigurationTable 000000000001712c     UefiLib:UefiLib.obj
+ 0005:00000138       $pdata$CompareIso639LanguageCode 0000000000017138     UefiLib:UefiLib.obj
+ 0005:00000144       $pdata$EfiLibInstallDriverBindingComponentName2 0000000000017144     UefiLib:UefiDriverModel.obj
+ 0005:00000150       $pdata$GetNextHob          0000000000017150     DxeHobLib:HobLib.obj
+ 0005:0000015c       $pdata$GetHobList          000000000001715c     DxeHobLib:HobLib.obj
+ 0005:00000168       $pdata$GetDebugPrintErrorLevel 0000000000017168     DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0005:00000174       $pdata$EfiBootManagerGetGopDevicePath 0000000000017174     UefiBootManagerLib:BmConsole.obj
+ 0005:00000180       $pdata$InternalReportStatusCode 0000000000017180     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0005:0000018c       $pdata$ReportStatusCodeEx  000000000001718c     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0005:00000198       $pdata$AsciiStrLen         0000000000017198     BaseLib:String.obj
+ 0005:000001a4       $pdata$AsciiStrnCmp        00000000000171a4     BaseLib:String.obj
+ 0005:000001b0       $pdata$AsciiStrnCpyS       00000000000171b0     BaseLib:SafeString.obj
+ 0005:000001bc       $pdata$ReadUnaligned64     00000000000171bc     BaseLib:Unaligned.obj
+ 0005:000001c8       $pdata$CopyGuid            00000000000171c8     BaseMemoryLibOptDxe:MemLibGuid.obj
+ 0005:000001d4       $pdata$CompareGuid         00000000000171d4     BaseMemoryLibOptDxe:MemLibGuid.obj
+ 0006:00000000       $unwind$ConPlatformUnInstallProtocol 0000000000018000     ConPlatformDxe:ConPlatform.obj
+ 0006:00000000       $unwind$_ModuleEntryPoint  0000000000018000     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0006:0000000c       $unwind$ProcessLibraryConstructorList 000000000001800c     ConPlatformDxe:AutoGen.obj
+ 0006:00000024       $unwind$ConPlatformDriverBindingSupported 0000000000018024     ConPlatformDxe:ConPlatform.obj
+ 0006:00000034       $unwind$ConPlatformTextInDriverBindingStart 0000000000018034     ConPlatformDxe:ConPlatform.obj
+ 0006:00000044       $unwind$ConPlatformTextOutDriverBindingStart 0000000000018044     ConPlatformDxe:ConPlatform.obj
+ 0006:00000058       $unwind$ConPlatformTextOutDriverBindingStop 0000000000018058     ConPlatformDxe:ConPlatform.obj
+ 0006:00000058       $unwind$ConPlatformTextInDriverBindingStop 0000000000018058     ConPlatformDxe:ConPlatform.obj
+ 0006:00000064       $unwind$CompareGuid        0000000000018064     BaseMemoryLibOptDxe:MemLibGuid.obj
+ 0006:00000064       $unwind$CompareMem         0000000000018064     BaseMemoryLibOptDxe:CompareMemWrapper.obj
+ 0006:00000064       $unwind$IsGopSibling       0000000000018064     ConPlatformDxe:ConPlatform.obj
+ 0006:00000064       $unwind$CopyMem            0000000000018064     BaseMemoryLibOptDxe:CopyMemWrapper.obj
+ 0006:00000078       $unwind$ConPlatformMatchDevicePaths 0000000000018078     ConPlatformDxe:ConPlatform.obj
+ 0006:00000090       $unwind$ConPlatformUpdateDeviceVariable 0000000000018090     ConPlatformDxe:ConPlatform.obj
+ 0006:000000a4       $unwind$IsHotPlugDevice    00000000000180a4     ConPlatformDxe:ConPlatform.obj
+ 0006:000000a4       $unwind$DevicePathNodeLength 00000000000180a4     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0006:000000a4       $unwind$DevicePathSubType  00000000000180a4     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0006:000000a4       $unwind$GetNextHob         00000000000180a4     DxeHobLib:HobLib.obj
+ 0006:000000a4       $unwind$NextDevicePathNode 00000000000180a4     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0006:000000a4       $unwind$ReadUnaligned64    00000000000180a4     BaseLib:Unaligned.obj
+ 0006:000000a4       $unwind$DevicePathType     00000000000180a4     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0006:000000a4       $unwind$IsDevicePathEndType 00000000000180a4     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0006:000000ac       $unwind$ConPlatformComponentNameGetDriverName 00000000000180ac     ConPlatformDxe:ComponentName.obj
+ 0006:000000c8       $unwind$DebugPrint         00000000000180c8     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0006:000000d8       $unwind$DebugAssert        00000000000180d8     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0006:000000f4       $unwind$GetHobList         00000000000180f4     DxeHobLib:HobLib.obj
+ 0006:000000f4       $unwind$FreePool           00000000000180f4     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0006:000000f4       $unwind$InternalAllocatePool 00000000000180f4     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0006:000000fc       $unwind$IsDevicePathEnd    00000000000180fc     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0006:000000fc       $unwind$CompareIso639LanguageCode 00000000000180fc     UefiLib:UefiLib.obj
+ 0006:000000fc       $unwind$AsciiStrLen        00000000000180fc     BaseLib:String.obj
+ 0006:00000108       $unwind$EfiGetSystemConfigurationTable 0000000000018108     UefiLib:UefiLib.obj
+ 0006:00000120       $unwind$EfiLibInstallDriverBindingComponentName2 0000000000018120     UefiLib:UefiDriverModel.obj
+ 0006:00000130       $unwind$GetDebugPrintErrorLevel 0000000000018130     DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0006:00000138       $unwind$EfiBootManagerGetGopDevicePath 0000000000018138     UefiBootManagerLib:BmConsole.obj
+ 0006:00000150       $unwind$InternalReportStatusCode 0000000000018150     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0006:00000168       $unwind$ReportStatusCodeEx 0000000000018168     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0006:00000180       $unwind$AsciiStrnCmp       0000000000018180     BaseLib:String.obj
+ 0006:00000180       $unwind$CopyGuid           0000000000018180     BaseMemoryLibOptDxe:MemLibGuid.obj
+ 0006:00000180       $unwind$AsciiStrnCpyS      0000000000018180     BaseLib:SafeString.obj

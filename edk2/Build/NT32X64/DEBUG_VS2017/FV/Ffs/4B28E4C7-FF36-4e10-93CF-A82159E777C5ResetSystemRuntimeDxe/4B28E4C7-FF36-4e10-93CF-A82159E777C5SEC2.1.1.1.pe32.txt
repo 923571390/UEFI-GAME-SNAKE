@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o c:\edk2\Build\NT32X64\DEBUG_VS2017\FV\Ffs\4B28E4C7-FF36-4e10-93CF-A82159E777C5ResetSystemRuntimeDxe\4B28E4C7-FF36-4e10-93CF-A82159E777C5SEC2.1.1.1.pe32 c:\edk2\Build\NT32X64\DEBUG_VS2017\X64\MdeModulePkg\Universal\ResetSystemRuntimeDxe\ResetSystemRuntimeDxe\OUTPUT\ResetSystemRuntimeDxe.efi

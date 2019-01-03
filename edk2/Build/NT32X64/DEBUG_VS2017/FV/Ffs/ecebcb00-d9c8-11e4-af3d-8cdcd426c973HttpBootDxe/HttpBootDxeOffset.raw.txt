@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_RAW -o c:\edk2\Build\NT32X64\DEBUG_VS2017\FV\Ffs\ecebcb00-d9c8-11e4-af3d-8cdcd426c973HttpBootDxe\HttpBootDxeOffset.raw c:\edk2\Build\NT32X64\DEBUG_VS2017\FV\Ffs\ecebcb00-d9c8-11e4-af3d-8cdcd426c973HttpBootDxe\HttpBootDxe.offset

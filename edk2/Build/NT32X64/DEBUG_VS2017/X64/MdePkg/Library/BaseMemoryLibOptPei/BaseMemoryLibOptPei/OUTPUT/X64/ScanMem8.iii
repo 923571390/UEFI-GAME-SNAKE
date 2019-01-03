@@ -1,0 +1,55 @@
+;------------------------------------------------------------------------------
+;
+; Copyright (c) 2006 - 2008, Intel Corporation. All rights reserved.<BR>
+; This program and the accompanying materials
+; are licensed and made available under the terms and conditions of the BSD License
+; which accompanies this distribution.  The full text of the license may be found at
+; http:
+;
+; THE PROGRAM IS DISTRIBUTED UNDER THE BSD LICENSE ON AN "AS IS" BASIS,
+; WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.
+;
+; Module Name:
+;
+;   ScanMem8.Asm
+;
+; Abstract:
+;
+;   ScanMem8 function
+;
+; Notes:
+;
+;   The following BaseMemoryLib instances contain the same copy of this file:
+;
+;       BaseMemoryLibRepStr
+;       BaseMemoryLibMmx
+;       BaseMemoryLibSse2
+;       BaseMemoryLibOptDxe
+;       BaseMemoryLibOptPei
+;
+;------------------------------------------------------------------------------
+
+    DEFAULT REL
+    SECTION .text
+
+;------------------------------------------------------------------------------
+; const void *
+; __cdecl
+; InternalMemScanMem8 (
+;         const void                *Buffer,
+;         UINTN                     Length,
+;         UINT8                     Value
+;   );
+;------------------------------------------------------------------------------
+global InternalMemScanMem8
+InternalMemScanMem8:
+    push    rdi
+    mov     rdi, rcx
+    mov     rcx, rdx
+    mov     rax, r8
+    repne   scasb
+    lea     rax, [rdi - 1]
+    cmovnz  rax, rcx                    ; set rax to 0 if not found
+    pop     rdi
+    ret
+

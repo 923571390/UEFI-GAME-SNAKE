@@ -1,0 +1,356 @@
+## @file
+#  The application to show the Boot Manager Menu.
+#
+#  The application pops up a menu showing all the boot options referenced by
+#  BootOrder NV variable and user can choose to boot from one of them.
+#
+#  Copyright (c) 2011 - 2015, Intel Corporation. All rights reserved.<BR>
+#  This program and the accompanying materials
+#  are licensed and made available under the terms and conditions of the BSD License
+#  which accompanies this distribution.  The full text of the license may be found at
+#  http://opensource.org/licenses/bsd-license.php
+#
+#  THE PROGRAM IS DISTRIBUTED UNDER THE BSD LICENSE ON AN "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.
+#
+##
+
+# DO NOT EDIT
+# FILE auto-generated
+
+[Defines]
+  INF_VERSION                = 0x00010017
+  BASE_NAME                  = BootManagerMenuApp
+  FILE_GUID                  = EEC25BDC-67F2-4D95-B1D5-F81B2039D11D
+  MODULE_TYPE                = UEFI_APPLICATION
+  VERSION_STRING             = 1.0
+  ENTRY_POINT                = BootManagerMenuEntry
+  MODULE_UNI_FILE            = BootManagerMenuApp.uni
+
+[Packages.X64]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  IntelFrameworkPkg/IntelFrameworkPkg.dec
+  IntelFrameworkModulePkg/IntelFrameworkModulePkg.dec
+
+[Binaries.X64]
+  PE32|BootManagerMenuApp.efi
+  BIN|BootManagerMenuAppOffset.bin
+  DISPOSABLE|BootManagerMenuApp.pdb
+
+[PatchPcd.X64]
+  ## PRODUCES
+  gEfiMdeModulePkgTokenSpaceGuid.PcdConOutRow|0x00000019|0x11170
+
+  ## PRODUCES
+  gEfiMdeModulePkgTokenSpaceGuid.PcdConOutColumn|0x00000050|0x11174
+
+  ## PRODUCES
+  gEfiMdeModulePkgTokenSpaceGuid.PcdVideoHorizontalResolution|0x00000320|0x11584
+
+  ## PRODUCES
+  gEfiMdeModulePkgTokenSpaceGuid.PcdVideoVerticalResolution|0x00000258|0x11580
+
+  ## SOMETIMES_CONSUMES
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoHorizontalResolution|0x00000320|0x112CC
+
+  ## SOMETIMES_CONSUMES
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoVerticalResolution|0x00000258|0x112C8
+
+
+[Protocols.X64]
+  ## SOMETIMES_CONSUMES
+  ## CONSUMES
+  gEfiBootLogoProtocolGuid
+
+  ## CONSUMES
+  gEfiLoadedImageDevicePathProtocolGuid
+
+  ## CONSUMES
+  gEfiStatusCodeRuntimeProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gPcdProtocolGuid
+
+  ## CONSUMES
+  gEfiPcdProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gGetPcdInfoProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiGetPcdInfoProtocolGuid
+
+  ## CONSUMES
+  gEfiPrint2SProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## CONSUMES
+  ## SOMETIMES_CONSUMES
+  ## SOMETIMES_CONSUMES
+  gEfiDevicePathProtocolGuid
+
+  ## CONSUMES
+  gEfiDevicePathUtilitiesProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiDevicePathToTextProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiDevicePathFromTextProtocolGuid
+
+  ## SOMETIMES_PRODUCES
+  gEfiDriverBindingProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## SOMETIMES_CONSUMES
+  gEfiSimpleTextOutProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## SOMETIMES_CONSUMES
+  gEfiGraphicsOutputProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## SOMETIMES_CONSUMES
+  gEfiHiiFontProtocolGuid
+
+  ## SOMETIMES_CONSUMES # Consumes if gEfiGraphicsOutputProtocolGuid uninstalled
+  gEfiUgaDrawProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiComponentNameProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiComponentName2ProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiDriverConfigurationProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiDriverConfiguration2ProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiDriverDiagnosticsProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiDriverDiagnostics2ProtocolGuid
+
+  ## PRODUCES
+  gEfiDebugMaskProtocolGuid
+
+  ## CONSUMES
+  gEfiHiiStringProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiHiiImageProtocolGuid
+
+  ## CONSUMES
+  gEfiHiiDatabaseProtocolGuid
+
+  ## CONSUMES
+  gEfiHiiConfigRoutingProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiUnicodeCollation2ProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## SOMETIMES_CONSUMES
+  gEfiFirmwareVolume2ProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## CONSUMES
+  gEfiLoadedImageProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## SOMETIMES_CONSUMES
+  gEfiLoadFileProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiLoadFile2ProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## SOMETIMES_CONSUMES
+  gEfiSimpleFileSystemProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## SOMETIMES_CONSUMES
+  gEfiFormBrowser2ProtocolGuid
+
+  ## CONSUMES
+  gEfiPciRootBridgeIoProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiPciIoProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiSimpleNetworkProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiSimpleTextInProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiBlockIoProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiSimpleTextInputExProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEdkiiVariableLockProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiUsbIoProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiNvmExpressPassThruProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiDiskInfoProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiDriverHealthProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiRamDiskProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiDeferredImageLoadProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiLegacyBiosProtocolGuid
+
+
+[Ppis.X64]
+
+[Guids.X64]
+  ## SOMETIMES_CONSUMES ## UNDEFINED
+  gEfiStatusCodeSpecificDataGuid
+
+  ## SOMETIMES_CONSUMES ## UNDEFINED
+  ## SOMETIMES_CONSUMES ## GUID
+  gEfiStatusCodeDataTypeDebugGuid
+
+  ## SOMETIMES_CONSUMES  ## Event
+  gEfiEventReadyToBootGuid
+
+  ## SOMETIMES_CONSUMES  ## Event
+  gEfiEventLegacyBootGuid
+
+  ## SOMETIMES_CONSUMES  ## Variable
+  ## SOMETIMES_PRODUCES ## Variable:L"BootCurrent" (The boot option of current boot)
+  ## SOMETIMES_CONSUMES ## Variable:L"BootXX" (Boot option variable)
+  ## SOMETIMES_CONSUMES ## Variable:L"BootOrder" (The boot option array)
+  ## SOMETIMES_CONSUMES ## Variable:L"DriverOrder" (The driver order list)
+  ## SOMETIMES_CONSUMES ## Variable:L"ConIn" (The device path of console in device)
+  ## SOMETIMES_CONSUMES ## Variable:L"ConOut" (The device path of console out device)
+  ## SOMETIMES_CONSUMES ## Variable:L"ErrOut" (The device path of error out device)
+  ## SOMETIMES_PRODUCES ## Variable:L"Boot####" (Boot option variable)
+  gEfiGlobalVariableGuid
+
+  ## CONSUMES  ## SystemTable
+  gEfiHobListGuid
+
+  ## SOMETIMES_PRODUCES   ## Variable:L"EFIDebug"
+  ## SOMETIMES_CONSUMES   ## Variable:L"EFIDebug"
+  ## SOMETIMES_CONSUMES   ## HOB
+  gEfiGenericVariableGuid
+
+  ## SOMETIMES_CONSUMES ## UNDEFINED
+  gEfiFileInfoGuid
+
+  ## CONSUMES  ## SystemTable
+  gEfiDxeServicesTableGuid
+
+  ## SOMETIMES_CONSUMES ## GUID
+  gEdkiiIfrBitVarstoreGuid
+
+  ## SOMETIMES_CONSUMES ## SystemTable (The identifier of memory type information type in system table)
+  ## SOMETIMES_CONSUMES ## HOB (The hob holding memory type information)
+  ## SOMETIMES_CONSUMES ## Variable:L"MemoryTypeInformation."
+  ## SOMETIMES_PRODUCES ## Variable:L"MemoryTypeInformation."
+  gEfiMemoryTypeInformationGuid
+
+  ## SOMETIMES_CONSUMES ## GUID
+  gEdkiiStatusCodeDataTypeVariableGuid
+
+  ## SOMETIMES_CONSUMES ## GUID
+  gEfiDiskInfoAhciInterfaceGuid
+
+  ## SOMETIMES_CONSUMES ## GUID
+  gEfiDiskInfoIdeInterfaceGuid
+
+  ## SOMETIMES_CONSUMES ## GUID
+  gEfiDiskInfoScsiInterfaceGuid
+
+  ## SOMETIMES_CONSUMES ## GUID
+  gEfiDiskInfoSdMmcInterfaceGuid
+
+  ## SOMETIMES_CONSUMES ## Variable:L"BootOrder" (The boot option array)
+  gEfiLegacyDevOrderVariableGuid
+
+
+[PcdEx.X64]
+
+[LibraryClasses.X64]
+## @LIB_INSTANCES
+#  MdeModulePkg/Library/DxeReportStatusCodeLib/DxeReportStatusCodeLib.inf
+#  MdePkg/Library/DxePcdLib/DxePcdLib.inf
+#  MdePkg/Library/BaseMemoryLibOptDxe/BaseMemoryLibOptDxe.inf
+#  MdePkg/Library/BaseLib/BaseLib.inf
+#  MdeModulePkg/Library/PeiDxeDebugLibReportStatusCode/PeiDxeDebugLibReportStatusCode.inf
+#  MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib.inf
+#  MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib.inf
+#  MdeModulePkg/Library/DxePrintLibPrint2Protocol/DxePrintLibPrint2Protocol.inf
+#  MdePkg/Library/UefiDevicePathLibDevicePathProtocol/UefiDevicePathLibDevicePathProtocol.inf
+#  MdePkg/Library/UefiRuntimeServicesTableLib/UefiRuntimeServicesTableLib.inf
+#  MdePkg/Library/UefiLib/UefiLib.inf
+#  MdePkg/Library/DxeHobLib/DxeHobLib.inf
+#  MdeModulePkg/Library/DxeDebugPrintErrorLevelLib/DxeDebugPrintErrorLevelLib.inf
+#  MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.inf
+#  MdeModulePkg/Library/UefiSortLib/UefiSortLib.inf
+#  MdePkg/Library/DxeServicesLib/DxeServicesLib.inf
+#  MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.inf
+#  MdePkg/Library/BasePeCoffGetEntryPointLib/BasePeCoffGetEntryPointLib.inf
+#  MdePkg/Library/BasePerformanceLibNull/BasePerformanceLibNull.inf
+#  MdeModulePkg/Library/UefiHiiLib/UefiHiiLib.inf
+#  MdeModulePkg/Library/UefiBootManagerLib/UefiBootManagerLib.inf
+#  MdePkg/Library/UefiApplicationEntryPoint/UefiApplicationEntryPoint.inf
+#  IntelFrameworkModulePkg/Library/LegacyBootManagerLib/LegacyBootManagerLib.inf
+
+[Depex.X64]
+#  (gEfiPcdProtocolGuid) AND (gEfiPcdProtocolGuid) AND (gEfiPcdProtocolGuid) AND (gEfiPcdProtocolGuid) AND (gEfiPrint2SProtocolGuid) AND (gEfiPrint2SProtocolGuid) AND (gEfiPrint2SProtocolGuid) AND (gEfiPrint2SProtocolGuid) AND (gEfiDevicePathUtilitiesProtocolGuid) AND (gEfiDevicePathUtilitiesProtocolGuid) AND (gEfiDevicePathUtilitiesProtocolGuid) AND (gEfiDevicePathUtilitiesProtocolGuid) AND (gEfiHiiStringProtocolGuid        AND gEfiHiiDatabaseProtocolGuid      AND gEfiHiiConfigRoutingProtocolGuid) AND (gEfiHiiStringProtocolGuid        AND gEfiHiiDatabaseProtocolGuid      AND gEfiHiiConfigRoutingProtocolGuid) AND (gEfiHiiStringProtocolGuid        AND gEfiHiiDatabaseProtocolGuid      AND gEfiHiiConfigRoutingProtocolGuid) AND (gEfiHiiStringProtocolGuid        AND gEfiHiiDatabaseProtocolGuid      AND gEfiHiiConfigRoutingProtocolGuid)
+
+[UserExtensions.TianoCore."ExtraFiles"]
+BootManagerMenuAppExtra.uni
+
+
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64 IPF EBC
+#
+
+[BuildOptions.X64]
+## @AsBuilt
+##   MSFT:DEBUG_VS2017_X64_SYMRENAME_FLAGS = Symbol renaming not needed for
+##   MSFT:DEBUG_VS2017_X64_ASLDLINK_FLAGS = /NODEFAULTLIB /ENTRY:ReferenceAcpiTable /SUBSYSTEM:CONSOLE
+##   MSFT:DEBUG_VS2017_X64_VFR_FLAGS = -l -n
+##   MSFT:DEBUG_VS2017_X64_PP_FLAGS = /nologo /E /TC /FIAutoGen.h
+##   MSFT:DEBUG_VS2017_X64_GENFW_FLAGS = 
+##   MSFT:DEBUG_VS2017_X64_OPTROM_FLAGS = -e
+##   MSFT:DEBUG_VS2017_X64_SLINK_FLAGS = /NOLOGO /LTCG
+##   MSFT:DEBUG_VS2017_X64_DTC_FLAGS = -H epapr
+##   MSFT:DEBUG_VS2017_X64_ASM_FLAGS = /nologo /c /WX /W3 /Cx /Zd /Zi
+##   MSFT:DEBUG_VS2017_X64_ASL_FLAGS = 
+##   MSFT:DEBUG_VS2017_X64_CC_FLAGS = /nologo /c /WX /GS- /W4 /Gs32768 /D UNICODE /O1b2s /GL /Gy /FIAutoGen.h /EHs-c- /GR- /GF /Zi /Gm
+##   MSFT:DEBUG_VS2017_X64_NASMB_FLAGS = -f bin
+##   MSFT:DEBUG_VS2017_X64_VFRPP_FLAGS = /nologo /E /TC /DVFRCOMPILE /FI$(MODULE_NAME)StrDefs.h
+##   MSFT:DEBUG_VS2017_X64_ASLCC_FLAGS = /nologo /c /FIAutoGen.h /TC /Dmain=ReferenceAcpiTable
+##   MSFT:DEBUG_VS2017_X64_MAKE_FLAGS = /nologo
+##   MSFT:DEBUG_VS2017_X64_DLINK2_FLAGS = /WHOLEARCHIVE
+##   MSFT:DEBUG_VS2017_X64_DLINK_FLAGS = /NOLOGO /NODEFAULTLIB /IGNORE:4001 /OPT:REF /OPT:ICF=10 /MAP /ALIGN:32 /SECTION:.xdata,D /SECTION:.pdata,D /Machine:X64 /LTCG /DLL /ENTRY:$(IMAGE_ENTRY_POINT) /SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER /SAFESEH:NO /BASE:0 /DRIVER /DEBUG /EXPORT:InitializeDriver=$(IMAGE_ENTRY_POINT) /BASE:0x10000 /ALIGN:4096 /FILEALIGN:4096 /SUBSYSTEM:CONSOLE
+##   MSFT:DEBUG_VS2017_X64_ASLPP_FLAGS = /nologo /E /C /FIAutoGen.h
+##   MSFT:DEBUG_VS2017_X64_OBJCOPY_FLAGS = objcopy not needed for
+##   MSFT:DEBUG_VS2017_X64_APP_FLAGS = /nologo /E /TC
+##   MSFT:DEBUG_VS2017_X64_ASMLINK_FLAGS = /nologo /tiny
+##   MSFT:DEBUG_VS2017_X64_NASM_FLAGS = -Ox -f win64 -g

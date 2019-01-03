@@ -1,0 +1,8 @@
+c:/edk2/Build/AppPkg/DEBUG_VS2017/X64/StdLib/LibC/Time/Time/OUTPUT/Time.obj
+c:/edk2/Build/AppPkg/DEBUG_VS2017/X64/StdLib/LibC/Time/Time/OUTPUT/ZoneProc.obj
+c:/edk2/Build/AppPkg/DEBUG_VS2017/X64/StdLib/LibC/Time/Time/OUTPUT/strftime.obj
+c:/edk2/Build/AppPkg/DEBUG_VS2017/X64/StdLib/LibC/Time/Time/OUTPUT/strptime.obj
+c:/edk2/Build/AppPkg/DEBUG_VS2017/X64/StdLib/LibC/Time/Time/OUTPUT/TimeEfi.obj
+c:/edk2/Build/AppPkg/DEBUG_VS2017/X64/StdLib/LibC/Time/Time/OUTPUT/gettimeofday.obj
+c:/edk2/Build/AppPkg/DEBUG_VS2017/X64/StdLib/LibC/Time/Time/OUTPUT/timegm.obj
+c:/edk2/Build/AppPkg/DEBUG_VS2017/X64/StdLib/LibC/Time/Time/OUTPUT/itimer.obj

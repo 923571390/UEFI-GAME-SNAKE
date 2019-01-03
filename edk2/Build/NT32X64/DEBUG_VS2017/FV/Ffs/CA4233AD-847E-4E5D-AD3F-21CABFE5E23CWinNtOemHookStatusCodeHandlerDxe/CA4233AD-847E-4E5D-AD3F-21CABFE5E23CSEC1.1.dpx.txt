@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_DXE_DEPEX -o c:\edk2\Build\NT32X64\DEBUG_VS2017\FV\Ffs\CA4233AD-847E-4E5D-AD3F-21CABFE5E23CWinNtOemHookStatusCodeHandlerDxe\CA4233AD-847E-4E5D-AD3F-21CABFE5E23CSEC1.1.dpx c:\edk2\Build\NT32X64\DEBUG_VS2017\X64\Nt32Pkg\WinNtOemHookStatusCodeHandlerDxe\WinNtOemHookStatusCodeHandlerDxe\OUTPUT\WinNtOemHookStatusCodeHandlerDxe.depex

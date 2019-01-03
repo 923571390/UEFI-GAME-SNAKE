@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_RAW -o c:\edk2\Build\NT32X64\DEBUG_VS2017\FV\Ffs\9B3ADA4F-AE56-4c24-8DEA-F03B7558AE50PcdPeim\PEIPcdDataBaseSec.raw c:\edk2\Build\NT32X64\DEBUG_VS2017\X64\MdeModulePkg\Universal\PCD\Pei\Pcd\OUTPUT\PEIPcdDataBase.raw

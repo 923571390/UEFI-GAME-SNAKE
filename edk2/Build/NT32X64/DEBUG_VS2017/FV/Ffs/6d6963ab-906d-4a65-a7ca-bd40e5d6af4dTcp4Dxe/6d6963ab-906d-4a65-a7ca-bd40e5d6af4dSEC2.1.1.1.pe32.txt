@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o c:\edk2\Build\NT32X64\DEBUG_VS2017\FV\Ffs\6d6963ab-906d-4a65-a7ca-bd40e5d6af4dTcp4Dxe\6d6963ab-906d-4a65-a7ca-bd40e5d6af4dSEC2.1.1.1.pe32 c:\edk2\Build\NT32X64\DEBUG_VS2017\X64\MdeModulePkg\Universal\Network\Tcp4Dxe\Tcp4Dxe\OUTPUT\Tcp4Dxe.efi

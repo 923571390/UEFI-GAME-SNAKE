@@ -1,0 +1,16 @@
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdePkg/Library/BaseMemoryLibOptDxe/BaseMemoryLibOptDxe/OUTPUT/BaseMemoryLibOptDxe.lib
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdeModulePkg/Library/DxeReportStatusCodeLib/DxeReportStatusCodeLib/OUTPUT/DxeReportStatusCodeLib.lib
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdePkg/Library/DxePcdLib/DxePcdLib/OUTPUT/DxePcdLib.lib
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdeModulePkg/Library/PeiDxeDebugLibReportStatusCode/PeiDxeDebugLibReportStatusCode/OUTPUT/PeiDxeDebugLibReportStatusCode.lib
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib/OUTPUT/UefiMemoryAllocationLib.lib
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib/OUTPUT/UefiBootServicesTableLib.lib
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdePkg/Library/UefiDevicePathLibDevicePathProtocol/UefiDevicePathLibDevicePathProtocol/OUTPUT/UefiDevicePathLibDevicePathProtocol.lib
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdePkg/Library/UefiRuntimeServicesTableLib/UefiRuntimeServicesTableLib/OUTPUT/UefiRuntimeServicesTableLib.lib
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdePkg/Library/DxeHobLib/DxeHobLib/OUTPUT/DxeHobLib.lib
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdeModulePkg/Library/DxeDebugPrintErrorLevelLib/DxeDebugPrintErrorLevelLib/OUTPUT/DxeDebugPrintErrorLevelLib.lib
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/Nt32Pkg/Library/DxeWinNtLib/DxeWinNtLib/OUTPUT/DxeWinNtLib.lib
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint/OUTPUT/UefiDriverEntryPoint.lib
+c:/edk2/Build/NT32X64/DEBUG_VS2017/X64/Nt32Pkg/TimerDxe/TimerDxe/OUTPUT/Timer.lib

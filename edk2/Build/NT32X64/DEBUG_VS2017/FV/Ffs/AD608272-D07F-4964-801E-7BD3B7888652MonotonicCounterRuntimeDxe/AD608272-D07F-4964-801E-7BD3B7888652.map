@@ -1,0 +1,204 @@
+ MonotonicCounterRuntimeDxe
+
+ Timestamp is 5c23c338 (Thu Dec 27 02:06:48 2018)
+
+ Preferred load address is 0000000000010000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000110H .text                   CODE
+ 0001:00000110 000012fbH .text$mn                CODE
+ 0002:00000000 00000854H .rdata                  DATA
+ 0002:00000854 00000168H .rdata$zzzdbg           DATA
+ 0003:00000000 00000128H .data                   DATA
+ 0003:00000128 00000078H .bss                    DATA
+ 0004:00000000 00000062H .edata                  DATA
+ 0005:00000000 000000f0H .pdata                  DATA
+ 0006:00000000 000000dcH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __volatile_metadata        0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000100       __guard_flags              0000000000000100     <absolute>
+ 0001:00000000       InternalMemCopyMem         0000000000011000     BaseMemoryLibOptDxe:CopyMem.obj
+ 0001:00000080       InternalMemSetMem          0000000000011080     BaseMemoryLibOptDxe:SetMem.obj
+ 0001:000000c0       InternalMemSetMem64        00000000000110c0     BaseMemoryLibOptDxe:SetMem64.obj
+ 0001:000000e0       InternalMemSetMem32        00000000000110e0     BaseMemoryLibOptDxe:SetMem32.obj
+ 0001:000000f0       InternalMemZeroMem         00000000000110f0     BaseMemoryLibOptDxe:ZeroMem.obj
+ 0001:00000110       _ModuleEntryPoint          0000000000011110 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000158       ProcessLibraryConstructorList 0000000000011158 f   MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0001:00000454       ProcessLibraryDestructorList 0000000000011454 f   MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0001:000005ac       ProcessModuleEntryPointList 00000000000115ac f   MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0001:0000072c       MonotonicCounterDriverGetNextMonotonicCount 000000000001172c f   MonotonicCounterRuntimeDxe:MonotonicCounter.obj
+ 0001:000007b0       MonotonicCounterDriverGetNextHighMonotonicCount 00000000000117b0 f   MonotonicCounterRuntimeDxe:MonotonicCounter.obj
+ 0001:0000085c       EfiMtcEventHandler         000000000001185c f   MonotonicCounterRuntimeDxe:MonotonicCounter.obj
+ 0001:00000870       DebugPrint                 0000000000011870 f   PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0001:00000a44       DebugAssert                0000000000011a44 f   PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0001:00000b94       GetHobList                 0000000000011b94 f   DxeHobLib:HobLib.obj
+ 0001:00000c74       GetNextHob                 0000000000011c74 f   DxeHobLib:HobLib.obj
+ 0001:00000cc4       GetDebugPrintErrorLevel    0000000000011cc4 f   DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0001:00000de0       GetDebugMask               0000000000011de0 f   DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0001:00000dfc       SetDebugMask               0000000000011dfc f   DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0001:00000e08       RuntimeLibExitBootServicesEvent 0000000000011e08 f   UefiRuntimeLib:RuntimeLib.obj
+ 0001:00000e10       RuntimeLibVirtualNotifyEvent 0000000000011e10 f   UefiRuntimeLib:RuntimeLib.obj
+ 0001:00000e24       InternalReportStatusCode   0000000000011e24 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00000eec       ReportStatusCodeEx         0000000000011eec f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:000010c0       CopyMem                    00000000000120c0 f   BaseMemoryLibOptDxe:CopyMemWrapper.obj
+ 0001:0000115c       CopyGuid                   000000000001215c f   BaseMemoryLibOptDxe:MemLibGuid.obj
+ 0001:000011e0       CompareGuid                00000000000121e0 f   BaseMemoryLibOptDxe:MemLibGuid.obj
+ 0001:00001248       AsciiStrLen                0000000000012248 f   BaseLib:String.obj
+ 0001:000012b4       AsciiStrnLenS              00000000000122b4 f   BaseLib:SafeString.obj
+ 0001:000012e0       AsciiStrnCpyS              00000000000122e0 f   BaseLib:SafeString.obj
+ 0001:000013dc       ReadUnaligned64            00000000000123dc f   BaseLib:Unaligned.obj
+ 0002:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 0000000000013000     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000028       ??_C@_0BE@DCHLEIGN@?$CBEFI_ERROR?5?$CIStatus?$CJ@ 0000000000013028     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000040       _gDriverUnloadImageCount   0000000000013040     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0002:00000041       _gPcd_FixedAtBuild_PcdReportStatusCodePropertyMask 0000000000013041     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0002:00000042       _gPcd_FixedAtBuild_PcdDebugPropertyMask 0000000000013042     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0002:00000044       _gUefiDriverRevision       0000000000013044     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0002:00000048       _gPcd_FixedAtBuild_PcdDebugPrintErrorLevel 0000000000013048     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0002:0000004c       _gPcd_FixedAtBuild_PcdFixedDebugPrintErrorLevel 000000000001304c     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0002:00000050       gEfiCallerBaseName         0000000000013050     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0002:00000058       _gPcd_FixedAtBuild_PcdMaximumAsciiStringLength 0000000000013058     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0002:0000005c       mUefiDevicePathLibEndDevicePath 000000000001305c     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000060       ??_C@_0BL@OKHPCBIJ@MonotonicCounterRuntimeDxe@ 0000000000013060     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0002:00000080       ??_C@_0IE@IIKLBEEM@c?3?2edk2?2Build?2NT32X64?2DEBUG_VS2@ 0000000000013080     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0002:00000108       ??_C@_17DGPLEKJI@?$AAM?$AAT?$AAC@ 0000000000013108     MonotonicCounterRuntimeDxe:MonotonicCounter.obj
+ 0002:00000110       ??_C@_0EN@JLAKDFDH@c?3?2edk2?2MdeModulePkg?2Universal?2@ 0000000000013110     MonotonicCounterRuntimeDxe:MonotonicCounter.obj
+ 0002:00000160       ??_C@_0EE@KLEMMEOM@?$CGgEfiMonotonicCounterArchProtoc@ 0000000000013160     MonotonicCounterRuntimeDxe:MonotonicCounter.obj
+ 0002:000001a8       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000131a8     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0002:000001c0       ??_C@_0EH@EMGPELNE@c?3?2edk2?2MdeModulePkg?2Library?2Pe@ 00000000000131c0     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0002:00000208       ??_C@_0CI@HIINONDG@?$CICHAR8?5?$CK?$CJBaseListMarker?5?$DM?$DN?5Form@ 0000000000013208     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0002:00000230       ??_C@_01OHGJGJJP@?$FL@     0000000000013230     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0002:00000234       ??_C@_02PBFOLPKM@?$FN?5@   0000000000013234     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0002:00000238       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013238     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0002:00000250       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013250     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000270       ??_C@_0EL@ODFJBOBF@c?3?2edk2?2MdePkg?2Library?2UefiBoot@ 0000000000013270     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000002c0       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000132c0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000002d8       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000132d8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000002f0       ??_C@_0EP@BCAOHHL@c?3?2edk2?2MdePkg?2Library?2UefiDevi@ 00000000000132f0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000340       ??_C@_0DC@CNNBPJA@mDevicePathLibDevicePathUtiliti@ 0000000000013340     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000378       ??_C@_0BE@OBDFIHND@gRT?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013378     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000390       ??_C@_0FB@NIMBGODD@c?3?2edk2?2MdePkg?2Library?2UefiRunt@ 0000000000013390     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000003e8       ??_C@_0CK@GGFNJPAK@c?3?2edk2?2MdePkg?2Library?2DxeHobLi@ 00000000000133e8     DxeHobLib:HobLib.obj
+ 0002:00000418       ??_C@_0BJ@OBFMLLDO@mHobList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013418     DxeHobLib:HobLib.obj
+ 0002:00000438       ??_C@_0BJ@NOLLDKJB@HobStart?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013438     DxeHobLib:HobLib.obj
+ 0002:00000458       ??_C@_1BC@DPOIABCP@?$AAE?$AAF?$AAI?$AAD?$AAe?$AAb?$AAu?$AAg@ 0000000000013458     DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0002:00000470       ??_C@_0DD@BGKIIDHG@c?3?2edk2?2MdePkg?2Library?2UefiRunt@ 0000000000013470     UefiRuntimeLib:RuntimeLib.obj
+ 0002:000004b0       ??_C@_0EK@NEAGPEKB@c?3?2edk2?2MdeModulePkg?2Library?2Dx@ 00000000000134b0     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000500       ??_C@_0DN@HHIHPHHB@?$CB?$CI?$CIExtendedData?5?$DN?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013500     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000540       ??_C@_0DN@BBBIFINB@?$CB?$CI?$CIExtendedData?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013540     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000580       ??_C@_0DI@MIEIGAOH@Status?5code?5extended?5data?5is?5to@ 0000000000013580     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:000005c0       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 00000000000135c0     BaseMemoryLibOptDxe:CopyMemWrapper.obj
+ 0002:00000608       ??_C@_0DM@DBGKHDAI@c?3?2edk2?2MdePkg?2Library?2BaseMemo@ 0000000000013608     BaseMemoryLibOptDxe:CopyMemWrapper.obj
+ 0002:00000648       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000013648     BaseMemoryLibOptDxe:CopyMemWrapper.obj
+ 0002:00000688       ??_C@_0CI@BEFOLLLE@c?3?2edk2?2MdePkg?2Library?2BaseLib?2@ 0000000000013688     BaseLib:String.obj
+ 0002:000006b0       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000136b0     BaseLib:String.obj
+ 0002:000006c8       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 00000000000136c8     BaseLib:String.obj
+ 0002:00000700       ??_C@_0CM@GBAFEFEA@c?3?2edk2?2MdePkg?2Library?2BaseLib?2@ 0000000000013700     BaseLib:SafeString.obj
+ 0002:00000730       ??_C@_0BO@ECNIOIHG@?$CIDestination?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000013730     BaseLib:SafeString.obj
+ 0002:00000750       ??_C@_0BJ@EAEEJIP@?$CISource?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000013750     BaseLib:SafeString.obj
+ 0002:00000770       ??_C@_0FL@CDANCHFO@InternalSafeStringNoAsciiStrOve@ 0000000000013770     BaseLib:SafeString.obj
+ 0002:000007d0       ??_C@_0CL@COEFNOFM@c?3?2edk2?2MdePkg?2Library?2BaseLib?2@ 00000000000137d0     BaseLib:Unaligned.obj
+ 0003:00000000       gEfiLoadedImageProtocolGuid 0000000000014000     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0003:00000010       gEfiStatusCodeSpecificDataGuid 0000000000014010     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0003:00000020       gEfiGlobalVariableGuid     0000000000014020     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0003:00000030       gEfiStatusCodeRuntimeProtocolGuid 0000000000014030     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0003:00000040       gEfiGenericVariableGuid    0000000000014040     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0003:00000050       gEfiDevicePathProtocolGuid 0000000000014050     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0003:00000060       gEfiDevicePathToTextProtocolGuid 0000000000014060     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0003:00000070       gEfiStatusCodeDataTypeDebugGuid 0000000000014070     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0003:00000080       gEfiDevicePathUtilitiesProtocolGuid 0000000000014080     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0003:00000090       gEfiDevicePathFromTextProtocolGuid 0000000000014090     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0003:000000a0       gEfiHobListGuid            00000000000140a0     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0003:000000b0       gEfiDebugMaskProtocolGuid  00000000000140b0     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0003:000000c0       gEfiEventExitBootServicesGuid 00000000000140c0     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0003:000000d0       gEfiMonotonicCounterArchProtocolGuid 00000000000140d0     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0003:000000e0       gEfiEventVirtualAddressChangeGuid 00000000000140e0     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0003:000000f0       gEfiCallerIdGuid           00000000000140f0     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0003:00000100       gMtcVendorGuid             0000000000014100     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0003:00000110       mDebugMaskProtocol         0000000000014110     DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0003:00000128       mMonotonicCounterHandle    0000000000014128     MonotonicCounterRuntimeDxe:MonotonicCounter.obj
+ 0003:00000130       gST                        0000000000014130     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000138       gBS                        0000000000014138     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000140       gImageHandle               0000000000014140     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000148       mDevicePathLibDevicePathUtilities 0000000000014148     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0003:00000150       gRT                        0000000000014150     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:00000158       mHobList                   0000000000014158     DxeHobLib:HobLib.obj
+ 0003:00000160       mSystemTable               0000000000014160     DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0003:00000168       mDebugPrintErrorLevel      0000000000014168     DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0003:0000016c       mGlobalErrorLevelInitialized 000000000001416c     DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0003:0000016d       mEfiAtRuntime              000000000001416d     UefiRuntimeLib:RuntimeLib.obj
+ 0003:00000170       mReportStatusCodeLibStatusCodeProtocol 0000000000014170     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0003:00000178       mEfiVirtualNotifyEvent     0000000000014178     <common>
+ 0003:00000180       mInternalRT                0000000000014180     <common>
+ 0003:00000188       mEfiExitBootServicesEvent  0000000000014188     <common>
+ 0003:00000190       mEfiMtc                    0000000000014190     <common>
+ 0003:00000198       mEfiMtcEvent               0000000000014198     <common>
+
+ entry point at        0001:00000110
+
+ Static symbols
+
+ 0000:ffff7000       .debug$S                   0000000000010000     MonotonicCounterRuntimeDxe.exp
+ 0001:0000001a       InternalMemCopyMem.0       000000000001101a     BaseMemoryLibOptDxe:CopyMem.obj
+ 0001:00000032       InternalMemCopyMem.1       0000000000011032     BaseMemoryLibOptDxe:CopyMem.obj
+ 0001:00000045       InternalMemCopyMem.2       0000000000011045     BaseMemoryLibOptDxe:CopyMem.obj
+ 0001:00000062       @CopyBackward              0000000000011062     BaseMemoryLibOptDxe:CopyMem.obj
+ 0001:0000006b       @CopyBytes                 000000000001106b     BaseMemoryLibOptDxe:CopyMem.obj
+ 0004:00000000       .edata                     0000000000015000     MonotonicCounterRuntimeDxe.exp
+ 0004:00000028       rgpv                       0000000000015028     MonotonicCounterRuntimeDxe.exp
+ 0004:0000002c       rgszName                   000000000001502c     MonotonicCounterRuntimeDxe.exp
+ 0004:00000030       rgwOrd                     0000000000015030     MonotonicCounterRuntimeDxe.exp
+ 0004:00000032       szName                     0000000000015032     MonotonicCounterRuntimeDxe.exp
+ 0004:00000051       $N00001                    0000000000015051     MonotonicCounterRuntimeDxe.exp
+ 0005:00000000       $pdata$_ModuleEntryPoint   0000000000016000     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:0000000c       $pdata$ProcessLibraryDestructorList 000000000001600c     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0005:00000018       $pdata$ProcessLibraryConstructorList 0000000000016018     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0005:00000024       $pdata$ProcessModuleEntryPointList 0000000000016024     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0005:00000030       $pdata$EfiMtcEventHandler  0000000000016030     MonotonicCounterRuntimeDxe:MonotonicCounter.obj
+ 0005:0000003c       $pdata$MonotonicCounterDriverGetNextHighMonotonicCount 000000000001603c     MonotonicCounterRuntimeDxe:MonotonicCounter.obj
+ 0005:00000048       $pdata$MonotonicCounterDriverGetNextMonotonicCount 0000000000016048     MonotonicCounterRuntimeDxe:MonotonicCounter.obj
+ 0005:00000054       $pdata$DebugPrint          0000000000016054     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0005:00000060       $pdata$DebugAssert         0000000000016060     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0005:0000006c       $pdata$GetNextHob          000000000001606c     DxeHobLib:HobLib.obj
+ 0005:00000078       $pdata$GetHobList          0000000000016078     DxeHobLib:HobLib.obj
+ 0005:00000084       $pdata$GetDebugPrintErrorLevel 0000000000016084     DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0005:00000090       $pdata$InternalReportStatusCode 0000000000016090     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0005:0000009c       $pdata$ReportStatusCodeEx  000000000001609c     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0005:000000a8       $pdata$CopyMem             00000000000160a8     BaseMemoryLibOptDxe:CopyMemWrapper.obj
+ 0005:000000b4       $pdata$CopyGuid            00000000000160b4     BaseMemoryLibOptDxe:MemLibGuid.obj
+ 0005:000000c0       $pdata$CompareGuid         00000000000160c0     BaseMemoryLibOptDxe:MemLibGuid.obj
+ 0005:000000cc       $pdata$AsciiStrLen         00000000000160cc     BaseLib:String.obj
+ 0005:000000d8       $pdata$AsciiStrnCpyS       00000000000160d8     BaseLib:SafeString.obj
+ 0005:000000e4       $pdata$ReadUnaligned64     00000000000160e4     BaseLib:Unaligned.obj
+ 0006:00000000       $unwind$_ModuleEntryPoint  0000000000017000     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0006:00000000       $unwind$AsciiStrnCpyS      0000000000017000     BaseLib:SafeString.obj
+ 0006:00000000       $unwind$CopyGuid           0000000000017000     BaseMemoryLibOptDxe:MemLibGuid.obj
+ 0006:00000000       $unwind$GetHobList         0000000000017000     DxeHobLib:HobLib.obj
+ 0006:00000010       $unwind$ProcessLibraryConstructorList 0000000000017010     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0006:00000028       $unwind$ProcessLibraryDestructorList 0000000000017028     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0006:0000003c       $unwind$ProcessModuleEntryPointList 000000000001703c     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0006:00000048       $unwind$ReadUnaligned64    0000000000017048     BaseLib:Unaligned.obj
+ 0006:00000048       $unwind$MonotonicCounterDriverGetNextMonotonicCount 0000000000017048     MonotonicCounterRuntimeDxe:MonotonicCounter.obj
+ 0006:00000048       $unwind$GetNextHob         0000000000017048     DxeHobLib:HobLib.obj
+ 0006:00000050       $unwind$MonotonicCounterDriverGetNextHighMonotonicCount 0000000000017050     MonotonicCounterRuntimeDxe:MonotonicCounter.obj
+ 0006:00000050       $unwind$GetDebugPrintErrorLevel 0000000000017050     DxeDebugPrintErrorLevelLib:DxeDebugPrintErrorLevelLib.obj
+ 0006:00000058       $unwind$EfiMtcEventHandler 0000000000017058     MonotonicCounterRuntimeDxe:MonotonicCounter.obj
+ 0006:00000060       $unwind$DebugPrint         0000000000017060     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0006:00000070       $unwind$DebugAssert        0000000000017070     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0006:0000008c       $unwind$InternalReportStatusCode 000000000001708c     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0006:000000a4       $unwind$ReportStatusCodeEx 00000000000170a4     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0006:000000bc       $unwind$CopyMem            00000000000170bc     BaseMemoryLibOptDxe:CopyMemWrapper.obj
+ 0006:000000bc       $unwind$CompareGuid        00000000000170bc     BaseMemoryLibOptDxe:MemLibGuid.obj
+ 0006:000000d0       $unwind$AsciiStrLen        00000000000170d0     BaseLib:String.obj

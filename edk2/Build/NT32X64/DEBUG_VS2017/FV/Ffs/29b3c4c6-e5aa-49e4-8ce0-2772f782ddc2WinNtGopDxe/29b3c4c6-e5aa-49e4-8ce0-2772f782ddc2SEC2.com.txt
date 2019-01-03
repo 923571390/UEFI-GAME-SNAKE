@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_COMPRESSION -c PI_STD -o c:\edk2\Build\NT32X64\DEBUG_VS2017\FV\Ffs\29b3c4c6-e5aa-49e4-8ce0-2772f782ddc2WinNtGopDxe\29b3c4c6-e5aa-49e4-8ce0-2772f782ddc2SEC2.com c:\edk2\Build\NT32X64\DEBUG_VS2017\FV\Ffs\29b3c4c6-e5aa-49e4-8ce0-2772f782ddc2WinNtGopDxe\29b3c4c6-e5aa-49e4-8ce0-2772f782ddc2SEC2.com.dummy

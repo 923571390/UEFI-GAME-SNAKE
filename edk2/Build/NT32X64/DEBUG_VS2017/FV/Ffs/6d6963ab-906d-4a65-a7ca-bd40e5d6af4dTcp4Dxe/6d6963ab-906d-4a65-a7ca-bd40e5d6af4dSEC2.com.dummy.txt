@@ -1,0 +1,1 @@
+GenSec --sectionalign 1 -o c:\edk2\Build\NT32X64\DEBUG_VS2017\FV\Ffs\6d6963ab-906d-4a65-a7ca-bd40e5d6af4dTcp4Dxe\6d6963ab-906d-4a65-a7ca-bd40e5d6af4dSEC2.com.dummy c:\edk2\Build\NT32X64\DEBUG_VS2017\FV\Ffs\6d6963ab-906d-4a65-a7ca-bd40e5d6af4dTcp4Dxe\6d6963ab-906d-4a65-a7ca-bd40e5d6af4dSEC2.1.guided

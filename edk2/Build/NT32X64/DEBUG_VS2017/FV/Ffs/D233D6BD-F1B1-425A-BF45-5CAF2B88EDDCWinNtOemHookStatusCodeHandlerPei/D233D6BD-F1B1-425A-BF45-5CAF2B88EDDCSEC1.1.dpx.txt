@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PEI_DEPEX -o c:\edk2\Build\NT32X64\DEBUG_VS2017\FV\Ffs\D233D6BD-F1B1-425A-BF45-5CAF2B88EDDCWinNtOemHookStatusCodeHandlerPei\D233D6BD-F1B1-425A-BF45-5CAF2B88EDDCSEC1.1.dpx c:\edk2\Build\NT32X64\DEBUG_VS2017\X64\Nt32Pkg\WinNtOemHookStatusCodeHandlerPei\WinNtOemHookStatusCodeHandlerPei\OUTPUT\WinNtOemHookStatusCodeHandlerPei.depex
